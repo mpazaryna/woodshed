@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kanbanfire-b749e": {
+      "hosting": {
+        "kanban-fire": [
+          "kanbanfire-b749e"
+        ]
+      }
+    }
+  }
+}
