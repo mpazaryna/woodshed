@@ -1,13 +1,9 @@
 # prompt_template_call.py
 from dotenv import find_dotenv, load_dotenv
 
-from langchain import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 load_dotenv(find_dotenv())
-
-# --------------------------------------------------------------
-# Prompt Templates: Manage prompts for LLMs
-# --------------------------------------------------------------
 
 
 def run_prompt_template_demo():
