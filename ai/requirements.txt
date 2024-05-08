@@ -1,0 +1,13 @@
+#chat-with-key
+streamlit
+langchain
+langchain-openai
+openai
+python-dotenv
+#chat-csv
+langchain_community
+langchain_core
+langchain_openai
+langchain-experimental
+python-dotenv
+tabulate
