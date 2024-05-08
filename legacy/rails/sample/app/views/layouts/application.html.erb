@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= yield %>
+<br/>
+<%= link_to 'Home', root_path %> | <%= link_to 'Users', users_path %> | <%= link_to 'Admin', admin_dashboard_path %>
+
+</body>
+</html>

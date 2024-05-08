@@ -1,0 +1,72 @@
+{
+  "name": "another-jarsap",
+  "version": "0.0.2",
+  "description": "Another React Webpack Babel Starter Kit",
+  "main": "''",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
+    "dev": "webpack-dev-server --progress --profile --colors --hot",
+    "start": "node server.js",
+    "doc": "esdoc -c config/esdoc.json",
+    "lint": "eslint ./src/**/*.js",
+    "test-all": "mocha config/enzyme.js src/**/*.spec.js",
+    "test-world": "mocha config/enzyme.js src/components/world/*.spec.js",
+    "test-comment": "mocha config/enzyme.js src/components/comment/*.spec.js",  
+    "storybook": "start-storybook -p 9001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wisesmile/another-jarsap"
+  },
+  "keywords": [
+    "React",
+    "Webpack",
+    "Babel",
+    "Starter",
+    "template"
+  ],
+  "author": "Paz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wisesmile/another-jarsap/issues"
+  },
+  "homepage": "https://github.com/wisesmile/another-jarsap",
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "css-loader": "^0.23.1",
+    "json-loader": "^0.5.4",
+    "json5-loader": "^0.6.0",
+    "jsx-loader": "^0.13.2",
+    "node-libs-browser": "1.0.0",
+    "react": "15.0.1",
+    "react-css-modules": "^3.7.7",
+    "react-dom": "15.0.1",
+    "react-router": "^2.5.2",
+    "style-loader": "^0.13.1",
+    "wisesmile-components": "^1.1.0"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^1.36.0",
+    "babel-core": "6.7.7",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-react": "6.5.0",
+    "chai": "^3.5.0",
+    "css-loader": "0.23.1",
+    "enzyme": "^2.3.0",
+    "eslint": "^3.0.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.1",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "file-loader": "0.8.5",
+    "jsdom": "^9.4.0",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.2.0",
+    "react-hot-loader": "1.3.0",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.0",
+    "webpack-dev-server": "1.14.1"
+  }
+}

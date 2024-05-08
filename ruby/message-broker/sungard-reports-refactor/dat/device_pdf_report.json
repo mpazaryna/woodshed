@@ -1,0 +1,9 @@
+{  
+   "type":"device_pdf_report",
+   "device":[  
+      "phlnu422"
+   ],
+   "start":20140901,
+   "end":20140930,
+   "destination":"mailto://joe.user@sungardas.com"
+}

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Controller name:</b>
+  <%= @audit.controller_name %>
+</p>
+
+<p>
+  <b>Action name:</b>
+  <%= @audit.action_name %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @audit.duration %>
+</p>
+
+
+<%= link_to 'Edit', edit_audit_path(@audit) %> |
+<%= link_to 'Back', audits_path %>

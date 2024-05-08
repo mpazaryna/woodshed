@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moving Light</title>
+    <meta name="description" content="A Moving Light Component" />
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
+    <script src="components/log.js"></script>
+    <script src="components/box.js"></script>
+    <script src="components/light.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img
+          id="groundTexture"
+          src="https://cdn.aframe.io/a-painter/images/floor.jpg"
+        />
+        <img
+          id="skyTexture"
+          src="https://cdn.aframe.io/a-painter/images/sky.jpg"
+        />
+      </a-assets>
+
+      <!-- instantiate lightbar with a color -->
+      <a-entity
+        lightbar="color: papayawhip"
+        position="-4 3 -4"
+        animation="property: position; to: 4 2.8 -4; dir: alternate; loop: true"
+      ></a-entity>
+
+      <!-- the sky -->
+      <a-entity
+        id="sky"
+        geometry="primitive: sphere; thetaLength: 90; radius: 30"
+        material="side: back; height: 2048; width: 2048; src: #skyTexture; shader: flat"
+      ></a-entity>
+
+      <!-- the ground -->
+      <a-entity
+        id="ground"
+        geometry="primitive: plane; height: 100; width: 100"
+        material="src: #groundTexture"
+        rotation="-90 0 0"
+      ></a-entity>
+
+      <!-- validate that the log component works and is being called -->
+      <a-entity log="message: Hello, World!"></a-entity>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EDC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  </head>
+  <body ng-app="v2App">
+
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Eastport Democratic Club</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="#/about">About</a>
+              </li>
+              <li class="">
+                <a href="#/news">News</a>
+              </li>
+              <li class="">
+                <a href="#/kitchen">Kitchen</a>
+              </li>
+              <li class="">
+                <a href="#/bar">Bar</a>
+              </li>
+              <li class="">
+                <a href="#/events">Events</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view="">
+    <!-- end site application content here --> 
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/modules.js -->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Tutorial</title>
+    <!-- Not present in the tutorial. Just for basic styling. -->
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.16/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
+  </head>
+  <body>
+    <div id="awesome"></div>
+    <script src="scripts/wisesmile-components.js"></script>
+    <script>
+      var Test = window["wisesmile-components"].Awesome;
+      ReactDOM.render(
+        React.createElement(Test),
+        document.getElementById('awesome')
+      );
+    </script>
+  </body>
+</html>

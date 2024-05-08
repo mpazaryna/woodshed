@@ -1,0 +1,81 @@
+{
+  "name": "flowise-redis-memory",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "46c6db17-d9bd-4c2d-9dcc-c65ea4be602a",
+      "name": "When clicking \"Test workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        280,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/v1/prediction/9794c484-1f86-4154-8562-051ee01b4dec?",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n    \"question\": \"What is my name?\",\n    \"overrideConfig\": {\n        \"sessionId\": \"wed-04-24\"\n    }\n}",
+        "options": {}
+      },
+      "id": "6ae7beec-59c4-48f5-ad44-cd278512c04f",
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        540,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "content": "This is a simple test, to show that Redis memory is working as expected and a flowise flow is running and listening.",
+        "height": 359,
+        "width": 788
+      },
+      "id": "a2e644cb-614d-42e3-8125-5a0c2bb37a95",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        80,
+        160
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking \"Test workflow\"": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "a1e23f09-7f26-4b06-94d2-9cad1ff433fc",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "869d068795160cde25ec1942155a6be21049ed1f6fb8c3a2dbbdafeddb8cbc0b"
+  },
+  "id": "FoMFybygwZ3Y0HNl",
+  "tags": [
+    {
+      "createdAt": "2024-04-29T16:56:01.271Z",
+      "updatedAt": "2024-04-29T16:56:01.271Z",
+      "id": "bL8Dpf9OIAWxe9Iu",
+      "name": "flowise"
+    }
+  ]
+}

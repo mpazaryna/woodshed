@@ -1,0 +1,9 @@
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "flash #{key}" %>
+<% end %>
+
+<% provide(:title, "About") %>
+<h1>Sample App</h1>
+<p>
+  This is the about page for the sample application.
+</p>

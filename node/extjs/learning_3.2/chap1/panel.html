@@ -1,0 +1,30 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="../ext/resources/css/ext-all.css"/>
+<script type="text/javascript" src="../ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-all.js"></script>
+<style type="text/css">
+.my-panel-class {
+    font-family: tahoma,sans-serif;
+}
+</style>
+<script type="text/javascript">
+Ext.onReady(function(){
+    new Ext.Panel({
+        renderTo: document.body,
+        title: 'Panel with pre-existing content',
+        height: 400,
+        width: 600,
+        cls: 'my-panel-class',
+        contentEl: 'main-content'
+    });
+});
+</script>
+</head>
+<body style="padding:10px">
+    <div id="main-content">
+        <h1>This is some pre-existing content.</h1>
+        This element is "imported" and used as the body of a Panel
+    </div>
+</body>
+</html>

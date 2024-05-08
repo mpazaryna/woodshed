@@ -1,0 +1,9 @@
+python-dotenv
+openai
+wikipedia
+langchain-core 
+langchain-community 
+langchain-openai
+langchain-cli
+langchain-fireworks
+numexpr

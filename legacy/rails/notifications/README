@@ -1,0 +1,24 @@
+== Welcome to Notifications
+
+Notifications is a small sample app that is being used to demonstrate and review
+Rails logging.
+
+== GEMS
+
+* itslog https://github.com/johnnytommy/itslog
+
+== Helpful rake commands
+
+* rake log:clear
+
+== Requirements
+
+1. Modify the command log to hold incoming request information (xml or json body)
+2. Modify the command log to hold incoming request headers
+3. Modify the command log to hold incoming request url
+4. The command log should also hold an entry for reads (so we have records of incoming requests for reads)
+
+== References
+
+http://rails.nuvvo.com/lesson/6377-action-controller-the-request-and-response-objects
+

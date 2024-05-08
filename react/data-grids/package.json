@@ -1,0 +1,47 @@
+{
+  "name": "starter-project",
+  "version": "0.1.0",
+  "description": "Simple starting point",
+  "main": "src/javascript/components/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && ./node_modules/webpack/bin/webpack.js --progress "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wisesmile/essential-react.git"
+  },
+  "author": "Paz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wisesmile/essential-react/issues"
+  },
+  "homepage": "https://github.com/wisesmile/",
+  "devDependencies": {
+    "babel": "~5.4.7",
+    "babel-core": "^4.7.16",
+    "babel-loader": "^4.2.0",
+    "babelify": "~6.1.2",
+    "browserify": "~10.2.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "~5.1.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-sass": "^2.0.3",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp-swig": "^0.7.4",
+    "gulp-uglify": "~1.2.0",
+    "gulp-util": "~3.0.4",
+    "gulp-webserver": "^0.9.1",
+    "nib": "^1.1.0",
+    "react-router": "^0.13.3",
+    "vinyl-buffer": "~1.0.0",
+    "vinyl-source-stream": "~1.1.0",
+    "webpack": "^1.7.3"
+  },
+  "dependencies": {
+    "griddle-react": "^0.2.13",
+    "react": "^0.13",
+    "react-datagrid": "^1.2.13",
+    "underscore": "^1.8.3"
+  }
+}

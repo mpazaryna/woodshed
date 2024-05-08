@@ -1,0 +1,25 @@
+<h1>Listing audits</h1>
+
+<table>
+  <tr>
+    <th>Controller</th>
+    <th>Action</th>
+    <th>Duration</th>
+    <th>Created</th>
+    <th>&nbsp;</th>
+  </tr>
+
+<% @audits.each do |audit| %>
+  <tr>
+    <td><%= audit.controller_name %></td>
+    <td><%= audit.action_name %></td>
+    <td><%= audit.duration %></td>
+    <td><%= audit.created_at %></td>
+    <td><%= link_to 'Show', audit %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Audit', new_audit_path %>

@@ -1,0 +1,19 @@
+{
+  "name": "alt-annotated",
+  "version": "1.0.0",
+  "description": "A simple flux tutorial built with alt and react",
+  "dependencies": {
+    "alt": "^0.16.0",
+    "react": "^0.13"
+  },
+  "devDependencies": {
+    "browserify": "^8.0.3",
+    "reactify": "^0.17.1"
+  },
+  "scripts": {
+    "build": "browserify -t [reactify --es6] src/App.jsx > build/app.js",
+    "start": "npm run build"
+  },
+  "author": "Josh Perez <josh@goatslacker.com>",
+  "license": "MIT"
+}

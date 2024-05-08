@@ -1,0 +1,39 @@
+{
+  "name": "github-notetaker-wisesmile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register",
+    "serve": "webpack-dev-server --content-base public/ --no-info"
+  },
+  "author": "Paz via Tyler McGinnis",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.8.0",
+    "firebase": "^2.3.2",
+    "history": "^1.13.1",
+    "re-base": "^1.3.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^1.0.1",
+    "reactfire": "^0.5.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-eslint": "^4.0.10",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "eslint-config-airbnb": "0.0.7",
+    "eslint-plugin-react": "^3.2.3",
+    "expect": "^1.13.4",
+    "expect-jsx": "2.1.2",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.3.4",
+    "react-addons-test-utils": "^0.14.5",
+    "webpack": "^1.12.9"
+  }
+}

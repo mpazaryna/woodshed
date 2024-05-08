@@ -1,0 +1,5 @@
+html2text
+bs4
+requests
+markdown 
+pdfkit

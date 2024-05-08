@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/10694355/how-to-use-ruby-minitestspec-with-rails-for-api-integration-tests

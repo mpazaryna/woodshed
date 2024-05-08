@@ -1,0 +1,19 @@
+require 'rake/testtask'
+
+Rake::TestTask.new do |t|
+  t.pattern = "test/*_test.rb"
+end
+
+namespace :db do
+  desc "Dump Mongo DB based on mongoid.yml settings, orgnanized by Rails.env and timestamp."
+  task :dump do
+    cmd = "mongodump --db tmp --collection foos --out tmp/foos"
+    puts "Running '#{cmd}'"
+    `#{cmd}`    
+  end
+  
+  desc "Load Mongo with some sample data."    
+  task :load do
+    ruby "util/foo-loader.rb"
+  end      
+end

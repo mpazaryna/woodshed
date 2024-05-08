@@ -1,0 +1,26 @@
+{
+  "name": "artist-suggestion",
+  "version": "1.0.0",
+  "description": "Suggests an artist name for your listening pleasure..",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wisesmile/artist-suggestion.git"
+  },
+  "author": "Matt Pazaryna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wisesmile/artist-suggestion/issues"
+  },
+  "homepage": "https://github.com/wisesmile/artist-suggestion",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}

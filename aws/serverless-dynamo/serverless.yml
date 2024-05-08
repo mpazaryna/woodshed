@@ -1,0 +1,78 @@
+service: lab-dynamo
+
+enableLocalInstallationFallback: true # If set to 'true', guarantees that it's a locally (for service, in its node_modules) installed framework which processes the command
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  versionFunctions: false
+  environment:
+    DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+        - s3:*
+        - ses:*
+      Resource: '*'
+functions:
+  amortization:
+    handler: functions/engine/amortization/handler.resolve
+    events:
+      - http:
+          path: engine/amortization
+          method: post
+          cors: true
+  db-create:
+    handler: functions/db/create.create
+    events:
+      - http:
+          path: db/engines
+          method: post
+          cors: true
+  db-list:
+    handler: functions/db/list.list
+    events:
+      - http:
+          path: db/engines
+          method: get
+          cors: true
+  db-get:
+    handler: functions/db/get.get
+    events:
+      - http:
+          path: db/engines/{id}
+          method: get
+          cors: true
+  db-update:
+    handler: functions/db/update.update
+    events:
+      - http:
+          path: db/engines/{id}
+          method: put
+          cors: true
+  db-delete:
+    handler: functions/db/delete.delete
+    events:
+      - http:
+          path: db/engines/{id}
+          method: delete
+          cors: true
+resources:
+  Resources:
+    EngineDynamoDbTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:provider.environment.DYNAMODB_TABLE}
+
+plugins:
+  - serverless-prune-plugin

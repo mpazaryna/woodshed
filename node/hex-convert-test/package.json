@@ -1,0 +1,30 @@
+{
+  "name": "test-hex-conversion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "watch:test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisesmile/hills"
+  },
+  "keywords": [],
+  "author": "Paz",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/wisesmile/hills",
+  "devDependencies": {
+    "jest-cli": "15.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "convert-hex": "^0.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+# requirements.txt
+supabase==2.4.1
+streamlit==1.32.2
+st-supabase-connection
+langchain==0.1.4
+langchain_community==0.0.16
+langchain_core==0.1.17
+langchain_openai==0.0.5
+python-dotenv==1.0.1
+plotly==5.20.0

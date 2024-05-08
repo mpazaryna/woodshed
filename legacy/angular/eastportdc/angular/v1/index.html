@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app="Site">
+<head>
+  <meta charset="UTF-8">
+  <title>The Eastport Democratic Club</title>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+  body {
+    padding-top:60px;
+  }
+  </style>
+</head>
+<body ng-controller="AppController">
+
+  <!-- Navbar -->
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="#/page/home">The Eastport Democratic Club</a>
+        <ul class="nav">
+          <li ng-class="{active: slug == 'home'}"><a href="#/page/home">Home</a></li>
+          <li ng-class="{active: slug == 'about'}"><a href="#/page/about">About</a></li>
+          <li ng-class="{active: slug == 'contact'}"><a href="#/page/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+
+        <!-- Dynamic content -->
+        <ng-view></ng-view>
+
+      </div>
+      <div class="span4">
+        <div class="well">
+          <h3>Side Bar</h3>
+          <p>This is static content that will stay the same between pages.</p>
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="http://angularjs.org">Angular.js</a></li>
+            <li><a href="http://andru.co">andru.co</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Includes -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.2/angular.min.js"></script>
+  <script type="text/javascript" src="js/site.js"></script>
+
+</body>
+</html>

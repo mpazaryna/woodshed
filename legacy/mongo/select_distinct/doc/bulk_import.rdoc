@@ -1,0 +1,59 @@
+= Import groups extracted from eHealth
+
+Ports (aka Interfaces in the Viewpoint menu) must also be processed as part of the parent child relationship.  There need to be a new
+attribute added into the collection that defines the parent_guid.
+
+== Mongodump sgmc_dev 
+
+   # user local system defines
+   ADMINPATH=~/dat
+   MONGO_DBNAME=sgmc_dev
+   DAY=`/bin/date +%Y%m%d_%H%M%S`
+   echo "Creating MONGO DUMP: mongo_$DAY.tar"
+   mongodump --db $MONGO_DBNAME --out $ADMINPATH/mongo_$DAY
+   cd $ADMINPATH/mongo_$DAY/
+   tar -cvzf "$ADMINPATH/mongo_$DAY.tar" $MONGO_DBNAME/
+   echo "file written to $ADMINPATH"
+
+== Create new db
+
+   # rename the output directory of mongodump and create new db
+   cd ~/dat
+   cd mongo_20120713_103320
+   mv sgmc_dev 301-bulk-load
+   mongorestore 301-bulk-load
+
+== Export groups from production 
+
+   mongodump --db sgmc --collection groups --out - > ~/tmp/groups.bson   
+   scp sgmc@zencon1:/home/sgmc/tmp/groups.bson .
+
+== Restore 
+
+   mongorestore -d 301-bulk-load --drop -c groups groups.bson
+
+== Convert the supplied Excel sheet into CSV and add a header row
+
+   Just do it.
+
+== Import the csv into the work db
+
+   mongoimport -d 301-bulk-load -c imports --type csv --file imports.csv --headerline 
+   mongoimport -d 301-bulk-load -c workbook1 --type csv --file workbook1.csv --headerline 
+   mongoimport -d 301-bulk-load -c imports --type csv --file workbook1.csv --headerline 
+
+== Running the test
+
+   rspec spec/all_spec.rb
+
+== Dump the processed data to a bson file
+
+  mongodump --db 301-bulk-load --collection final_imports --out - > final_imports.bson  
+
+== Import into staging for review
+
+   mongorestore -d sgmc_staging -c groups final_imports.bson ~/tmp/final_imports.bson
+
+== Import into production after review
+
+   mongorestore -d sgmc -c groups final_imports.bson

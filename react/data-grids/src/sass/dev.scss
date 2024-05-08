@@ -1,0 +1,53 @@
+//colors
+$color_mine_shaft_approx: #333333;
+$color_storm_dust_approx: #666666;
+$color_alto_approx: #dedede;
+$white: #ffffff;
+$papayawhip: #ffefd5;
+$primary-color: #ffefd5;
+$secondary-color: #ffefd5;
+
+//fonts
+$font_0: verdana;
+$font_1: arial;
+$font_2: sans-serif;
+
+body {
+  background-color: $white;
+}
+
+dt {
+	font-weight: bold;
+	text-decoration: underline;
+	&:after {
+		content: ":";
+	}
+}
+
+dd {
+	margin: 0;
+	padding: 0 0 0.5em 0;
+}
+
+table.gridtable {
+	font-family: $font_0, $font_1, $font_2;
+	font-size: 11px;
+	color: $color_mine_shaft_approx;
+	border-width: 1px;
+	border-color: $color_storm_dust_approx;
+	border-collapse: collapse;
+	th {
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: $color_storm_dust_approx;
+		background-color: $color_alto_approx;
+	}
+	td {
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: $color_storm_dust_approx;
+		background-color: $white;
+	}
+}

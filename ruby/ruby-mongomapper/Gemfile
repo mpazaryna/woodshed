@@ -1,0 +1,8 @@
+source "https://rubygems.org"
+
+gem "rake"
+gem "minitest"
+gem "shoulda-context"
+gem "minitest-reporters"
+gem "mongo_mapper"
+gem "bson_ext"

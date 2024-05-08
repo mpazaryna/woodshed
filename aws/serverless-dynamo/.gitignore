@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+
+#SERVERLESS STUFF
+admin.env
+.env
+_meta
+.serverless

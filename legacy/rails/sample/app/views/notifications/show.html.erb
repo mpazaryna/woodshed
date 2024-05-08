@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Path:</b>
+  <%= @notification.path %>
+</p>
+
+<p>
+  <b>Page duration:</b>
+  <%= @notification.page_duration %>
+</p>
+
+<p>
+  <b>View duration:</b>
+  <%= @notification.view_duration %>
+</p>
+
+<p>
+  <b>Db duration:</b>
+  <%= @notification.db_duration %>
+</p>
+
+<p>
+  <b>Payload:</b>
+  <%= @notification.payload %>
+</p>
+
+
+<%= link_to 'Edit', edit_notification_path(@notification) %> |
+<%= link_to 'Back', notifications_path %>

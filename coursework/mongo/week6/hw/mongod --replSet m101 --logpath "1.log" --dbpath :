@@ -1,0 +1,6 @@
+mongod --replSet m101 --logpath "1.log" --dbpath /tmp/rs1 --port 27017 --smallfiles --fork
+mongod --replSet m101 --logpath "2.log" --dbpath /tmp/rs2 --port 27018 --smallfiles --fork
+mongod --replSet m101 --logpath "3.log" --dbpath /tmp/rs3 --port 27019 --smallfiles --fork
+
+
+config = { _id: "m101", members:[{ _id : 0, host : "localhost:27017"},{ _id : 1, host : "localhost:27018"},{ _id : 2, host : "localhost:27019"} ]};

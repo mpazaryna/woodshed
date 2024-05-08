@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Logical name:</b>
+  <%= @network.logical_name %>
+</p>
+
+<p>
+  <b>Ip inteface:</b>
+  <%= @network.ip_inteface %>
+</p>
+
+
+<%= link_to 'Edit', edit_network_path(@network) %> |
+<%= link_to 'Back', networks_path %>

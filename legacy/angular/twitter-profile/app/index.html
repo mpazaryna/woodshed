@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="Twitter">
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Twitter Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div ng-controller="TwitterController">
+      <div id="header">
+        <form class="form-horizontal">
+          <input type="text" ng-model="username" placeholder="Enter username">
+          <button class="btn" ng-click='fetch()'><i class="icon-search"></i>Search</button>
+        </form>
+      </div>
+      <h1>{{screenName}}</h1>
+      <table class="table table-striped">
+        <tr>
+          <th>Name</th>
+          <td>{{userData.name}}</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>{{userData.description}}</td>
+        </tr>
+        <tr>
+          <th>URL</th>
+          <td><a ng-show="userData.url" href="{{userData.url}}">{{userData.url}}</a></td>
+        </tr>
+        <tr>
+          <th>Favourites count</th>
+          <td>{{userData.favourites_count}}</td>
+        </tr>
+        <tr>
+          <th>Friends count</th>
+          <td>{{userData.friends_count}}</td>
+        </tr>
+        <tr>
+          <th>Followers count</th>
+          <td>{{userData.followers_count}}</td>
+        </tr>
+        <tr>
+          <th>Tweets count</th>
+          <td>{{userData.statuses_count}}</td>
+        </tr>
+      </table>
+    </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="css/bootstrap/css/js/jquery.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-transition.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-alert.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-modal.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-dropdown.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-scrollspy.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-tab.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-tooltip.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-popover.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-button.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-collapse.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-carousel.js"></script>
+    <script src="css/bootstrap/css/js/bootstrap-typeahead.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
+    <script src="js/twitter.js"></script>
+  </body>
+</html>

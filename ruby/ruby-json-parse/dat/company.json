@@ -1,0 +1,62 @@
+{
+    "meta": "Company based subscriptions",
+    "status": 200,
+    "result": [
+        {
+            "report_id": "6",
+            "report_type": "company_device_availability_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "10:30"
+        },
+        {
+            "report_id": "6",
+            "report_type": "company_device_availability_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "11:30"
+        },
+        {
+            "report_id": "6",
+            "report_type": "company_device_availability_report",
+            "email": "mpazaryna@gmail.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "12:30"
+        },
+        {
+            "report_id": "8",
+            "report_type": "company_network_availability_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "07:30"
+        },
+        {
+            "report_id": "12",
+            "report_type": "company_availability_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "08:00"
+        },
+        {
+            "report_id": "12",
+            "report_type": "company_availability_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "09:00"
+        },
+        {
+            "report_id": "12",
+            "report_type": "company_availability_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "12:00"
+        }
+    ]
+}

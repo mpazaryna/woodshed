@@ -1,0 +1,16 @@
+{
+  "name": "weather_api_proxy",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "paz",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.1"
+  }
+}

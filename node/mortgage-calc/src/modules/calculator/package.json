@@ -1,0 +1,25 @@
+{
+  "name": "christy",
+  "version": "0.0.1",
+  "description": "Christy calculation engine.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/matt_pazaryna/christy.git"
+  },
+  "author": "Matt Pazaryna",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://bitbucket.org/matt_pazaryna/christy.git"
+  },
+  "homepage": "https://bitbucket.org/matt_pazaryna/christy",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}

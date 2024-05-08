@@ -1,0 +1,19 @@
+{
+  "name": "how-to-javascript",
+  "version": "1.0.0",
+  "description": "Sample project",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack",
+    "clear": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "paz",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "lodash": "^4.6.1"
+  }
+}

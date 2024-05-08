@@ -1,0 +1,22 @@
+{
+  "name": "mongo-node",
+  "version": "1.0.0",
+  "description": "Simple mongo test scripts.  Testing using jest-mongo",
+  "main": "",
+  "scripts": {
+    "test": "jest",
+    "query": "node query",
+    "insert-one": "node insert-one",
+    "insert-many": "node insert-many"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shelf/jest-mongodb": "^1.1.3",
+    "mongodb": "^3.5.2"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

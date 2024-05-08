@@ -1,0 +1,11 @@
+{
+  "type":"company_availability_report",
+  "company_guid":[
+    "a3f72a77-0be7-4340-84e9-e882dd8a1c79",
+    "08314537-a12e-460a-b6e9-8a34da239aec"
+  ],
+  "start":20140901,
+  "end":20140930,
+  "destination":
+    "pyxie://<path/in/pyxie>"
+}

@@ -1,0 +1,28 @@
+<h1>Listing networks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Guid</th>
+    <th>Logical name</th>
+    <th>Ip inteface</th>
+    <th colspan="3">Action</th>
+  </tr>
+<% @networks.each do |network| %>
+  <tr>
+    <td><%= network.name %></td>
+    <td><%= network.location %></td>
+    <td><%= network.guid %></td>
+    <td><%= network.logical_name %></td>
+    <td><%= network.ip_interface %></td>
+    <td><%= link_to 'Show', network %></td>
+    <td><%= link_to 'Edit', edit_network_path(network) %></td>
+    <td><%= link_to 'Destroy', network, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Network', new_network_path %>

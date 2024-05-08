@@ -1,0 +1,116 @@
+{
+    "meta": "device subscription",
+    "status": 200,
+    "result": [
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "sunny.bogawat@sungardas.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "22:30",
+            "asset_list": [
+                "SALPVA004#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "mpazaryna@gmail.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "21:30",
+            "asset_list": [
+                "SALPVA008#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "mpazaryna@gmail.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "22:30",
+            "asset_list": [
+                "SALPVA004#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "sunny.bogawat@sungardas.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "23:30",
+            "asset_list": [
+                "salppa001#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "23:30",
+            "asset_list": [
+                "SOA-116.subaru1.com#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "19:30",
+            "asset_list": [
+                "SOA-142#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "crashonthelevee@yahoo.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "07:30",
+            "asset_list": [
+                "SALPVA008#cust2"
+            ]
+        },
+        {
+            "report_id": "2",
+            "report_type": "device_csv_glance",
+            "email": "mpazaryna@gmail.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "19:30",
+            "asset_list": [
+                "SALPVA005#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "mpazaryna@gmail.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "19:30",
+            "asset_list": [
+                "SOA-502T#cust2"
+            ]
+        },
+        {
+            "report_id": "1",
+            "report_type": "device_pdf_report",
+            "email": "jhoch@example.com",
+            "company_guid": "d9efa335-f8e5-4271-9541-bb5d7590aee5",
+            "frequency": "1",
+            "delivery_time": "12:00",
+            "asset_list": [
+                "SALPVF001.soa.soaad.com#cust2"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "001-hello-world",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.6.1",
+    "@kadira/storybook": "^2.21.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 8082 -s public",
+    "build-storybook": "build-storybook -s public"
+  }
+}

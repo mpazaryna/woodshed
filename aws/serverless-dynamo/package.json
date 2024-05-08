@@ -1,0 +1,26 @@
+{
+  "name": "lab-dynamo",
+  "version": "0.1.0",
+  "description": "Serverless and DynamoDB",
+  "main": "index.js",
+  "scripts": {
+    "amort": "node ./bin/Amort.js > ./temp/amort.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@mpazaryna.github.com:AskChristee/lab-dynamo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.783.0",
+    "dynamodb-toolbox": "^0.3.5",
+    "idgen": "^2.1.0",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "esdoc": "^1.1.0",
+    "jest": "^27.0.6",
+    "serverless-prune-plugin": "^1.5.1"
+  }
+}

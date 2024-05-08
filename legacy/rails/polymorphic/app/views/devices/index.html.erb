@@ -1,0 +1,31 @@
+<h1>Listing devices</h1>
+
+<table>
+  <tr>
+    <th>Guid</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Ip</th>
+    <th>Hw manufacturer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @devices.each do |device| %>
+  <tr>
+    <td><%= device.ass.guid %></td>
+    <td><%= device.ass.name %></td>
+    <td><%= device.ass.location %></td>
+    <td><%= device.ip %></td>
+    <td><%= device.hw_manufacturer %></td>
+    <td><%= link_to 'Show', device %></td>
+    <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    <td><%= link_to 'Destroy', device, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Device', new_device_path %>

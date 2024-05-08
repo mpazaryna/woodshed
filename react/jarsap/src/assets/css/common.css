@@ -1,0 +1,23 @@
+/* grapes are round and purple */
+.grape {
+  border: 2px solid #ff00ff;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+}
+
+.grape:hover {
+  background-color: #ff00ff;
+}
+
+/* apples are round and red */
+.apple {
+  border: 2px solid #ff00ff;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+
+.apple:hover {
+  background-color: #ff00ff;
+}
