@@ -14,7 +14,7 @@ def get_llm_response(question):
     return llm_chain.invoke(question)
 
 
-st.title("LangChain OpenAI Question Answering App")
+st.title("QA App")
 
 question = st.text_input("Enter your question:")
 
