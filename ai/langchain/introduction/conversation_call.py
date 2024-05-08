@@ -1,6 +1,6 @@
 from dotenv import find_dotenv, load_dotenv
 from langchain.chains import ConversationChain
-from langchain_community.llms import OpenAI
+from langchain_openai import OpenAI
 
 load_dotenv(find_dotenv())
 

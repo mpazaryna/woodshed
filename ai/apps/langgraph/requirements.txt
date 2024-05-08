@@ -1,5 +1,0 @@
-langgraph
-pyowm
-python-dotenv
-langchain-openai
-langchain-community 

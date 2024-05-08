@@ -2,9 +2,8 @@ import streamlit as st
 from langchain_openai import OpenAI
 
 # Set the title of the Streamlit app
-st.title("LangChain and OpenAI")
+st.title("Provide your OpenAI Key")
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
-
 
 def generate_response(input_text):
     """

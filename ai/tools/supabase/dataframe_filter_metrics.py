@@ -2,7 +2,7 @@
 import plotly.express as px
 import streamlit as st
 
-from supabase_base import SupabaseClientBase
+from ai.tools.supabase.supabase_base import SupabaseClientBase
 
 
 def additional_function(x):
