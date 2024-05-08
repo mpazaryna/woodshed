@@ -18,3 +18,4 @@ langchain-community
 langchain-cli
 langchain-fireworks
 numexpr
+pandas
