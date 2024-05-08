@@ -7,7 +7,14 @@ python-dotenv
 #chat-csv
 langchain_community
 langchain_core
+langchain-groq
 langchain_openai
 langchain-experimental
 python-dotenv
 tabulate
+#langchain
+wikipedia
+langchain-community 
+langchain-cli
+langchain-fireworks
+numexpr
