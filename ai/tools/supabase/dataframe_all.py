@@ -1,7 +1,7 @@
 # In dataframe_demo.py
 import streamlit as st
 
-from supabase_base import SupabaseClientBase
+from ai.tools.supabase.supabase_base import SupabaseClientBase
 
 
 class SupabaseDataFrameDemo(SupabaseClientBase):
