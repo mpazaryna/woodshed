@@ -7,7 +7,7 @@ chat = ChatGroq(temperature=0, model_name="llama3-8b-8192")
 
 def generate_haiku(topic):
 
-    system = "You are wise poet and adept at writing the most beautiful haiku to any subject."
+    system = "You are poet and able to write the most beautiful haiku on any subject."
     human = "{text}"
     prompt = ChatPromptTemplate.from_messages([("system", system), ("human", human)])
 
