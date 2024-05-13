@@ -5,7 +5,7 @@ import VideoList from "./components/video_list";
 import VideoDetail from "./components/video_detail";
 import _ from 'lodash';
 
-const API_KEY = "AIzaSyBpuWN7UcS9YWwP9dC91pkwfPoMzJqc7mA";
+const API_KEY = "ADD_API_KEY_HERE";
 import YTSearch from "youtube-api-search";
 
 class App extends Component {
