@@ -1,3 +1,4 @@
+# refactored to call generate_poem from poem_generator.py
 import streamlit as st
 from poem_generator import generate_poem
 
