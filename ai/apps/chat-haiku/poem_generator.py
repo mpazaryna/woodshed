@@ -1,4 +1,3 @@
-import streamlit as st
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
@@ -6,9 +5,9 @@ from langchain_groq import ChatGroq
 # Initialize the chat model once, to be used by both poem types
 chat = ChatGroq(temperature=0, model_name="llama3-8b-8192")
 
-def generate_poem(topic, poem_type):
+def create_poem(topic, poem_type):
     """
-    Generates a poem based on the given topic and type.
+    Generates a poem based on the given topic and type and returns it as a string.
     """
     if poem_type == "haiku":
         system_message = "You are a poet and able to write the most beautiful haiku on any subject."
@@ -24,23 +23,14 @@ def generate_poem(topic, poem_type):
 
     chain = prompt | chat | StrOutputParser()
     output = chain.invoke({"text": topic})
+    return output
 
+def generate_poem(topic, poem_type):
+    """
+    Handles the poem output for different types.
+    """
+    output = create_poem(topic, poem_type)
     if poem_type == "haiku":
-        # Assuming the haiku is returned as a single string with lines separated by newlines
-        lines = output.split('\n')
-        for line in lines:
-            st.write(line)
+        return output.split('\n')
     else:
-        st.write(output)
-
-def main():
-    st.title("Poetry Bot")
-    topic = st.text_input("Enter a topic for your poem:")
-    poem_type = st.selectbox("Choose the type of poem:", ["haiku", "limerick"])
-
-    if st.button(f"Generate {poem_type.capitalize()}"):
-        generate_poem(topic, poem_type)
-
-if __name__ == "__main__":
-    main()
-
+        return [output]
