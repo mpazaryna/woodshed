@@ -9,8 +9,8 @@ class ResearchCrew:
 
     def __init__(self):
         self.llm = ChatOpenAI(
-            # model="gpt-4o"
-            model="gpt-4-turbo"
+            model="gpt-4o"
+            # model="gpt-4-turbo"
             # model="gpt-3.5-turbo"
         )
 
