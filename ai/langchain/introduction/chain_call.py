@@ -3,9 +3,6 @@ from langchain.chains import ConversationChain, LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_openai import OpenAI
 
-load_dotenv(find_dotenv())
-
-
 def chain_demo():
     llm = OpenAI()
     prompt = PromptTemplate(

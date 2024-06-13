@@ -1,9 +1,5 @@
-from dotenv import find_dotenv, load_dotenv
 from langchain.chains import ConversationChain
 from langchain_openai import OpenAI
-
-load_dotenv(find_dotenv())
-
 
 def conversation_demo():
     llm = OpenAI()

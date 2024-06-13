@@ -4,9 +4,6 @@ from langchain.agents.load_tools import get_all_tool_names
 from langchain_openai import OpenAI
 from langchain_community.output_parsers.rail_parser import GuardrailsOutputParser
 
-load_dotenv(find_dotenv())
-
-
 def agent_demo():
     llm = OpenAI()
     get_all_tool_names()
