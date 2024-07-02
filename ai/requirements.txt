@@ -19,3 +19,5 @@ wikipedia
 numexpr
 #autogen
 pandas_datareader
+#llamaIndex
+llama-index-llms-ollama
