@@ -23,6 +23,36 @@ generate_changelog() {
     echo "# Changelog"
     echo
 
+    # Handle untagged changes first
+    local latest_tag=$(echo "$tags" | head -n1)
+    if [ -n "$latest_tag" ]; then
+        echo "## Unreleased"
+        echo
+
+        local types=("feat" "fix" "doc" "chore")
+        local titles=("Features" "Bug Fixes" "Documentation" "Chores")
+
+        for i in "${!types[@]}"; do
+            local type="${types[$i]}"
+            local title="${titles[$i]}"
+            
+            echo "### $title"
+            
+            commits=$(git log --no-merges $latest_tag..HEAD --pretty=format:"%H§%s" | grep -E "^[^§]+§$type:" || true)
+            debug "Found untagged commits for $type: $commits"
+            
+            if [ -n "$commits" ]; then
+                echo "$commits" | while IFS='§' read -r hash message; do
+                    debug "Processing untagged commit: $hash $message"
+                    format_commit "$hash" "${message#* $type: }"
+                done
+            else
+                echo "No $type changes since last release."
+            fi
+            echo
+        done
+    fi
+
     local prev_tag=""
     for tag in $tags; do
         debug "Processing tag: $tag"

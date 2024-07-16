@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased
+
+### Features
+No feat changes since last release.
+
+### Bug Fixes
+No fix changes since last release.
+
+### Documentation
+No doc changes since last release.
+
+### Chores
+No chore changes since last release.
+
 ## [v1.3.2] - 2024-07-16 13:11:44 -0400
 
 ### Features
