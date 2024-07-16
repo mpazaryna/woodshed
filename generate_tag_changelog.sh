@@ -7,6 +7,10 @@ debug() {
     echo "DEBUG: $1" >&2
 }
 
+# Fetch the latest tags
+debug "Fetching latest tags..."
+git fetch --tags
+
 # Check if a tag was provided
 if [ $# -eq 0 ]; then
     echo "Please provide a tag as an argument."
