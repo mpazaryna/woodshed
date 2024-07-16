@@ -14,9 +14,10 @@ No doc changes since last release.
 ### Chores
 No chore changes since last release.
 
-## [v1.3.2] - 2024-07-16 13:11:44 -0400
+## [v1.3.3] - 2024-07-16 13:20:32 -0400
 
 ### Features
+- feat: add new feature changelog generation (0d2ac5e)
 - feat: add test file (9149b6e)
 - feat: updated script (14e7435)
 - feat: adding pinecone serverless notebooks (e87ce78)
@@ -47,6 +48,20 @@ No doc changes in this release.
 - chore: llama index getting started (0d0e7df)
 - chore: continued check and refactor (68da988)
 - chore: refactor folder (0f72119)
+
+## [v1.3.2] - 2024-07-16 13:11:44 -0400
+
+### Features
+No feat changes in this release.
+
+### Bug Fixes
+No fix changes in this release.
+
+### Documentation
+No doc changes in this release.
+
+### Chores
+No chore changes in this release.
 
 ## [v1.3.1] - 2024-07-16 12:56:01 -0400
 
