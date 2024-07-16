@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.3.1] - 2024-07-16 12:56:01 -0400
+## [v1.3.2] - 2024-07-16 13:11:44 -0400
 
 ### Features
 - feat: add test file (9149b6e)
@@ -33,6 +33,20 @@ No doc changes in this release.
 - chore: llama index getting started (0d0e7df)
 - chore: continued check and refactor (68da988)
 - chore: refactor folder (0f72119)
+
+## [v1.3.1] - 2024-07-16 12:56:01 -0400
+
+### Features
+No feat changes in this release.
+
+### Bug Fixes
+No fix changes in this release.
+
+### Documentation
+No doc changes in this release.
+
+### Chores
+No chore changes in this release.
 
 ## [v1.3.0] - 2024-07-16 12:52:33 -0400
 
