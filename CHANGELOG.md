@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.0] - 2024-07-17 12:45:34 -0400
+
+### Features
+- Instructor Library Demo ([`1666373`](https://github.com/mpazaryna/woodshed/commit/1666373a696e7b1307df81711ee153e4adfc2c6e))
+- test google authentication ([`5388636`](https://github.com/mpazaryna/woodshed/commit/5388636c1209b7f8b6eb9cf2585213a2e1770b3b))
+- langchain hub and templates ([`4c521ea`](https://github.com/mpazaryna/woodshed/commit/4c521ea726c47e7a0897caa294c7aa236270d3d4))
+
+### Bug Fixes
+- updated to include missing sections ([`cf26b8c`](https://github.com/mpazaryna/woodshed/commit/cf26b8cf1eaff42f7f9b278d4a6cf340873170da))
+- make sure to fetch latest tags before running generate_tag_changelog.sh ([`f82d119`](https://github.com/mpazaryna/woodshed/commit/f82d11994e223015d2bc14be86f5b6c38b92bc3d))
+
+### Documentation
+- adapt Instructor Library example for learning ([`b8bf715`](https://github.com/mpazaryna/woodshed/commit/b8bf715a5f174c4400c7f0ef0dd303fcce9bcab7))
+- copy over tags output to include url ([`3227fc5`](https://github.com/mpazaryna/woodshed/commit/3227fc55af3c1a5d51b4bc7390262f503e2cb3e5))
+- updated for adding link to commit ([`f9dc409`](https://github.com/mpazaryna/woodshed/commit/f9dc409ce35af78ab3984a8df15d95cddf1486de))
+- updated section for create changelog ([`74b5fb2`](https://github.com/mpazaryna/woodshed/commit/74b5fb2e3b32f9c12d73b8cd9472e813c7c9d836))
+
+### Chores
+- simple test of notebook ([`c166d36`](https://github.com/mpazaryna/woodshed/commit/c166d360ac07207bf2683208e1ece5f3bc3e604b))
+- remove debug files for changelog automation ([`77b8873`](https://github.com/mpazaryna/woodshed/commit/77b887306263800f82ac0c8eb06b60534219d18b))
+
 ## [v1.3.4] - 2024-07-16 13:23:07 -0400
 
 ### Features
