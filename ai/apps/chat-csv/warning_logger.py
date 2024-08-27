@@ -3,7 +3,7 @@ import warnings
 from functools import wraps
 
 
-def log_warnings(logger_name="warning_logger", log_file="warnings.log"):
+def log_warnings(logger_name="warning_logger", log_file="logs/warnings.log"):
     """
     A decorator that logs warnings that occur during the execution of a function.
 

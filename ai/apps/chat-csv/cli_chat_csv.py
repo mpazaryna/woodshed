@@ -22,7 +22,7 @@ def create_agent(csv_file):
     return create_csv_agent(OpenAI(temperature=0), csv_file, verbose=True)
 
 
-@log_warnings(logger_name="chat_csv_logger", log_file="chat_csv_warnings.log")
+@log_warnings(logger_name="chat_csv_logger", log_file="logs/chat_csv_warnings.log")
 def main(csv_file_path=None, user_question=None):
     if csv_file_path is None:
         csv_file_path = input("Enter the path to your CSV file: ")
