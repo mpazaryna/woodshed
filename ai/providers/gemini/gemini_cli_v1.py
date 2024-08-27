@@ -7,9 +7,9 @@ $ pip install google-generativeai
 import os
 
 import google.generativeai as genai
-#from dotenv import find_dotenv, load_dotenv
+from dotenv import find_dotenv, load_dotenv
 
-#load_dotenv(find_dotenv())
+load_dotenv(find_dotenv())
 API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 genai.configure(api_key=API_KEY)
