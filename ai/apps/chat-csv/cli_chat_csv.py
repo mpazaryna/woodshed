@@ -6,6 +6,7 @@ It uses LangChain to create an agent capable of answering questions about the CS
 from langchain_community.output_parsers.rail_parser import GuardrailsOutputParser
 from langchain_experimental.agents.agent_toolkits.csv.base import create_csv_agent
 from langchain_openai import OpenAI
+from warning_logger import log_warnings
 
 
 def create_agent(csv_file):
@@ -21,6 +22,7 @@ def create_agent(csv_file):
     return create_csv_agent(OpenAI(temperature=0), csv_file, verbose=True)
 
 
+@log_warnings(logger_name="chat_csv_logger", log_file="chat_csv_warnings.log")
 def main(csv_file_path=None, user_question=None):
     if csv_file_path is None:
         csv_file_path = input("Enter the path to your CSV file: ")
@@ -43,6 +45,12 @@ def main(csv_file_path=None, user_question=None):
         return "No CSV file was specified."
 
 
+if __name__ == "__main__":
+    result = main()
+    print(result)
+if __name__ == "__main__":
+    result = main()
+    print(result)
 if __name__ == "__main__":
     result = main()
     print(result)
