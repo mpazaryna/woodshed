@@ -48,9 +48,3 @@ def main(csv_file_path=None, user_question=None):
 if __name__ == "__main__":
     result = main()
     print(result)
-if __name__ == "__main__":
-    result = main()
-    print(result)
-if __name__ == "__main__":
-    result = main()
-    print(result)
