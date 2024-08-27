@@ -27,6 +27,9 @@ For example, `Union[str, bytes]` means a value can be either a string or bytes.
 
 import io
 import os
+from contextlib import (
+    contextmanager,  # Import contextmanager for creating custom context managers
+)
 from typing import Optional, Tuple, Union
 
 import langchain
@@ -113,6 +116,29 @@ def extract_text_from_pdf(pdf_reader: PdfReader) -> str:
     return "".join(page.extract_text() for page in pdf_reader.pages)
 
 
+@contextmanager
+def open_pdf_file(pdf_file: Union[str, bytes]):
+    """
+    Context manager for opening a PDF file.
+
+    Args:
+        pdf_file (Union[str, bytes]): Either a file path (str) or file content (bytes) of the PDF.
+
+    Yields:
+        PdfReader: A PdfReader instance of the opened PDF file.
+    """
+    try:
+        # If pdf_file is a string, open it as a file; otherwise, treat it as bytes
+        if isinstance(pdf_file, str):
+            pdf_reader = PdfReader(pdf_file)
+        else:
+            pdf_reader = PdfReader(io.BytesIO(pdf_file))
+        yield pdf_reader  # Yield the PdfReader instance for use in the block
+    finally:
+        # No explicit close needed for PdfReader, but this is where you could handle cleanup if necessary
+        pass
+
+
 def process_pdf(pdf_file: Union[str, bytes]) -> Optional[FAISS]:
     """
     Process a PDF file by extracting its text and creating a FAISS index.
@@ -124,15 +150,13 @@ def process_pdf(pdf_file: Union[str, bytes]) -> Optional[FAISS]:
         Optional[FAISS]: A FAISS index of the processed PDF content, or None if processing fails.
     """
     try:
-        if isinstance(pdf_file, str):
-            pdf_reader = PdfReader(pdf_file)
-        else:
-            pdf_reader = PdfReader(io.BytesIO(pdf_file))
-        text = extract_text_from_pdf(pdf_reader)
-        return process_text(text)
+        # Use the context manager to handle the opening of the PDF file
+        with open_pdf_file(pdf_file) as pdf_reader:
+            text = extract_text_from_pdf(pdf_reader)  # Extract text from the opened PDF
+            return process_text(text)  # Process the extracted text into a FAISS index
     except Exception as e:
-        print(f"Error processing PDF: {e}")
-        return None
+        log_warnings(f"Error processing PDF: {e}")  # Log the error instead of printing
+        return None  # Return None if processing fails
 
 
 def answer_question(knowledge_base: FAISS, query: str) -> Tuple[str, dict]:
