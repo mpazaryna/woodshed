@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "groq_kit"
+version = "0.1.0"
+description = "A simple groq utility"
+authors = ["Matthew Pazaryna <mpazaryna@gmail.com>"]
+packages = [
+    { include = "groq_kit" }  # Adjust the name to match your package structure
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+groq = "^0.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
