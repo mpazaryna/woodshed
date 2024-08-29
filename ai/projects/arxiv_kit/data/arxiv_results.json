@@ -1,0 +1,113 @@
+[
+    {
+        "id": "2308.01990v3",
+        "title": "From Prompt Injections to SQL Injection Attacks: How Protected is Your\n  LLM-Integrated Web Application?",
+        "published": "2023-08-03T19:03:18Z",
+        "summary": "Large Language Models (LLMs) have found widespread applications in various\ndomains, including web applications, where they facilitate human interaction\nvia chatbots with natural language interfaces. Internally, aided by an\nLLM-integration middleware such as Langchain, user prompts are translated into\nSQL queries used by the LLM to provide meaningful responses to users. However,\nunsanitized user prompts can lead to SQL injection attacks, potentially\ncompromising the security of the database. Despite the growing interest in\nprompt injection vulnerabilities targeting LLMs, the specific risks of\ngenerating SQL injection attacks through prompt injections have not been\nextensively studied. In this paper, we present a comprehensive examination of\nprompt-to-SQL (P$_2$SQL) injections targeting web applications based on the\nLangchain framework. Using Langchain as our case study, we characterize\nP$_2$SQL injections, exploring their variants and impact on application\nsecurity through multiple concrete examples. Furthermore, we evaluate 7\nstate-of-the-art LLMs, demonstrating the pervasiveness of P$_2$SQL attacks\nacross language models. Our findings indicate that LLM-integrated applications\nbased on Langchain are highly susceptible to P$_2$SQL injection attacks,\nwarranting the adoption of robust defenses. To counter these attacks, we\npropose four effective defense techniques that can be integrated as extensions\nto the Langchain framework. We validate the defenses through an experimental\nevaluation with a real-world use case application.",
+        "authors": [
+            "Rodrigo Pedro",
+            "Daniel Castro",
+            "Paulo Carreira",
+            "Nuno Santos"
+        ]
+    },
+    {
+        "id": "2310.05421v1",
+        "title": "Automating Customer Service using LangChain: Building custom open-source\n  GPT Chatbot for organizations",
+        "published": "2023-10-09T05:35:10Z",
+        "summary": "In the digital age, the dynamics of customer service are evolving, driven by\ntechnological advancements and the integration of Large Language Models (LLMs).\nThis research paper introduces a groundbreaking approach to automating customer\nservice using LangChain, a custom LLM tailored for organizations. The paper\nexplores the obsolescence of traditional customer support techniques,\nparticularly Frequently Asked Questions (FAQs), and proposes a paradigm shift\ntowards responsive, context-aware, and personalized customer interactions. The\nheart of this innovation lies in the fusion of open-source methodologies, web\nscraping, fine-tuning, and the seamless integration of LangChain into customer\nservice platforms. This open-source state-of-the-art framework, presented as\n\"Sahaay,\" demonstrates the ability to scale across industries and\norganizations, offering real-time support and query resolution. Key elements of\nthis research encompass data collection via web scraping, the role of\nembeddings, the utilization of Google's Flan T5 XXL, Base and Small language\nmodels for knowledge retrieval, and the integration of the chatbot into\ncustomer service platforms. The results section provides insights into their\nperformance and use cases, here particularly within an educational institution.\nThis research heralds a new era in customer service, where technology is\nharnessed to create efficient, personalized, and responsive interactions.\nSahaay, powered by LangChain, redefines the customer-company relationship,\nelevating customer retention, value extraction, and brand image. As\norganizations embrace LLMs, customer service becomes a dynamic and\ncustomer-centric ecosystem.",
+        "authors": [
+            "Keivalya Pandya",
+            "Mehfuza Holia"
+        ]
+    },
+    {
+        "id": "2406.18122v1",
+        "title": "Poisoned LangChain: Jailbreak LLMs by LangChain",
+        "published": "2024-06-26T07:21:02Z",
+        "summary": "With the development of natural language processing (NLP), large language\nmodels (LLMs) are becoming increasingly popular. LLMs are integrating more into\neveryday life, raising public concerns about their security vulnerabilities.\nConsequently, the security of large language models is becoming critically\nimportant. Currently, the techniques for attacking and defending against LLMs\nare continuously evolving. One significant method type of attack is the\njailbreak attack, which designed to evade model safety mechanisms and induce\nthe generation of inappropriate content. Existing jailbreak attacks primarily\nrely on crafting inducement prompts for direct jailbreaks, which are less\neffective against large models with robust filtering and high comprehension\nabilities. Given the increasing demand for real-time capabilities in large\nlanguage models, real-time updates and iterations of new knowledge have become\nessential. Retrieval-Augmented Generation (RAG), an advanced technique to\ncompensate for the model's lack of new knowledge, is gradually becoming\nmainstream. As RAG enables the model to utilize external knowledge bases, it\nprovides a new avenue for jailbreak attacks.\n  In this paper, we conduct the first work to propose the concept of indirect\njailbreak and achieve Retrieval-Augmented Generation via LangChain. Building on\nthis, we further design a novel method of indirect jailbreak attack, termed\nPoisoned-LangChain (PLC), which leverages a poisoned external knowledge base to\ninteract with large language models, thereby causing the large models to\ngenerate malicious non-compliant dialogues.We tested this method on six\ndifferent large language models across three major categories of jailbreak\nissues. The experiments demonstrate that PLC successfully implemented indirect\njailbreak attacks under three different scenarios, achieving success rates of\n88.56%, 79.04%, and 82.69% respectively.",
+        "authors": [
+            "Ziqiu Wang",
+            "Jun Liu",
+            "Shengkai Zhang",
+            "Yang Yang"
+        ]
+    },
+    {
+        "id": "2312.03013v1",
+        "title": "Breast Ultrasound Report Generation using LangChain",
+        "published": "2023-12-05T00:28:26Z",
+        "summary": "Breast ultrasound (BUS) is a critical diagnostic tool in the field of breast\nimaging, aiding in the early detection and characterization of breast\nabnormalities. Interpreting breast ultrasound images commonly involves creating\ncomprehensive medical reports, containing vital information to promptly assess\nthe patient's condition. However, the ultrasound imaging system necessitates\ncapturing multiple images of various parts to compile a single report,\npresenting a time-consuming challenge. To address this problem, we propose the\nintegration of multiple image analysis tools through a LangChain using Large\nLanguage Models (LLM), into the breast reporting process. Through a combination\nof designated tools and text generation through LangChain, our method can\naccurately extract relevant features from ultrasound images, interpret them in\na clinical context, and produce comprehensive and standardized reports. This\napproach not only reduces the burden on radiologists and healthcare\nprofessionals but also enhances the consistency and quality of reports. The\nextensive experiments shows that each tools involved in the proposed method can\noffer qualitatively and quantitatively significant results. Furthermore,\nclinical evaluation on the generated reports demonstrates that the proposed\nmethod can make report in clinically meaningful way.",
+        "authors": [
+            "Jaeyoung Huh",
+            "Hyun Jeong Park",
+            "Jong Chul Ye"
+        ]
+    },
+    {
+        "id": "2403.05568v1",
+        "title": "Revolutionizing Mental Health Care through LangChain: A Journey with a\n  Large Language Model",
+        "published": "2024-02-21T15:19:03Z",
+        "summary": "Mental health challenges are on the rise in our modern society, and the\nimperative to address mental disorders, especially regarding anxiety,\ndepression, and suicidal thoughts, underscores the need for effective\ninterventions. This paper delves into the application of recent advancements in\npretrained contextualized language models to introduce MindGuide, an innovative\nchatbot serving as a mental health assistant for individuals seeking guidance\nand support in these critical areas. MindGuide leverages the capabilities of\nLangChain and its ChatModels, specifically ChatOpenAI, as the bedrock of its\nreasoning engine. The system incorporates key features such as LangChain's\nChatPrompt Template, HumanMessage Prompt Template, ConversationBufferMemory,\nand LLMChain, creating an advanced solution for early detection and\ncomprehensive support within the field of mental health. Additionally, the\npaper discusses the implementation of Streamlit to enhance the user experience\nand interaction with the chatbot. This novel approach holds great promise for\nproactive mental health intervention and assistance.",
+        "authors": [
+            "Aditi Singh",
+            "Abul Ehtesham",
+            "Saifuddin Mahmud",
+            "Jong-Hoon Kim"
+        ]
+    },
+    {
+        "id": "2310.02759v1",
+        "title": "Comparative Study and Framework for Automated Summariser Evaluation:\n  LangChain and Hybrid Algorithms",
+        "published": "2023-10-04T12:14:43Z",
+        "summary": "Automated Essay Score (AES) is proven to be one of the cutting-edge\ntechnologies. Scoring techniques are used for various purposes. Reliable scores\nare calculated based on influential variables. Such variables can be computed\nby different methods based on the domain. The research is concentrated on the\nuser's understanding of a given topic. The analysis is based on a scoring index\nby using Large Language Models. The user can then compare and contrast the\nunderstanding of a topic that they recently learned. The results are then\ncontributed towards learning analytics and progression is made for enhancing\nthe learning ability. In this research, the focus is on summarizing a PDF\ndocument and gauging a user's understanding of its content. The process\ninvolves utilizing a Langchain tool to summarize the PDF and extract the\nessential information. By employing this technique, the research aims to\ndetermine how well the user comprehends the summarized content.",
+        "authors": [
+            "Bagiya Lakshmi S",
+            "Sanjjushri Varshini R",
+            "Rohith Mahadevan",
+            "Raja CSP Raman"
+        ]
+    },
+    {
+        "id": "2310.12430v1",
+        "title": "DocXChain: A Powerful Open-Source Toolchain for Document Parsing and\n  Beyond",
+        "published": "2023-10-19T02:49:09Z",
+        "summary": "In this report, we introduce DocXChain, a powerful open-source toolchain for\ndocument parsing, which is designed and developed to automatically convert the\nrich information embodied in unstructured documents, such as text, tables and\ncharts, into structured representations that are readable and manipulable by\nmachines. Specifically, basic capabilities, including text detection, text\nrecognition, table structure recognition and layout analysis, are provided.\nUpon these basic capabilities, we also build a set of fully functional\npipelines for document parsing, i.e., general text reading, table parsing, and\ndocument structurization, to drive various applications related to documents in\nreal-world scenarios. Moreover, DocXChain is concise, modularized and flexible,\nsuch that it can be readily integrated with existing tools, libraries or models\n(such as LangChain and ChatGPT), to construct more powerful systems that can\naccomplish more complicated and challenging tasks. The code of DocXChain is\npublicly available\nat:~\\url{https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/Applications/DocXChain}",
+        "authors": [
+            "Cong Yao"
+        ]
+    },
+    {
+        "id": "2311.12719v1",
+        "title": "Development of a Legal Document AI-Chatbot",
+        "published": "2023-11-21T16:48:10Z",
+        "summary": "With the exponential growth of digital data and the increasing complexity of\nlegal documentation, there is a pressing need for efficient and intelligent\ntools to streamline the handling of legal documents.With the recent\ndevelopments in the AI field, especially in chatbots, it cannot be ignored as a\nvery compelling solution to this problem.An insight into the process of\ncreating a Legal Documentation AI Chatbot with as many relevant features as\npossible within the given time frame is presented.The development of each\ncomponent of the chatbot is presented in detail.Each component's workings and\nfunctionality has been discussed.Starting from the build of the Android app and\nthe Langchain query processing code till the integration of both through a\nFlask backend and REST API methods.",
+        "authors": [
+            "Pranav Nataraj Devaraj",
+            "Rakesh Teja P V",
+            "Aaryav Gangrade",
+            "Manoj Kumar R"
+        ]
+    },
+    {
+        "id": "2401.10733v2",
+        "title": "Dynamic Q&A of Clinical Documents with Large Language Models",
+        "published": "2024-01-19T14:50:22Z",
+        "summary": "Electronic health records (EHRs) house crucial patient data in clinical\nnotes. As these notes grow in volume and complexity, manual extraction becomes\nchallenging. This work introduces a natural language interface using large\nlanguage models (LLMs) for dynamic question-answering on clinical notes. Our\nchatbot, powered by Langchain and transformer-based LLMs, allows users to query\nin natural language, receiving relevant answers from clinical notes.\nExperiments, utilizing various embedding models and advanced LLMs, show Wizard\nVicuna's superior accuracy, albeit with high compute demands. Model\noptimization, including weight quantization, improves latency by approximately\n48 times. Promising results indicate potential, yet challenges such as model\nhallucinations and limited diverse medical case evaluations remain. Addressing\nthese gaps is crucial for unlocking the value in clinical notes and advancing\nAI-driven clinical decision-making.",
+        "authors": [
+            "Ran Elgedawy",
+            "Ioana Danciu",
+            "Maria Mahbub",
+            "Sudarshan Srinivasan"
+        ]
+    },
+    {
+        "id": "2401.12599v1",
+        "title": "Revolutionizing Retrieval-Augmented Generation with Enhanced PDF\n  Structure Recognition",
+        "published": "2024-01-23T09:54:36Z",
+        "summary": "With the rapid development of Large Language Models (LLMs),\nRetrieval-Augmented Generation (RAG) has become a predominant method in the\nfield of professional knowledge-based question answering. Presently, major\nfoundation model companies have opened up Embedding and Chat API interfaces,\nand frameworks like LangChain have already integrated the RAG process. It\nappears that the key models and steps in RAG have been resolved, leading to the\nquestion: are professional knowledge QA systems now approaching perfection?\nThis article discovers that current primary methods depend on the premise of\naccessing high-quality text corpora. However, since professional documents are\nmainly stored in PDFs, the low accuracy of PDF parsing significantly impacts\nthe effectiveness of professional knowledge-based QA. We conducted an empirical\nRAG experiment across hundreds of questions from the corresponding real-world\nprofessional documents. The results show that, ChatDOC, a RAG system equipped\nwith a panoptic and pinpoint PDF parser, retrieves more accurate and complete\nsegments, and thus better answers. Empirical experiments show that ChatDOC is\nsuperior to baseline on nearly 47% of questions, ties for 38% of cases, and\nfalls short on only 15% of cases. It shows that we may revolutionize RAG with\nenhanced PDF structure recognition.",
+        "authors": [
+            "Demiao Lin"
+        ]
+    }
+]
