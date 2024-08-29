@@ -1,5 +1,7 @@
-import pytest
+from unittest.mock import MagicMock, patch
 
+import groq
+import pytest
 from groq_kit.utils import get_chat_completion
 
 

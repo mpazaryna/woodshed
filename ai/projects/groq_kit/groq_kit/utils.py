@@ -52,9 +52,14 @@ def get_chat_completion(models, content):
                 completion_content  # Store completion by model name
             )
 
-        except Exception as e:
-            print(
-                f"An error occurred while getting chat completion for model {model_name}: {e}"
-            )
+        except groq.APIConnectionError as e:
+            print("The server could not be reached")
+            print(e.__cause__)
+        except groq.RateLimitError as e:
+            print("A 429 status code was received; we should back off a bit.")
+        except groq.APIStatusError as e:
+            print("Another non-200-range status code was received")
+            print(e.status_code)
+            print(e.response)
 
     return completions
