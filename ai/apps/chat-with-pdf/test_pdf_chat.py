@@ -7,7 +7,7 @@ from pypdf import PdfReader
 from warning_logger import log_warnings
 
 # Constants
-PDF_SAMPLE_PATH = "pdf-sample.pdf"
+PDF_SAMPLE_PATH = "2403.05568v1.pdf"
 TEST_LOGGER_NAME = "test_pdf_chat_logger"  # Changed logger name
 TEST_LOG_FILE = "logs/test_pdf_chat_warnings.log"  # Changed log file name
 
@@ -80,7 +80,7 @@ def test_process_text_with_pdf_sample(openai_api_key, capsys):
     captured = capsys.readouterr()
     print(captured.out)
 
-    expected_text = "Adobe PDF is an ideal format for electronic document distribution"
+    expected_text = "Mental health challenges"
     assert any(
         expected_text.lower() in result.page_content.lower() for result in results
     ), f"Expected text not found in results: {expected_text}"
