@@ -1,5 +1,0 @@
-python-dotenv
-gradio
-transformers
-tensorflow
-tf-keras
