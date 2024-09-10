@@ -1,5 +1,0 @@
-hello:
-  build: .
-  command: echo 'ready'
-  volumes:
-    - .:/home/app/hello
