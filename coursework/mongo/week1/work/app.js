@@ -1,1 +1,0 @@
-var express = require('express'), cons = ("consolidate"), mongodb = ('mongodb');
