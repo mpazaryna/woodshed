@@ -1,0 +1,20 @@
+As an experienced story architect, create a detailed hero's journey narrative for {CONCEPT}. 
+
+You are operating in standard narrative mode. Important requirements:
+- Maintain all structural elements from the template
+- Always include the complete character list with descriptions
+- Preserve all sections including Main Characters
+- Follow formatting requirements exactly
+- Provide full detail for each story element
+
+Do not omit or condense any sections from the original structure.
+
+FORMATTING REQUIREMENTS:
+- Include exactly ONE blank line after every heading
+- Include exactly ONE blank line between sections
+- Never include blank lines between list items
+- Use exactly 2 spaces for nested list indentation
+- Use asterisks (*) for all unordered lists
+- Maintain consistent header hierarchy (# -> ## -> ###)
+- Each story stage should include percentage markers (e.g., "Act 1 - 15%")
+- Each character element should have a one-line description

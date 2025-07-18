@@ -1,0 +1,29 @@
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Deno specific
+# Nothing to ignore! deno.lock should be committed
+
+# Project specific
+/dist
+/output
+/coverage
+/articles
+/build
+scripts/set_cookie.sh

@@ -1,0 +1,85 @@
+So in the last video, you saw how to create a client application
+that calls the rest endpoint for DALL-E, but it had the configuration details hard
+coded into the core logic of the app. So now it's time to switch to a
+configuration-driven development approach and refactor your code to
+externalize those settings. And of course,
+an LLM can help you with this step. Starting with the code that
+the LLM previously generated or code that you might have written yourself,
+you can tell the LLM that you want to externalize the parameters into a separate
+file and ask it to generate the code for that for you. Note that this prompt will only work for chatbot applications
+that can browse the web. If your chatbot doesn't
+have that functionality, you could code and paste the documentation
+into your prompt instead. Okay, so the model then created a JSON file which
+contained the configurable parameters. Notice how the LLM structured the file. The parameters for driving how the
+application will call the backend model, such as the URL, API key, and
+headers, will all appear at the top. While the hyper parameters to the model,
+such as the prompt and the desired size and number of images, have been grouped
+into a second chunk called payload. This is where the prompt to the image
+generation model is stored. In this case,
+it asks the model to create a futuristic cityscape at dusk with flying cars and
+neon lights. Do note that even though
+the prompt asked the model for an exhaustive list of parameters,
+it didn't actually include everything. You can see how some of the choices
+here can help future proof your code, for instance, by externalizing
+details like the URL, which allows for easy updates should the endpoint change. The model also amended the code from
+earlier to use this configuration file, so let's take a look at this step-by-step. Here's the first half of the code. It opens the JSON file and loads it using
+the JSON module that you saw earlier. Reading the parameters then becomes as
+easy as selecting them from the config object using their keys, so
+you can get things like the URL or the API key from very easily. The hyperparameters that form
+the payload to the endpoint are then loaded as a single data
+item using the payload key. And it gets used in this code where you
+call the endpoint with the URL headers and payload, and you can catch the response. As usual, code 200 here
+indicates a successful request. Note that this code will only parse
+one image from the response data, regardless of the number of images that
+you asked for, and that's probably something that you want to fix so
+that you can handle batches of images. And as it's written,
+the code only returns the image URL, not the image itself, so
+that's something that you should fix too. An image generation app isn't that much
+use if it doesn't return any images. So let's fix all of these
+issues with another prompt. Since the code is already included in
+the ongoing conversation with the chatbot, you can continue your chat and
+ask the model to modify the code and fix those two issues that we just saw. Notice that the prompt
+is really specific here. I've specified the filename format and that it should be included in
+the JSON configuration file. The model then responded
+with updated code. It updated the config JSON file
+to include the filename, and it modified the Python code to
+handle multiple files like this. The code iterates through the data
+returned from the API, and it reads the URL for each image and then
+downloads and saves each image for you. So let's try running this. I'm really curious to see what kind of
+futuristic cityscapes that the model will generate. Running the code resulted in this output, where you can see three images were
+generated and downloaded as pngs. And if you're curious what they look like,
+here they are. These are pretty great. The model did a really good job of
+capturing this future city at dusk. This configuration approach creates
+a lot of flexibility in our app, so now let's try prompting
+the model to see if there are other settings that we
+could move into a configuration file. When I asked GPT for suggestions,
+I got a lot of interesting ideas, from logging controls to user settings
+to even specifying the output format. All of these suggestions are interesting
+and you could try adding them to your app. As an example, let's implement one
+of the simpler suggestions, and that's adding a timeout to the API calls. You can prompt the model to update
+the application code and configuration format to add a timeout to the API
+calls with an instruction like this. Update the configuration file and app code
+to include a timeout for the API calls, and here's the code that
+the model generated. The configuration file now
+includes the timeout, and the application code has been updated
+to use it as part of the API call. At this point, you have a fun, simple,
+configurable app for generating images using DALL-E, and as you saw, the LLM was
+really helpful in developing this app. It started by suggesting the CDD
+paradigm as the design strategy for your project and then it helped you build
+the software following that approach. And by carrying on the conversation,
+the LLM helped you to update and improve your application to handle new
+configuration options and app behaviors. So here's a little challenge for you. Recall earlier that I mentioned that
+GPT didn't include all of the available DALL-E API parameters in the config file,
+even though they requested that it do so. So take a moment to go back and look at
+the API documentation for DALL-E, and you'll see some parameters
+like quality and style that weren't included in
+the current configuration setup. Think about how you would add those
+parameters to the config file, and how your code would then need to
+change to be able to make use of them. Then try to implement these new
+configuration parameters either manually or using the LLM as your
+favorite pair programmer. These are useful and
+fun aspects of the API to include, and it's worth taking the time to
+see if you can get them working. And once you've done that,
+the last step that you're going to take is to pickle up the results
+along with the configuration file so you can share them with other people,
+and let's tackle that in the next video.

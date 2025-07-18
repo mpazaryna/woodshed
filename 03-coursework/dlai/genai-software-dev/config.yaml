@@ -1,0 +1,10 @@
+# config.yml
+
+# Module configuration
+module: "03-system-design" # Module name
+module_path: "03-system-design" # Path to the module directory
+readme_path: "README.md" # Relative path to README within module
+
+# File processing configuration - generate summaries from raw transcripts
+input_dir: "03-system-design/transcripts/raw/module-03" # Directory containing input files
+output_dir: "03-system-design/transcripts/summaries/module-03" # Directory for output files

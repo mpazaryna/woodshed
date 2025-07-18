@@ -1,0 +1,168 @@
+Welcome to Generative AI for
+Software Development. Generative AI is helping many software
+developers write faster, better codes. And just to be clear, this specialization is not about
+writing generative AI applications. It's about how generative AI can
+help with software development, whether you're data scientists or front
+end or backend or full stack of mobile or whatever type of developer. I'm here with Laurence Moroney,
+who will be instructor for these courses. You might be familiar with Laurence from
+the Tensorflow courses he had taught with Deep Learn AI some time back. Laurence is also the author
+of more than 30 books, some Sci-Fi some programming,
+many machine learning. And I'm excited to have him
+teach best practices for how you can write software
+better using generative AI. >> Always delighted to be here, Andrew,
+and to work alongside you and your team. So one of the things that I know
+you've been thinking about is really the impact of Generative AI on the day
+to day role of a software developer. And how do you feel it's going to impact,
+what's that going to look like? >> The thing that surprised me was
+how much more fun coding is with generative AI than without. Three weeks ago, I was trying to
+deploy something to cloud service. Hadn't done it for a while and
+I'd forgotten how to do it. And I thought, boy, if I had to go and
+read that documentation to figure it out, I could have done it. But frankly, it was much faster to prompt
+an LLM to guide me through the sense, which turned out to be almost correct. To help me package up a Docker container,
+push to the cloud service they're using, and just get the job done. So I find myself looking forward to
+coding more now that I know I have this coding companion as my generative
+AI buddy to help me along. >> Yeah, it's those kind of drudgery tasks
+sometimes that take away from the joy of solving a particular problem. And when you have that pair programmer
+alongside you to help you through those, it does make the overall
+task of that offer. >> Yeah, and productivity is one thing,
+all for that. I guess there was a McKinsey study, then a
+Cisco study that estimated something like 35-ish, maybe more, percentage
+improvements in productivity boost for code generation and various tasks. So productivity boost is great,
+all for that. But then the fun is a big bonus too. >> Totally.
+Yeah. It's like I found myself, I'm sitting down
+and I'm enjoying coding much more than I had been previously, because I'm spending
+more time thinking about the problem that I'm working on and thinking about how
+to implement that, solve that problem, as opposed to what do I do for
+user interface, what do I do for a docker container to push to
+the cloud and those types of things. It's really fun. >> So elephant in the room,
+on social media, there have been some very strident voices
+saying no one ever needs to write code and software engineers would be
+obsolete because of generative AI. I think we share similar view on that. Yeah, I honestly think that that
+viewpoint is wrong, and I'll come out and say that because I think your expertise
+as a software developer, if anything, is more important than ever in the age of
+gender of AI, because it can make you have those superpowers, be more effective,
+be able to solve those domain problems and have fun while you're doing it, so
+you can have, as we've been sharing, so you can have a more fulfilling thing and
+just have a better time at work. >> In fact, one I suspect will happen
+is if indeed the estimates of, let's say 35% productivity boosts
+are accurate, then I think what will happen is people that use AI
+will replace people that don't. But AI won't replace software developers. And when I think about the studies showing
+meaningful productivity boost already today, I think with the rapid
+pace of development, these gains will only expand and
+get even much bigger over time. So today we prompt LLMs to help
+us explain code, debug code, manage dependencies, all that is great. As we look in the future, with future
+generations of more agentic technologies, more subscriptive things,
+I think it will actually become more and more productive and more and more fun to
+have all these tools at your disposal. >> Absolutely. And I also think that if
+the word is shrinkification, the fact that LLMs are getting smaller but
+still being as effective, I really see that trend continuing and
+increasing and making again the job of
+a developer that bit easier. So now, instead of outsourcing to a third
+party via a chatbot or those kind of things with your code, you could have
+an LLM running on your local machine. That's trained on your code base, that's
+an expert on your domain that you can then use as that pair programmer alongside you. And I see that being a major trend. And in addition to that, of course, then many companies won't allow
+their source code to be shared outside. You can't bring it to ChatGPT or
+Claude or anything like that. But when you have an internal model
+running on your own development box, that's when, again,
+I think the floodgates can open on these. >> For a lot of developers when we get
+stuck on a task, both for novices, even for experienced developers, if you're learning something new,
+you sometimes get stuck. You gotta find a human expert
+to help you get unstuck. And I really like this analogy of
+pair programming of you always have a buddy with you now that you can ask
+it a question with from right away. And I think compared to waiting a day or
+whatever to track down that domain expert, not that the LLM always
+knows every answer. But the fact that your buddy can
+give you an answer right away, give you some options,
+I see this helping developers get unstuck. Not all the time, but
+at least much more rapidly. >> I found for me personally, sometimes if it's not helping solve the
+immediate problem, it sparks inspiration. Some of the answers that it give will help
+me find a different track that I'm going to follow to be able to fix
+a particular problem or to go a whole new direction that
+I hadn't previously thought of. And it's that sparking of inspiration is
+one of the things that really can make the task more enjoyable. >> One of the things I really appreciate
+about the insights you brought to our conversations was I think a lot of
+us have been using generative AI to help with coding in ad hoc but
+effective ways. One of the things that I saw you do that
+I really appreciated was going through, frankly, a lot of the tasks that
+developers have to go through. And then to think through
+best practices for how can generative AI help
+with different tasks? So, for example, I just had not thought of using generative
+AI to help with test-driven development to write tests until I heard about that
+from you quite a while back now. But I think those systematic analysis
+of what are the things you could do, what are the best practices? I really appreciate your thinking that,
+putting it together for us. >> Thank you, thank you. Yeah, and another one in that realm that
+I love is dependency management, right? Because often bugs,
+there's nothing wrong with your code, it's just your dependency set,
+there's something mismatching in there. And to be able to use your
+friendly pair program or LLM to help you through that and has that
+of dependencies and breaking changes and those type of things to guide you
+through that, there's a whole lot more to the universe of being
+a developer than just writing code. And I think having that LLM beside you
+through all of those tasks is really powerful and fun. Now when we speak about drudgery and
+not fun, three years ago I downloaded some open
+source code that uses Python 3.12. There's some weird features that
+I've never used, and then thank goodness LLM told me how to modify the
+code to be compatible with Python 3.10 or whatever I was using. And I think that kind of thing really
+saves developers a lot of time. And it does know Python 3.10 and
+Python 3.12 much better than I did, and so it could help me
+solve the problem quickly. >> Exactly, exactly. So changing tech for a second, we're looking at all these advancements
+and all these improvements, and what if we were to cast our eye
+down the road of time and think, what do you think software development
+will look like in five years with this? I think it's exciting. It feels like syntax is already
+becoming less important. So there's one few thing we
+need to memorize as much of. And then I think as AI becomes
+increasingly able to autonomously write code, test it with agentic workflows,
+AI can write code, test it, debug it. I feel like, software developers can
+operate at a higher and higher level. I think there'll be plenty of work for
+us as humans to do to guide and supervise AI for a long time. But then knowing where
+the technology is and staying with the technology
+even as it matures, I think that would be critical for
+us really doing the best work that we can. >> Sometimes when we start building
+a system, we start at the whiteboard and we start drawing all these boxes and
+arrows between them and thinking about the constraints. And given the idea that today we generate
+code or we generate documentation, or we generate test cases and
+other things from a prompt. It might be very interesting that
+in the not-too-distant future, those system specification designs that
+we draw on boxes on a whiteboard could be the next prompt. And to be able to design systems off
+of those with multimodal models now being able to recognize imagery and
+being able to parse that kind of thing. That I can see that going back
+to that domain expertise, that when you have a domain expertise
+to solve a particular problem and you can draw the architecture of that, that architecture can be implicitly
+turned into code which would execute. And you may not even be interfacing
+that much with raw code, right, unless you want to tweak and debug. And it's like five years from now, that could be a way that software
+developers will be even more effective. And it's something that I'm looking
+forward to, that's in the future. But what do we have today? So in this specialization,
+so we have three courses. The first thing that we do want to
+emphasize that this isn't a series of courses on how to build generative AI. This is a series of courses on how to use
+generative AI to be a better software developer. And the skills that we're looking at
+building here are really relevant for you in all areas. As we've touched on a little bit already,
+it's not just coding, it's documentation,
+dependency management, testing, a little bit of architecture, all of that
+kind of stuff with gen AI as your friend. >> So with these courses,
+anyone that writes code, we're going to adopt best practices and
+using generative AI to help with these. Can you say a bit more about what
+the three courses are about? >> Sure, sure, so we kind of broke
+the three courses into themes. So the first course is really for
+you as an individual software developer. It's going to introduce you
+a little bit to LLMs and how you can use them as a pair programmer. But then you're going to get into
+prompting and system prompting and having an LLM play roles like software
+tester or any of those kind of roles of the type of people that you'd be
+working alongside to build better code. The second one then is really when you
+start thinking about collaboration with other people as a software engineer. You're going to work with testers,
+you're going to work with people who do documentation, you're going to be working
+with people who give you dependencies. They may be internal to your company, or it might be third party
+dependencies like Python ones. And we're going to work through the skills
+of you being able to use an LLM to just be better at doing all of that. Then in the third and final course, it's like we're really going to take that
+to the professional software developer level where you can understand the full
+workflow of building and launching applications from the design phase with
+design patterns and the famous gang of four patterns through things like data
+serialization and database management. That's really the whole idea of this, to
+help you start as an individual developer, go on to working in a team, and then go on to really being able
+to deploy professional solutions. >> And
+do these courses have any prerequisites? >> I think the only prerequisite here
+would be it's good to know a little bit of python. So if you're a Python developer,
+it's good. We're also going to touch some other
+languages like Java and JavaScript, but we'll be primarily working in Python. >> So
+lots of things to learn in these courses. And with that, let's jump into how you
+can use large language models right away to help you with your coding. Let's go on to the next
+video to get started.

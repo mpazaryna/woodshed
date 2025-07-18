@@ -1,0 +1,49 @@
+One of the challenges of learning how to
+work with databases has always been having a database to access in the first place. So in this lesson, you're going to start
+by setting up a simple development environment that will allow you to
+try out any code that an LLM suggests as you think through issues related
+to database design and access. For this module, you're going to be
+using SQLite and SQLAlchemy in Python. This combination of packages is ideal for
+the course, because they're lightweight, file-based, and they will run in colab or
+your local environment. Now if you're an experienced
+Python developer, you would likely know how to select
+this combination of packages. But if you're less familiar and
+need a suggestion, you can always ask an LLM to suggest
+a lightweight database setup for you. And here's a prompt you could use. Suggest a lightweight but powerful Python
+setup that uses a file-based database so I can practice working with databases. I want the code to be able
+to run in Google Colab, and when you run this you'll get
+a suggestion from the LLM. In this case, it's also the combination
+of SQLAlchemy and SQLite, along with instructions on how to
+install and set up the packages. You'll follow a similar setup process
+in this video to get up and running. So let's start with SQLAlchemy, which is
+a powerful Python library that provides a set of tools for working with databases. First you need to install
+the package with this command, and once Sqlalchemy is installed,
+you can set up a sample SQLite database. SqLite is a lightweight serverless
+relational database management system, making it a great choice for
+this course and very easy for you to use. It's included in most Python setups, so you usually don't have to
+install it separately. For this setup, you're going to
+use SQLAlchemy to create and manage the database as a DB file. Here's the code to import
+the necessary libraries and create an engine to connect
+to the SQLite database. This code creates a SQLite
+database named ecommerce.db. The echo=True parameter allows us to
+see the generated SQL statements, which is really helpful for debugging and understanding what SQLAlchemy is
+actually doing under the hood. Okay, great,
+you now have a database connection set up. The first thing you should do, of course,
+is to check that it's working before LLMs. Figuring out how to test this connection
+would likely have involved searching the SQLAlchemy docs or
+Stack Overflow pages. And you may not have easily found what
+you were looking for and what you needed. Now you can just give the LLM some context
+about how you've set up your database and ask it to provide the code that you need
+to check if the connection is live and the LLM will respond with some code. But more importantly, it also offers
+some guidance on common practices to check the connection, in this case by
+executing a sample SQL query, select one. This kind of insight is a really great
+way to learn how a package or library or any kind of code works. And if you do try out this code,
+you'll see that it's actually working. First you see the SQL commands that
+was executed will appear on screen, and this is because of that echo true
+that you set earlier in the code, and then you'll see the integer one
+being returned as expected, indicating that our connection is live. So before moving on to use this database,
+I encourage you to carry out the steps in this video, either with
+your own setup or in colab, and then use the code above or whatever your
+LLM provides you to check that connection. And once you've got a working database
+instance, join me in the next lesson where you'll explore how you can use an LLM
+to define the schema for your database.

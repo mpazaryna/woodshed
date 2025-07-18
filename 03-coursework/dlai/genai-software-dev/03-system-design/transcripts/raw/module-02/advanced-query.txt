@@ -1,0 +1,43 @@
+Welcome back. So far in this module, you've been working
+with an LLM as a pair programmer to design and implement a simple database for
+an e-commerce site. If you've been working in code alongside
+the videos, you should now have a small SQLite database that you've
+set up using SQLAlchemy and a working set of functions for crud
+operations for each of the four tables, users, products, orders, and order items. So the next question is
+the most important one. How do you query the database
+that you've built? If you're familiar with SQLAlchemy
+already, you probably know how to do this. But if this particular
+implementation is new to you, you can have the LLM help you
+craft queries to the database. So let's start with a really simple query
+to develop intuition about how the LLM can help you here. So I'm going to ask the model to
+write a SQLAlchemy query to find all orders placed by a specific user
+in the e-commerce database. One note before you do that. If you're working in a new chat window,
+you should give context to the model by sharing your existing code containing
+the schema and the crud operations, and then the model will have better context
+to help you to define the query. There are several ways
+that you can do this. Remember when generating code that
+there's lots of ways to solve a problem. So consider deeply what is generated for
+you. This one worked really well for me. In this function, we select all orders where the user
+id matches the specified user. This allows us to retrieve all
+orders placed by a particular user. And this was really simple, but where working with an LLM can really
+help you is on the more complex queries. Let's now take a look at an example
+that requires an aggregation. Suppose you want to find the total
+quantity of each product sold. This will require aggregating across all
+of the records in the Order_items table. So you could ask ChaGPT to help you
+with a simple prompt like this one. Write a SQL alchemy query to find
+the total quantity of each product sold in this database, and it will
+generate code a little bit like this. There's a couple of really
+cool things going on here. First, the LLM understands
+the structure of the database without any
+specific instruction. It knows that it needs to work
+with the order items table and to group by the product id. The LLM then generates code using
+the func.sum function to aggregate the total quantity of each product sold,
+grouping by the product_id. This gives us a summary of all product
+sales the func module is a feature of SQL alchemy that provides a way
+to call SQL functions like count, Max, lower and
+all of those within your query. The LLM knows about this function and
+how to apply it within the context of your database schema to help you
+create the query that you want. And in this specific use case it writes
+a query that gives us a summary of product sales for each item. Let's move on to the next video to take
+a closer look at how an LLM can help you optimize your database and the queries
+that you're going to write with it.

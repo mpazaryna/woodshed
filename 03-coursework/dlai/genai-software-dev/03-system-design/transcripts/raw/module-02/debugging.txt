@@ -1,0 +1,114 @@
+You've come a long way since
+the start of this module, and if you've been
+following along in code, you should now have a fairly
+large code base in hand. You've designed and
+created tables, you've implemented
+CRUD functionality , you've designed queries, and you've maybe even
+refactored some of the code to optimize
+it for performance, for example, by
+implementing a query cache. Along the way, you've probably encountered a bunch of errors. Errors are inevitable when working with databases
+or indeed any code. But knowing how to
+handle and debug them effectively can save you a lot of time and a
+lot of headaches. First, let's talk about handling database
+connection errors. A common issue you
+might encounter is an inability to connect
+to your database. Could you work with an
+LLM to help you write code to handle any connection
+errors you might encounter? Well, we've been using SQLAlchemy in Python as the
+example in this module, but if you're using
+something else, the same principles of
+specific prompting will apply. Let's start by asking the LLM a fairly general
+question about how to handle database connection
+errors in SQLAlchemy, and the solution
+is pretty simple: a basic try-catch clause to get an operational error exception and to print out the details. You first attempt to connect to the database using
+engine.connect, and if a connection
+error occurs, it's caught by the
+exception block, and then you can then print
+out the error message. This is simple, but it's a very effective way to
+handle connection issues. In earlier videos, you implemented a series
+of CRUD operations, and as you expand the
+functionality of your database, you might find
+yourself running into edge cases that create errors
+with these operations. For example, what if
+you tried to insert a duplicate entry into a table that has a
+unique constraint? How should your database
+handle this error? You can ask the LLM for advice
+with a prompt like this, and it will give you some
+advice along the lines of this. Here, it suggests that you
+use an IntegrityError type, which is built into SQLAlchemy and has a super
+simple interface. If you're working in some other language or database
+infrastructure, the model should give
+you specific advice for your implementation. In the example here, the code deals with
+the case of trying to add a duplicate user
+to the user's table. Users should, of course, be unique, so this action
+should be disallowed. If a duplicate entry error occurs due to the unique
+constraint on the email column, it triggers an IntegrityError that it's caught by
+the accept block, which then prints out the error. Again, the point here is
+not the implementation, but the fact that the
+LLM understands that the user's table has a
+unique constraint and it makes use of the
+correct error type in the database software
+you're working with and helps you
+handle the error. Now, let's move on
+to debugging issues. One powerful tool for
+debugging anything is logging, and SQL queries are
+no exception to this. Let's ask the LLM how to enable SQL query logging with a very simple prompt
+like this one, and here is the code
+that was generated. It turns on logging and tests it with a query
+to get all users. The SQL will just be
+printed to the console. In production, you'll likely want your logs to
+be saved to a file, so you can ask a follow-up to the LLM to modify the
+code to do that for you. It will return the
+modified code where you output the logs to a file by specifying the file name and other setup parameters inside
+the basic config call. Take a second to pause the
+video and implement something like this in your
+own database setup and see if you can
+get it to work. Okay. Hopefully, you were
+able to successfully enable logging to a file
+in your database setup. Another type of error to consider are transaction errors, and these can typically
+happen when you're doing a complex update
+to the database, which will fail
+before it completes, and that leaves the database
+in an inconsistent state. These can be really damaging. So how do we mitigate them? Well, we could start by asking, and in the response,
+you'll see code like this. It tries the query,
+and when it commits, it then checks if
+there's an exception. If so, it uses the
+same session rollback that we saw for a previous
+IntegrityError. That's handy. Finally, if you work
+with databases a lot, you'll probably know that
+another useful debugging tool is to understand the
+execution plan of queries. This is primarily for complex
+queries that interact with many tables and can track and reveal the order in which
+tables are accessed, which parts get updated
+first, and stuff like that. In SQLAlchemy, there's
+functionality called EXPLAIN. Let's see how you
+would use that. First, I'll query the
+LLM for some advice, and it will generate code
+for me that looks like this. Again, be sure to
+check here that the code is matching
+your database setup. If you've been working
+in the same chats, the LLM will probably
+be keeping track. But it can make mistakes, so check that all of the suggested code is good
+and check it carefully. You can see a query here. Select all users
+that match ID equals one and pass this to the
+explain_query function, which, in turn, will
+execute explain with that query and then return the full process of
+running that query. If you print that out, you can explore just what happened, which will
+look like this. Now, if you don't
+understand what everything in the output
+means, you can, of course, go straight to the LLM for answers with a query
+that looks like this, and you'll get a very
+detailed answer. I've shown a snippet
+of the output here, and it really shows in detail how that query
+executes step by step. I usually learn something
+new from output like this, so I would encourage you to take the time to read
+through it thoroughly. Hopefully, you've
+now got a flavor of how an LLM can help you debug errors in your
+database and offer up code fixes for whatever
+database platform you're using. You're now ready to do the final exercise for this module and actually try debugging some
+database errors yourself. In the next video, I'll walk you through some of the important details
+of the exercise. When you're done with that, you'll be ready to move on to the final module of this
+course in specialization, where you'll work with an LLM to develop deeper
+understanding of common software design
+patterns that can really elevate your workflow and the products that you build. I'll see you there
+after the exercise.

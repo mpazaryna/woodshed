@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 120
+extend-ignore = E203, E266, E501, E302, E305, W503, W293, W291, W292, D100, D101, D102, D103, D104, D200, D205, D400, F401, F841
+max-complexity = 10
+select = B,C,E,F,W,T4,B9
+docstring-convention = google
+per-file-ignores =
+    __init__.py:F401,D104
+    tests/*:D100,D101,D102,D103,F401
+    docs/source/conf.py:E402
+    tasks.py:D100
+    src/risk_kit/*.py:D100,D200,D205,D400,E501,F401
+    

@@ -1,0 +1,16 @@
+{
+  "rss_feeds": [
+    {
+      "name": "Smitten Kitchen",
+      "url": "https://smittenkitchen.com/feed/"
+    },
+    {
+      "name": "101 Cookbooks.com",
+      "url": "https://www.101cookbooks.com/feed/"
+    },
+    {
+      "name": "Cookie and Kate",
+      "url": "https://cookieandkate.com/feed/"
+    }
+  ]
+}

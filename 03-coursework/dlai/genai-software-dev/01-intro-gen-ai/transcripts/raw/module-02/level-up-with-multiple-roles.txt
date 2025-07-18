@@ -1,0 +1,29 @@
+You've seen how roles can have an impact on the
+output of the model, now let's explore how
+combining roles can allow the model to create responses
+that are not only complex, but also incredibly insightful. Imagine you have a Python
+script for a web application, and you need comprehensive
+feedback that covers both architecture
+and security. Here's how you might frame your prompt to get
+the model to act as both a software architect
+and a security expert. You're asking ChatGPT
+to wear two hats, one of a software architect
+and one of a security expert. Let's add some code to
+the prompt like this. Now with the role defined in the prompt and the code
+you want to analyze, here's how a human would think. A software architect would
+assess the script structure, is the code scalable? Are there redundancies
+that affect performance? Is the overall design pattern suitable for the
+application's purpose? In contrast, a security expert would scrutinize the script
+for vulnerabilities. Are there any secured
+data handling processes? Does the script expose
+the application to SQL injection or cross-site
+scripting attacks? Let's see the
+response that ChatGPT generates when asked to
+take on these roles. The model spotted a
+number of things, like the fact that the code uses a text file as a database, and that the username
+and password are stored in clear text. These are big vulnerabilities. The model also suggested
+an improved script, which is really useful. As you can see, you get specific actionable advice
+that enhances your code. As you can see, using advanced roles
+effectively transforms an LLM into a more powerful tool for software development
+and project planning. Stay tuned for our next section on expert level
+prompt engineering.

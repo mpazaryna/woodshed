@@ -1,0 +1,16 @@
+resources:
+  - plugin: "local"
+    pluginConfig:
+      path: '/Users/mpaz/workspace/systemata/tmp/combined-rules.md'
+      symlink: false
+    overwrite: true
+    outputs:
+      - '.github/copilot-instructions.md'
+  - plugin: "local"
+    pluginConfig:
+      path: '/Users/mpaz/workspace/systemata/tmp/combined-rules.md'
+      symlink: false
+    overwrite: true
+    outputs:
+      - 'adk-starter-002/.github/copilot-instructions.md'
+      - 'adk-starter-003/.github/copilot-instructions.md'

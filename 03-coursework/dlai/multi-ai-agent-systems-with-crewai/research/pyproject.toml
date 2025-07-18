@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "research"
+version = "0.1.0"
+description = "research using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.30.11"}
+agentops = "^0.1.10"
+
+[tool.poetry.scripts]
+research = "research.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

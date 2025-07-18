@@ -1,0 +1,8 @@
+default: true
+MD013: false  # line length
+MD024: false
+MD026: false
+MD040: false
+MD031: false  # Disable rule for blank lines around fenced code blocks
+MD047: false  # Disable rule for single-trailing-newline Files should end with a single newline character
+MD018: false  # Disable missing-space-atx

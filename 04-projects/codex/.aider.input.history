@@ -1,0 +1,21 @@
+
+# 2024-11-05 09:18:43.270714
++y
+
+# 2024-11-05 09:19:50.681479
++/code add a function to calculate the factorial of a number in deno
+
+# 2024-11-05 09:21:18.023632
++y
+
+# 2024-11-05 09:21:28.543787
++/run deno test src/math_utils_test.ts
+
+# 2024-11-05 09:21:47.438336
++/run deno test src/math_utils_test.ts
+
+# 2024-11-05 09:22:01.553696
++exit
+
+# 2024-11-05 09:22:13.166891
++quit

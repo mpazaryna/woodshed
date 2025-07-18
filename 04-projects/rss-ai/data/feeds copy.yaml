@@ -1,0 +1,11 @@
+feeds:
+  OpenAI: "https://openai.com/blog/rss.xml"
+  HuggingFace: "https://huggingface.co/blog/feed.xml"
+  Microsoft: "https://news.microsoft.com/source/topics/ai/feed/"
+  AWS: "https://aws.amazon.com/blogs/machine-learning/feed/"
+  Google: "https://blog.google/technology/ai/rss/"
+  Langchain: "https://blog.langchain.dev/rss/"
+  Apple: "https://machinelearning.apple.com/rss.xml"
+  Clarifai: "https://www.clarifai.com/blog/rss.xml"
+  Machine Learning Mastery: "https://machinelearningmastery.com/blog/feed/"
+  TechCrunch: "https://techcrunch.com/feed/"

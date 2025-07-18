@@ -1,0 +1,6 @@
+The study guide should include:
+
+1. A clear conceptual overview for beginners
+2. Practical code examples with comments
+3. Common pitfalls and best practices
+4. Practice exercises

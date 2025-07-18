@@ -1,0 +1,35 @@
+{
+  "repositories": [
+    {
+      "name": "stackwise",
+      "priority": 1,
+      "display": "Stackwise"
+    },
+    {
+      "name": "lexikon",
+      "priority": 2,
+      "display": "Lexikon"
+    },
+    {
+      "name": "varlex",
+      "priority": 3,
+      "display": "Varlex"
+    },
+    {
+      "name": "chiro-soap",
+      "priority": 4,
+      "display": "Chiro-soap"
+    },
+    {
+      "name": "fintech",
+      "priority": 5,
+      "display": "Fintech"
+    },
+    {
+      "name": "woodshed-ai",
+      "priority": 6,
+      "display": "Woodshed AI"
+    }
+
+  ]
+}

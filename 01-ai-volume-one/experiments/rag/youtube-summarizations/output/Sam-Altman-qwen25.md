@@ -1,0 +1,17 @@
+The episode of Seoia Capital AI Ascent featured Sam Alman, who discussed various aspects of youth AI usage patterns and the broader implications for AI in society. One of the key insights highlighted by Alman is that younger people seem to be using AI as an operating system, a perspective not commonly associated with older generations.
+
+Alman elaborated on how different age groups utilize AI: "The interesting thing here is that the younger people seem to be using it as an operating system." He further explained that while older individuals might use platforms like CHBT (presumably referring to a company name) as a replacement for search engines, younger users tend to employ AI in more integrated and advisory roles. For instance, those in their 20s and 30s may view it as a life advisor, whereas college students could be utilizing it as an operating system.
+
+In discussing the role of coding in this context, Alman emphasized its centrality: "coding I think will be very central to how you actuate the world." He predicted that coding would play a pivotal role in the future development and application of AI technologies. For instance, writing meaningful code, he suggested, is essential for effectively using and developing AI systems.
+
+Looking ahead, Alman posited that by 2025, AI agents could be performing significant tasks: "I kind of think 2025 will be a year of sort of agents doing work." This prediction underscores the growing importance and autonomy of AI in various domains.
+
+The conversation also touched on broader economic implications. Alman asserted that sustainable economic growth throughout human history has largely stemmed from advancements in scientific knowledge, which is then implemented into society: "I am a kind of a believer that most of the sort kind of real sustainable economic growth in human history comes from once you've like kind of spread out and colonized the earth, most of it comes from just better scientific knowledge and then implementing that for the world."
+
+Reflecting on organizational behavior, Alman observed that both startups and established corporations often struggle to adapt: "The thing that they're getting wrong is the same thing they always get wrong, which is like people get incredibly stuck in their ways. Organizations get incredibly stuck in their ways." This observation highlights a recurring theme of resistance to change within larger entities.
+
+In discussing the innovation landscape, Alman noted the distinct advantages of startups over established companies: "This is creative destruction. This is why startups win." He highlighted that while larger organizations can be cumbersome and slow-moving, startups are more agile and innovative.
+
+The episode touched on generational differences in technology adoption and the psychological challenges associated with navigating technological shifts. Alman remarked, "There's much less talk about that," referencing the need for better management of personal and organizational psychology during times of significant change: "I think much less talk about that."
+
+Overall, the discussion provided a multifaceted view of AI usage patterns among younger individuals, the transformative role of coding in this era, and broader implications for economic growth and innovation. The conversation underscored both the opportunities and challenges presented by rapid technological advancements, with particular emphasis on the adaptability required from both organizations and individuals to thrive in an increasingly AI-driven world.

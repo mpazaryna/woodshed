@@ -1,0 +1,17 @@
+- Cookbook: '[C2M1_Assignment](https://github.com/togethercomputer/together-cookbook/blob/main/team-software-engineering/assignments/week-01/C2M1_Assignment.ipynb)'
+  Description: Welcome to the first assignment in the Generative AI for Software Development
+    - Team Software Engineering course. In this assignment, you'll see several pieces
+    of code containing bugs or issues. Your task is to identify and correct these
+    errors. While it might be possible to debug each problem yourself, you'll find
+    that using a large language model will help you tackle these challenges more efficiently,
+    and might even bring up solutions you hadn't considered. This approach not only
+    enhances your debugging skills but also introduces you to the practical applications
+    of LLMs in software development. Get ready to sharpen your problem-solving abilities
+    and delve into the world of code correction with an AI assistant by your side.
+  Open: '[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/togethercomputer/together-cookbook/blob/main/team-software-engineering/assignments/week-01/C2M1_Assignment.ipynb)'
+- Cookbook: '[Secutity-Testing](https://github.com/togethercomputer/together-cookbook/blob/main/team-software-engineering/src/week-01/Secutity-Testing.ipynb)'
+  Description: No description available
+  Open: '[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/togethercomputer/together-cookbook/blob/main/team-software-engineering/src/week-01/Secutity-Testing.ipynb)'
+- Cookbook: '[Software-Performance-Testing](https://github.com/togethercomputer/together-cookbook/blob/main/team-software-engineering/src/week-01/Software-Performance-Testing.ipynb)'
+  Description: No description available
+  Open: '[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/togethercomputer/together-cookbook/blob/main/team-software-engineering/src/week-01/Software-Performance-Testing.ipynb)'

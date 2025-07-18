@@ -1,0 +1,75 @@
+At this point you've used an LLM to remind
+you of the skills needed to read and write configuration files using JSON. So now we're going to switch gears and we're going to build our app using an API
+for the DALLY-E model from OpenAI. Throughout the specialization you've been
+using a large language model to help you generate code. But generative AI isn't just
+limited to code or language. Models like OpenAI's dolly
+can take text prompts and then use them to generate images. And this is the model that we're
+going to be using to build this app. Calling these from an API can require
+a lot of parameters, as you can see here. Indeed, on the documentation page you
+can see a sample curl request to create an image and it looks like this. And as you can see, there are lots of parameters that need to
+be set in order to make a successful call. But I'm going to split
+those into two parts. The first are the parameters for
+the model itself, and these are what guided to create
+the image on your behalf. And you can see those here. The API does separate them out for you. Note that this is not
+an exhaustive list of parameters, but it is a useful list that
+can help you get an image. The second set are the parameters that
+ensure that the application will work the way that we want it to. In this case its the API key. But as youll see in a moment,
+there are many others, such as the location where we want to
+save the file from our application and whether we want to pickle it up or not. After calling DALL-E, if the call is
+successful, you'll get back a set of URL's where it temporarily
+stores the generated image for you. The payload will look
+a little bit like this. Its a JSON object with a data element
+that contains a number of URL's, each pointing to an image. You can ask DALLY e to generate multiple
+images based on your hyper parameters and this output is the result of asking for
+two images. And as noted earlier, if you are creating
+an app to do all of this calling on your behalf, you'll likely want to download and
+save the produced images, so you're going to have to
+specify file names for them. Okay, so now let's take a look at how
+you can start creating an app that makes use of the Dali model. I want to make a quick note here that
+from experience when creating this, it's a great example of how not to
+blindly trust the output from an LLM. At the time of recording, the API was in
+flux and even though I was using GPT, which is an LLM from the same
+company that produces Dali. The code that GPT generated was
+deprecated and it didn't work. So as a software engineer, I did have
+to make some decisions upfront I and guide the LLM according
+to those decisions. Let me demonstrate first. As you've seen throughout these courses, when prompting an LLM for
+the code, you have to be explicit. So for a problem like the one
+we're trying to solve here, that you want both code and
+an external file for the parameters, then you should be very
+clear about what you want.. And here's the prompt that I used. And as you can see, I first assigned the LLM the role of
+an expert in the OpenAI ecosystem with deep knowledge of the libraries and
+tools available to use their models. I gave explicit instructions
+on what I want and then asked it to use the most
+up to date design pattern, and in response,
+the model generated this code. The generate image function here uses the
+OpenAI image library to create an image, and it then takes in the prompt and other image configuration parameters
+in order to set up the API call. Now this code may look really good at
+face value, but there was a big problem. This library is deprecated, and
+it was deprecated a long time ago. So if you try to run the code, youll
+likely get a message like this one calling out that the OpenAI image library is
+unfortunately no longer supported. And when I tried following
+the instructions in the response, I found a detailed walkthrough that
+focused on using the LLM endpoint, but hasn't been updated for
+the Dali image generation endpoint. So I tried using GPT to refactor
+the code to fix this issue, but it ended up sending me around in circles
+with the only realistic solution being to downgrade my client
+libraries to older versions. Still, by the time you're watching this,
+that issue might be fixed and it might work. But I did want to include my experience
+to reiterate the fact that you should not blindly trust the LLM. You should continuously test
+the code you generate and use your expertise to navigate
+around roadblocks like this one. And here's where if you treat
+it as a pair programmer and not a blind code generation machine, you
+can begin to solve the problem together. Earlier you saw the rest endpoint,
+which you can call to generate an image. So if you guide the LLM with
+that specific information, you can work your way out of the bug
+without downgrading libraries. So with a prompt like this one that
+includes the endpoint that you want to work with. You can now get code that does not use
+the deprecated client libraries, and instead post directly to the endpoint
+using the request library in Python with a payload of parameters
+that's hard coded in. And if you run this code,
+you'll now find that it works. Now, the code you've written
+here is a great start, but it doesn't follow the design
+approach of CDD quite yet. For that, you're going to have to identify
+your configurable parameters in your code, and then refactor your code to
+externalize those parameters into a file, again with clear, detailed prompting. An LLM can help you with this step, so join me in the next video to
+see all of this in action.

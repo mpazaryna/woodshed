@@ -1,0 +1,52 @@
+The importance of software
+testing can't be overstated. It's a fundamental step in the development process that
+ensures that you launch high quality correctly
+functioning products that result in great
+experiences for your users. As a software developer, you can really help
+keep the wheels of your project turning
+if you think about software testing
+and the needs of your testing colleagues at
+every stage of your work. Luckily, you can now use an
+LLM as a partner to do this, even when the software testers might be busy with
+other projects. Being more familiar
+with the discipline of software testing as a whole will help you be a
+better colleague, save you time, reduce bugs, and improve the overall
+quality of your code. Without proper testing,
+you risk releasing software that could fail
+in unpredictable ways, leading to frustrated users, potential financial
+losses or worse. A famous example of a dramatic software failure
+is the Mars climate orbiter. After it launched in
+1998 and successfully traveled over 100 million
+kilometers to Mars, the probe missed its
+target orbital altitude by just a few kilometers. The root cause, a simple unit conversion error between the software
+created by different teams. One team use metric units and the other use
+imperial units. This mismatch caused
+the spacecraft to deviate from its
+intended trajectory, and it ultimately disintegrated in the Martian atmosphere. This small coding error
+resulted in the loss of a $200,000,000 mission and years of amazing scientific
+discoveries, and it could have been caught
+with more thorough testing. Over the next few videos, you'll explore the importance of testing and debugging and the various types of
+tests that you can implement in the context
+of simple applications. You'll start by exploring several different types
+of manual testing, including exploratory
+and functional testing. You'll learn how to implement these tests with the help
+of large language models. Next, you're going to dive into automated
+testing frameworks. One of the things
+I've continually encountered and experienced
+during my career is that the cognitive load
+of trying to figure out test scripts
+and test cases to get the most out of
+an automated tool can sometimes lead to
+them being ignored, and if that's you, then I
+would really encourage you to spend some time on this
+lesson in particular, because working alongside an LLM can be enormously helpful there. After that, you're going to
+explore performance testing, and you'll see how you can
+work with an AI to ensure that our application performs really well under different
+conditions and loads. Finally, you'll look at
+techniques to use an LLM to identify and fix security vulnerabilities
+in your software, and it will help you have
+productive conversations with your security
+expert colleagues. There's a whole lot of exciting
+stuff to consider here. Let's go onto the
+next video and get started by looking at
+testing strategies.

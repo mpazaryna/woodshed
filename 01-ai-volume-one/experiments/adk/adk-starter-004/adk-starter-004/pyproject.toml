@@ -1,0 +1,18 @@
+[tool.uv]
+dependencies = [
+    "structlog",
+    "google-cloud-agent-sdk"
+]
+
+[project]
+name = "adk-starter-004"
+version = "0.1.0"
+description = "A starter project for Google Agent Development Kit."
+authors = ["Your Name <youremail@example.com>"]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"

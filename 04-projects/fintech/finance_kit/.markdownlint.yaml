@@ -1,0 +1,17 @@
+# This configuration file for Markdownlint specifies the following rules:
+# - MD013: Disabled to allow for longer line lengths.
+# - MD024: Disabled to ignore the need for multiple headers in a document.
+# - MD026: Disabled to allow for inconsistent emphasis.
+# - MD040: Disabled to ignore the need for a consistent style for links.
+# - MD031: Disabled to allow for blank lines around fenced code blocks.
+# - MD047: Disabled to ignore the requirement for a single trailing newline at the end of files.
+# - MD018: Disabled to ignore the missing space after ATX headers.
+
+default: true
+MD013: false  # line length
+MD024: false
+MD026: false
+MD040: false
+MD031: false  # Disable rule for blank lines around fenced code blocks
+MD047: false  # Disable rule for single-trailing-newline Files should end with a single newline character
+MD018: false  # Disable missing-space-atx

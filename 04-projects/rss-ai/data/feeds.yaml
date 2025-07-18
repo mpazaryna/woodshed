@@ -1,0 +1,5 @@
+feeds:
+  HuggingFace: "https://huggingface.co/blog/feed.xml"
+  Google: "https://blog.google/technology/ai/rss/"
+  Langchain: "https://blog.langchain.dev/rss/"
+  

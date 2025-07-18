@@ -1,0 +1,7 @@
+# requirements.in
+openai
+tiktoken
+langchain
+groq    
+pip-tools
+pip-audit

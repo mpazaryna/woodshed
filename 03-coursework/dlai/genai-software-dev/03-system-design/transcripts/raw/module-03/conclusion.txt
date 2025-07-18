@@ -1,0 +1,52 @@
+Congratulations on
+completing this course. Over the past three modules, you've gained valuable skills to enhance your
+coding capabilities, and you learned how to
+work with an LLM like ChatGPT as your reliable
+pair programmer. In the first module, you saw how an LLM can help
+you think through data serialization
+and its role in a software design paradigm called configuration-driven
+development. You saw how JSON
+files can be used to externalize the
+configuration of an app so that settings that
+might change are separated from the core
+logic of the app itself. You also saw how you could
+use something like pickle to serialize complex objects or
+preserve application states. You leveraged ChatGPT's
+deep knowledge of these concepts to implement a prototype configurable app that generates
+images using DALL-E. The second module took you
+into the world of databases. You discovered how to design robust and efficient databases using ChatGPT to design a schema and implement
+CRUD operations. Using an LLM as a database expert gives
+you a powerful tool to build and manage databases that are both scalable
+and maintainable. GPT's ability to offer real-time insights and
+suggestions help you navigate complex
+database challenges making you a more proficient
+database developer. While the example you worked on use SQLAlchemy and Python, the prompting skills
+you learned will apply to other implementations
+like PostgreSQL, MySQL, or indeed any other
+database management system. In the final module, you looked into the realm
+of design patterns, focusing on those from
+the Gang of Four. You worked with an
+LLM to build out a financial services
+application, and you applied patterns like Singleton Factory and
+template methods to improve the app design and
+solve real-world problems. GPT was there to guide
+you through each step, providing examples
+and clarifications to solidify your understanding. You now have a strong
+foundation in using an LLM to think through design patterns
+and to create flexible, reusable, and maintainable code. As you move forward in
+your coding journey, remember that the
+skills and knowledge you've gained here are
+just the beginning. LLMs, like ChatGPT, Claude, or Gemini, will continue to be
+powerful allies, helping you tackle new challenges
+and refine your craft. But I will encourage
+you to remember this. Don't let the LLM
+dictate your code. I'm seeing increasing sentiment about junior developers taking code from an LLM and just using it without
+fully understanding it. The more senior developers
+then have to take on the technical debt of fixing the bugs and issues that arise. Remember, someday you might be that more senior developer. When we see lots of
+code generated for us, it's tempting to use it
+and then just move on to the next problem.
+But please don't. It's sacrificing the future
+to save the present. Instead, keep experimenting,
+keep learning, and most importantly,
+keep coding. Your future as a proficient and efficient developer
+looks bright. Thank you for being a part of this course, and happy coding.

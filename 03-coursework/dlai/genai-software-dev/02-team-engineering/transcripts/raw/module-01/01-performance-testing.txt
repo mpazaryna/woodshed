@@ -1,0 +1,88 @@
+Performance testing is essential to ensure that your
+applications run efficiently in production and can handle the
+expected user load. In this video, you're
+going to focus on two primary aspects of
+performance testing : measuring execution time and identifying
+performance bottlenecks. Again, you're going to be using some Python-specific
+libraries to do this here, but similar principles
+will apply to software that you're writing
+in any other language, and an LLM can help you
+write the necessary code. I'm going to start
+with a gratuitous demo that's computationally
+intensive. This code will find
+the prime numbers in a range and calculate
+the sum of all of them. For example, if I now specify my list of numbers
+to be between 1 and 100,000 and call the
+sum_of_primes_naive, I'm going to get a result
+of around 454 million. The goal here is to add code to measure the
+execution time. If you're comfortable in Python, you'll probably
+know that you can use Python's timeit function. But if you are already familiar with how to do this in Python, you can use an LLM
+to help you write the necessary code with
+a prompt like this one, and here's the model's response. It did teach me about several
+different ways to do this, including using the time module, the timeit module, and
+the cProfile library. This kind of insight
+is really great. If you're not already an
+expert in the ecosystem, an LLM can really
+broaden your experience. From there, I got this code, and you can use this to test the performance of
+the primes function. When you run it, you
+can now see that the execution time took a
+little bit over 40 seconds. By the way, if you ever
+generate code to do this, make sure that you use the number parameter
+of timeit.timeit. This is the number of times
+the function will be called, and it defaults to one million. If you were to run
+this code without it, it could take a very long time. So this code is really slow, and while you could
+probably prompted LLM to improve this simple code, it might struggle with longer, more complex code from
+real-world applications. You can help an LLM
+improve your code in these circumstances by giving it deeper context around the
+current performance issues. The cProfile library in Python, which the LLM also suggested, is a really useful tool to help you understand
+specifically where bottlenecks are occurring
+in your code by measuring the time spent
+in individual functions. If you run it, you'll
+get output like this. Now, this run took a little
+longer, about 52 seconds, but the important thing is to see where most of
+the time was spent, and it's in the
+is_prime function. Only 0.046 seconds of the 52 seconds were
+not in that function, so it's clearly a bottleneck. This is exactly the kind of
+detailed additional context that you can pass to an LLM to help it write the best
+possible code for you. So now, instead of
+just asking the model to look for places to
+speed up your code, you can include the
+results from using cProfile in your prompt and ask the LLM to optimize the is_prime function
+specifically, and you might get
+code a bit like this. By the way, if you're curious about where this
+algorithm comes from, go ahead and ask the
+LLM and it'll give you a great walkthrough of how
+primes can be calculated. If you run this new code, the optimization suggested by the LLM reduces
+the execution time to a fraction of a second instead of the 40-50 seconds
+that we had earlier. When you profile
+it with cProfile, you can see that, formally, the is_prime_optimized function
+is still the bottleneck, but 0.16 seconds for
+100,000 calls is pretty good and it's much less of a bottleneck
+than it was before. I've provided you with a
+notebook and this code, so you can try it
+out for yourself. Try out the function with much bigger values than 100,000, and you'll see how well
+this new code is optimized. Pause the video and spend a bit of time with
+the notebook now. The important
+lesson in following prompting best practices
+here is twofold. First, you can ask the LLM to
+give you an expert opinion, and the LLM will give you
+great advice on how to improve performance and even introduce you to libraries that you may not have been familiar with. Performance testing
+is specialized work, and you can help your engineering
+colleagues do this more efficiently by thinking about it yourself as you
+develop your code. Second, and perhaps
+more important, providing detailed context
+in your prompts will always lead to more useful
+responses from the LLM. That's what you did in
+this video when you gave the model the
+cProfile results. They helped the LLM
+identify how to fix the performance
+bottleneck caused by that specific slow
+primes function. Now, of course, this
+is just one example, but I do think
+that the skills of doing this will serve
+you well in general and this example is
+representative of the types of things that you need to do to be a better coder. Now, there's one last type
+of testing to consider, and it's one that's really
+important to get right because the implications of getting
+it wrong are pretty bad. So please join me
+in the next video to explore security testing.

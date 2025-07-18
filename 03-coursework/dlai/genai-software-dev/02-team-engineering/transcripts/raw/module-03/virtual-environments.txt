@@ -1,0 +1,103 @@
+A great first step for successful dependency
+management is to have a space where you
+feel safe to try different libraries for
+a specific project. Virtual environments
+are designed with exactly that in mind. A virtual environment is an isolated workspace
+that allows you to manage dependencies for a specific project
+without affecting others. This isolation is crucial
+to avoid conflicts between different projects and their own sets of dependencies. So for example,
+think of the slide as representing a single
+development machine. The yellow box on the left is one virtual environment
+designed to run App 1. To do so, Library version 1 and Framework version
+2 are necessary. Meanwhile, the green
+box on the right is a second virtual environment
+designed to run App 2. Perhaps this is a newer app, so it's built upon
+Library version 2 and Framework version 5. You'll notice that it's
+the same framework and library in each but
+different versions. App 1 might require
+Library version 1, which is incompatible
+with Library version 2. So if App 2 needs
+Library version 2, installing that
+would break App 1. If you are trying
+to run these apps within the same
+development machine, this could create a conflict. By instead partitioning each app within separate
+virtual environments, you can isolate them from
+one another and only give each app access to the
+appropriate dependencies. There are many benefits to using virtual environments in
+your development projects. A virtual environment is isolated from all
+other environments, so each project can have access to its own
+set of dependencies, which won't be impacted by unintended updates
+by other projects. This is a great way to avoid
+cross-project conflicts. Virtual environments
+are also reproducible. For example, you can send
+your project to a teammate, and by loading the same virtual environment
+configuration, they can expect
+the application to run in the same way
+as it did for you. Lastly, virtual environments
+are more manageable. By keeping the setups
+isolated and only working with exactly what you
+need for a given project, it's easier for you
+to manage, maintain, and update dependencies
+over time, especially if you have many
+projects in the works. Now that you've seen an overview
+of virtual environments, let's actually set some up. Throughout this module,
+I want you to have an opportunity to try out the concepts that
+you'll be exploring. To help you do that,
+you'll see how you can set up a virtual environment
+in Python and explore tools that you
+can use to install packages and manage
+dependencies like Pip. Here, you'll be using a
+tool called venv, V-E-N-V. If you're familiar
+with this, great. Feel free to skip ahead, or you might find this material
+useful as a refresher. For the rest of us, let's take a brief look at how to get
+up and running with venv, and we'll have an LLM
+by our side to help us. To start, I'm going to prompt the LLM to tell me how to set up a virtual environment
+in Python using venv. Note that I asked it for instructions on setting
+it up on my Mac. It gave me Mac-specific
+instructions, such as using Homebrew to install Python if I didn't
+have it installed already. First, it tells me just
+to make sure I have Python installed and
+check its version number. If I don't have
+Python installed, I can then install
+it using Homebrew. This ended up being
+surprisingly good advice because I've gotten
+so used to using development environments
+in the cloud that my local environment
+had gotten really rusty. This is one of the things I love about working alongside
+an LLM like this. It doesn't have assumptions, and it forces you
+to challenge yours. Next, it tells me to navigate to the directory where I want to create my virtual environment. Once you're in the
+correct directory, you can call python3 -m venv, V-E-N-V, and then the
+name of your environment. Here, the environment
+is called myenv, but you can name it
+whatever you like. Now you call source, the name of your environment, /bin/activate to activate
+your environment. For example, it's source
+myenv/bin/activate. Should everything work, your
+terminal would show the name of your environment
+at the beginning of your prompt like this. Now that your virtual
+environment is active, you can install libraries or other dependencies within
+it as you normally would without impacting
+your main environment or any of the other
+environments. To see those
+packages listed out, you can call pip list. When you're done,
+you can simply call deactivate to deactivate
+the virtual environment. If you want to reactivate
+an environment, you can use the same source commands that you used to
+activate it the first time. In the next few videos, I want you to be able to create virtual environments
+of your own. Feel free to rewatch this
+video for instructions, or prompt your LLM to provide them for your
+specific machine. Then I'd love you to try
+the following activity : create two virtual
+environments with venv, call them env1 and env2. That's env1 and env2. Use Pip to install
+requests in each of these, but do it slightly differently. In env1, use pip
+install requests. In env2, use pip install
+requests==2.31.0. In env1, you'll get the most recent version
+of the request library. In env2, you'll get a specific
+version from May 2023. Use the source and
+deactivate commands to move in and out
+of each environment, and use pip list to get details on the versions
+of your dependencies. Take your time and explore
+to get a feel for it. Once you're done, join
+me in the next video. We'll see how LLMs can help
+you make good choices about how to pick the
+libraries to use in the environment that
+you just created.

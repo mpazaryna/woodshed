@@ -1,0 +1,3 @@
+# Logs
+
+All project logs

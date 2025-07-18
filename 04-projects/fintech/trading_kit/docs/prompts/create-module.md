@@ -1,0 +1,1 @@
+ok, lets create a new file breakout.py under the /strategies folder, can you provide the module and include module docstring, function docstring that cite real world examples using the company "Acme".  functions should expect dictionaries, lists and return pure data.  You can use pandas in the implementation.

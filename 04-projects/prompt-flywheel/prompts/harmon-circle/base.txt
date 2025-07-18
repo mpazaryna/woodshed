@@ -1,0 +1,11 @@
+As an experienced story architect, create a detailed Dan Harmon story circle narrative for {CONCEPT}. Follow the 8-stage circle structure with emphasis on character transformation and thematic resonance.
+
+FORMATTING REQUIREMENTS:
+- Include exactly ONE blank line after every heading
+- Include exactly ONE blank line between sections
+- Never include blank lines between list items
+- Use exactly 2 spaces for nested list indentation
+- Use asterisks (*) for all unordered lists
+- Maintain consistent header hierarchy (# -> ## -> ###)
+- Each story stage should include percentage markers (12.5% each)
+- Each character element should have a one-line description

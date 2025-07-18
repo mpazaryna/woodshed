@@ -1,0 +1,52 @@
+An industry,
+supervised learning is a giant. It's more prevalent than all other AI
+domains like unsupervised learning or reinforcement learning. Because it has direct applications
+in our day to day technology, from email filtering to
+personal assistance. Supervised learning forms the backbone
+of systems that require reliable and accurate predictions based on past data. So what exactly is supervised learning? Well, it involves training a model on
+a dataset that includes inputs paired with correct outputs as we saw earlier
+with the activity detection example. This method is akin to teaching
+a child with flashcards. Each question comes with an answer and the task is to learn those pairs
+in order to make predictions. Think about some everyday email systems
+that are trained to identify spam based on features within good emails
+as well as spam ones. Or medical imaging systems that learn
+from thousands of retina images tagged with diagnoses. These systems rely on high quality labeled
+data to learn how to respond accurately to new information. And the core underlying
+principle of machine learning is that it can learn to match
+the data to the labels. One really interesting real world
+example comes from medicine and the diabetic retinopathy example. Diabetic retinopathy is the world's
+fastest growing cause of preventable blindness and it is relatively easily
+mitigated with regular screening. Every diabetic person should be
+screened yearly with a special camera that takes a picture of the back
+of the eye, the retina. But in many parts of the world there
+simply arent enough specialists to do this. In India, for example, theres a shortage of many thousands of
+eye doctors to do that scanning and as a result, almost half of patients will
+suffer vision loss before any diagnosis. And this is a tragedy because
+the disease is completely preventable. In order to address this doctor shortage,
+researchers turned to machine learning. They created a dataset of tens of
+thousands of retinal scans that were graded by doctors on a five point scale
+from no issues all the way up to advanced disease. Doctors would spot patterns like
+hemorrhages, as you can see here. The researchers then used the resulting
+data and human assigned labels to train a machine learning algorithm
+to match one to the other and carry out the same feature
+spotting as the doctors. So this model enables a computer to learn
+how to diagnose images as well as, and sometimes even better than, a human. But machine learning can sometimes
+find other interesting relationships in the data set. In this case, the retina images weren't
+just labeled with disease features, but also other data like the patient's age,
+their birth, assigned gender, blood pressure readings and so on. And because supervised learning
+matches data to labels, the algorithm here has learned to match
+the images to all of the labels, and in the process, reveals something new. The model was able to correctly
+predict a person's birth, assigned gender from the retina
+image 97% of the time. Somehow it could see this label in
+the images in a way that humans cannot. A human will get this right
+about 50% of the time, the same odds as flipping a coin. So, supervised learning is a very
+powerful technique that can be applied to different kinds of labeled data,
+from images to sounds and text. In fact, it's supervised learning using
+text data that has led to the development of the powerful large language models that
+power chatbots and other applications. LLMs like ChatGPT, or Gemini are trained
+on vast amounts of text data, where the model learns the relationships
+between sequences of words and what naturally follows. Enabling it to predict
+the next word repeatedly and thus to continue to generate coherent and
+contextually relevant text on its own. Well, look at those next. Starting with the transformer
+architecture, which makes the generation of text and the artificial
+simulation of reasoning possible.

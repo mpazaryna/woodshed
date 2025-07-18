@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "test": "deno test --allow-net --allow-read --allow-write --allow-env",
+    "docs": "deno doc --html --output=build/docs --name=codex src/",
+    "run": "deno run --allow-net --allow-read --allow-write --allow-env src/main.ts",
+    "lint": "deno lint src/"
+  },
+  "permissions": {
+    "net": true,
+    "read": true,
+    "write": true,
+    "env": true
+  }
+}

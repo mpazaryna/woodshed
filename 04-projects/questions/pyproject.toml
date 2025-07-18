@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "questions"
+version = "0.1.0"
+description = ""
+authors = ["Matthew Pazaryna <mpazbot@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.52.2"
+anyio = "^4.6.2.post1"
+pytest-asyncio = "^0.24.0"
+pytest-tornasync = "^0.6.0.post2"
+pytest-trio = "^0.8.0"
+pytest-twisted = "^1.14.3"
+twisted = "^24.10.0"
+python-dotenv = "^1.0.1"
+pyyaml = "^6.0.2"
+pdoc = "^15.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

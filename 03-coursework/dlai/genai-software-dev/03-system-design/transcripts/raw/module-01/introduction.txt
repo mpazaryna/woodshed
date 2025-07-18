@@ -1,0 +1,50 @@
+Welcome to this third and final course on
+generative AI for software development. I'm here again with Laurence Varoni. In the first two courses, you learn
+how to partner with an LM to write and analyze code to improve its performance
+and robustness in production. Then you saw how an ElM can help you
+create test cases, write documentation, and manage dependencies,
+all of which help your teams work better. In this course, you explore how you can tap the deeper
+knowledge of arms beyond just writing code to building better applications and
+designing better software. >> Yeah, and this course, it's really
+about thinking beyond just your code, to how it interfaces with other things and
+the final product. So, for example, a lot of times your code
+might need to read configuration files, read maybe very complex configuration
+files, write out log files, or deal with serialization and
+deserialization of data. And then the second one of course would
+be databases and structured databases. So to be able to use an LLM to help you
+structure and design most efficient schema, and we even populate it with
+sample data and then think about cross tab queries, and those kind of things and
+how to build them very, very efficiently. And I think these are very important
+things as you go to production. But then as we go into production, then
+we think about how there are developers out there with many millions of person
+years of experience in building systems, and then the design patterns that
+have grown out of that experience, particularly the gang of
+four design patterns. And I'll be frank that they're often
+quite opaque if you don't know what they are already. And here's where an LLM can be very, very
+powerful to help suggest maybe the right design pattern for you, as well as
+starting you with code for that pattern. >> Yeah, I find spotting the right
+design pattern and when to use it, to be really difficult. Several weeks ago, I was implementing
+an interface interface with multiple pieces of software and I had clues to
+together with big switch statement. Fortunately, thanks to an LLM, it prompted
+me to use a design pattern called a factory method design pattern,
+which, long story short, is an object oriented programming concept
+that lets you write code to instantiate objects without needing to specify
+in advance what class they will be. So pretty complicated design pattern
+that candidly, I kind of understand, but not really. But the fact that LLM looked
+at what I did, prompted me for a better way to architect the code, and it gave me sample code to tell
+me how to implement this in python. That got me going and resulted in
+helping me go from a pretty ugly switch statement to a much cleaner design
+that's also much more extensible. I showed the code to some of the people
+and I think they were impressed because really, they are helping
+me out get the job done. >> And that's what they're great at,
+right, in that case it sparked inspiration in you
+to think about using the factory method, but then just didn't leave
+you hanging there, right? Like you said, it also gave you the sample
+code, but then you as an engineer were able to take that sample code, solve
+a problem with it, and solve it in a way that was hopefully more efficient and
+more maintainable going forward. >> Yeah, much more extensible. I think I asked LLM to help me
+design something more extensible and it came up with this and
+I thought, this is great. So hopefully,
+I think LLMs will make you look good. >> I'm sure they will. >> So that, let's go on to the next video
+and dive in to start learning about serialization and deserialization,
+databases and design patterns.

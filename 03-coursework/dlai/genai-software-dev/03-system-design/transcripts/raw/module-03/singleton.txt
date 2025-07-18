@@ -1,0 +1,81 @@
+My first encounter with using the gang of
+four design patterns came many years ago when I was working on
+a mobile application. Mobile operating systems like iOS or Android are very strict about
+managing memory and resources. If an app consumes too much of them,
+the system can respond by slowing it down, limiting its background activities, or even closing it unexpectedly in order
+to keep the device running smoothly. So when designing apps for
+these operating systems, you generally have to be very
+careful about memory usage. And if you need to store a large amount
+of data that must be accessed across different parts of the application,
+things can get tricky. In my case, I was passing a lot of data
+between functions in order to maintain the state between different views, and my
+work became spaghetti code really quickly. What I really needed was some
+sort of global variable. But there was no such functionality
+when using multiple source files that separate each view and separated
+the design from the implementation. Leaving me to do the trick
+that I just mentioned, passing data that maintains state from
+function to function or view to view. It's not efficient. And then I stumbled across
+the singleton design pattern. It's very simple, it's a class that
+can only be instantiated once. It then allows you to have data and methods that are accessible
+to every other class. And because there's only one instance of
+the class, the contents of its variables are effectively global,
+and they're not repeated. It was a perfect solution to my problem,
+but back in the day it took me
+a long time to figure that out. So let's start by implementing
+a singleton in Python. It's actually really straightforward, especially when you've worked
+with the pattern before. Here's the code, the key to the singleton
+pattern is the _instance class variable. Initially it's set to None. Then when the class is instantiated, the getInstance method checks
+if an instance already exists. If it doesn't, it creates a new one and
+assigns the new instance to instance. And if an instance does already exist,
+then it will return the existing one. So you can see here that the instance
+variable serves as a gatekeeper, ensuring that only one instance of
+the singleton class can ever be created. Another thing to notice here is that
+getinstance is a static method, which is crucial. Static methods can be called directly on
+the class without needing an instance. This allows you to call singleton
+getinstance from anywhere in your app, ensuring that you will always access the
+single instance of the singleton class. Now the singleton example here
+isn't really that useful. It doesn't do anything or hold any data. But if you were to add some data to
+the class instance well then you'll have a really useful object that can
+be accessed from anywhere in your application. A great example of the kind of data
+a singleton might hold is configuration variables that may need to be
+accessed from anywhere in your app. So let's take a look at how we
+can add data to a singleton next. And it's pretty straightforward, here's the previous class with
+a configuration dictionary added to it. The dictionary is created when the class
+is initialized and then functions are defined for both writing to and
+reading from the dictionary. You can then add one more function
+that allows us to parse through and read the entire dictionary, like this. Note that this is just a continuation
+of the same class as we had on the previous slide. Okay, so now you have a singleton class
+where only one instance is allowed, so it's great for global functionality. And it includes some data and
+some variables as well as some functions. Now let's take a look at how we
+can implement some code that consumes the singleton. And here's the code. It first creates an instance of
+the singleton that you'll call singleton_instance. And then on that instance you'll
+call set_config, passing a key and a value where the key is database and
+the value is PostgresSQL. And it stores it in the configuration
+dictionary that you added to the Singleton class. So now you can check if your singleton
+is working as intended by creating another instance of the singleton. And let's call this one another_instance. And if the singleton does work as
+intended, then the return from the display configured will be the key value
+pair of database and postgres SQL from the first instance because
+these are actually the same instance, there is only one, but if you really want
+to test if they are the same instance and not that one is just a copy of the other,
+you can do an assertion like this and test if they're the same instance. When running this code in Google Colab,
+I got this result and we could see that the singleton
+is working as intended. So hopefully this has helped you get
+a feel for how a singleton works and how one of those Gang of Four
+patterns can be implemented in code. Okay, the thing with this scenario is
+that I already knew that the singleton was a good solution to my problem and
+that it works pretty well. But what about those 22
+other design patterns? Some of that might be equally suitable for
+similar scenarios. But it can be hard to know if
+a particular pattern is a good choice for your scenario,
+even if you're an experienced developer. So typically you would have to
+experiment with different patterns or work alongside someone else
+who already has expertise or experience in your problem domain and can
+understand how to apply patterns to it. But what if you could quickly explore and validate different patterns
+with the help of an LLM? Well, that's the spirit of what
+you're exploring in this module. In the remaining videos in this module, you're going to partner with an LLM like
+ChatGPT to see if you can improve on a coding scenario using some of
+the other Gang of Four design patterns. And see how using an LLM
+to implement tested and proven solutions can help
+you avoid writing bad code. So let's move on to the next video to
+look at our first scenario where we're going to build an app for
+a financial services company.

@@ -1,0 +1,4 @@
+# mdformat configuration
+wrap: 80  # Wrap lines at 80 characters
+number: false  # Don't add line numbers to code blocks
+end_of_line: lf  # Use LF line endings

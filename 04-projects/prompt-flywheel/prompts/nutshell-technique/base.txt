@@ -1,0 +1,11 @@
+As an experienced story architect, create a detailed Nutshell Technique narrative for {CONCEPT}.
+
+FORMATTING REQUIREMENTS:
+- Include exactly ONE blank line after every heading
+- Include exactly ONE blank line between sections
+- Never include blank lines between list items
+- Use exactly 2 spaces for nested list indentation
+- Use asterisks (*) for all unordered lists
+- Maintain consistent header hierarchy (# -> ## -> ###)
+- Each stage should include percentage markers (e.g., "Setup - 12.5%")
+- Each character element should have a one-line description

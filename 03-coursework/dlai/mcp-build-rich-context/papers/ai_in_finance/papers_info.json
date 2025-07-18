@@ -1,0 +1,61 @@
+{
+  "2107.09051v1": {
+    "title": "AI in Finance: Challenges, Techniques and Opportunities",
+    "authors": [
+      "Longbing Cao"
+    ],
+    "summary": "AI in finance broadly refers to the applications of AI techniques in\nfinancial businesses. This area has been lasting for decades with both classic\nand modern AI techniques applied to increasingly broader areas of finance,\neconomy and society. In contrast to either discussing the problems, aspects and\nopportunities of finance that have benefited from specific AI techniques and in\nparticular some new-generation AI and data science (AIDS) areas or reviewing\nthe progress of applying specific techniques to resolving certain financial\nproblems, this review offers a comprehensive and dense roadmap of the\noverwhelming challenges, techniques and opportunities of AI research in finance\nover the past decades. The landscapes and challenges of financial businesses\nand data are firstly outlined, followed by a comprehensive categorization and a\ndense overview of the decades of AI research in finance. We then structure and\nillustrate the data-driven analytics and learning of financial businesses and\ndata. The comparison, criticism and discussion of classic vs. modern AI\ntechniques for finance are followed. Lastly, open issues and opportunities\naddress future AI-empowered finance and finance-motivated AI research.",
+    "pdf_url": "http://arxiv.org/pdf/2107.09051v1",
+    "published": "2021-07-20"
+  },
+  "2306.02773v1": {
+    "title": "Explaining AI in Finance: Past, Present, Prospects",
+    "authors": [
+      "Barry Quinn"
+    ],
+    "summary": "This paper explores the journey of AI in finance, with a particular focus on\nthe crucial role and potential of Explainable AI (XAI). We trace AI's evolution\nfrom early statistical methods to sophisticated machine learning, highlighting\nXAI's role in popular financial applications. The paper underscores the\nsuperior interpretability of methods like Shapley values compared to\ntraditional linear regression in complex financial scenarios. It emphasizes the\nnecessity of further XAI research, given forthcoming EU regulations. The paper\ndemonstrates, through simulations, that XAI enhances trust in AI systems,\nfostering more responsible decision-making within finance.",
+    "pdf_url": "http://arxiv.org/pdf/2306.02773v1",
+    "published": "2023-06-05"
+  },
+  "2308.16538v1": {
+    "title": "The AI Revolution: Opportunities and Challenges for the Finance Sector",
+    "authors": [
+      "Carsten Maple",
+      "Lukasz Szpruch",
+      "Gregory Epiphaniou",
+      "Kalina Staykova",
+      "Simran Singh",
+      "William Penwarden",
+      "Yisi Wen",
+      "Zijian Wang",
+      "Jagdish Hariharan",
+      "Pavle Avramovic"
+    ],
+    "summary": "This report examines Artificial Intelligence (AI) in the financial sector,\noutlining its potential to revolutionise the industry and identify its\nchallenges. It underscores the criticality of a well-rounded understanding of\nAI, its capabilities, and its implications to effectively leverage its\npotential while mitigating associated risks. The potential of AI potential\nextends from augmenting existing operations to paving the way for novel\napplications in the finance sector. The application of AI in the financial\nsector is transforming the industry. Its use spans areas from customer service\nenhancements, fraud detection, and risk management to credit assessments and\nhigh-frequency trading. However, along with these benefits, AI also presents\nseveral challenges. These include issues related to transparency,\ninterpretability, fairness, accountability, and trustworthiness. The use of AI\nin the financial sector further raises critical questions about data privacy\nand security. A further issue identified in this report is the systemic risk\nthat AI can introduce to the financial sector. Being prone to errors, AI can\nexacerbate existing systemic risks, potentially leading to financial crises.\nRegulation is crucial to harnessing the benefits of AI while mitigating its\npotential risks. Despite the global recognition of this need, there remains a\nlack of clear guidelines or legislation for AI use in finance. This report\ndiscusses key principles that could guide the formation of effective AI\nregulation in the financial sector, including the need for a risk-based\napproach, the inclusion of ethical considerations, and the importance of\nmaintaining a balance between innovation and consumer protection. The report\nprovides recommendations for academia, the finance industry, and regulators.",
+    "pdf_url": "http://arxiv.org/pdf/2308.16538v1",
+    "published": "2023-08-31"
+  },
+  "2406.14243v1": {
+    "title": "AuditMAI: Towards An Infrastructure for Continuous AI Auditing",
+    "authors": [
+      "Laura Waltersdorfer",
+      "Fajar J. Ekaputra",
+      "Tomasz Miksa",
+      "Marta Sabou"
+    ],
+    "summary": "Artificial Intelligence (AI) Auditability is a core requirement for achieving\nresponsible AI system design. However, it is not yet a prominent design feature\nin current applications. Existing AI auditing tools typically lack integration\nfeatures and remain as isolated approaches. This results in manual,\nhigh-effort, and mostly one-off AI audits, necessitating alternative methods.\nInspired by other domains such as finance, continuous AI auditing is a\npromising direction to conduct regular assessments of AI systems. The issue\nremains, however, since the methods for continuous AI auditing are not mature\nyet at the moment. To address this gap, we propose the Auditability Method for\nAI (AuditMAI), which is intended as a blueprint for an infrastructure towards\ncontinuous AI auditing. For this purpose, we first clarified the definition of\nAI auditability based on literature. Secondly, we derived requirements from two\nindustrial use cases for continuous AI auditing tool support. Finally, we\ndeveloped AuditMAI and discussed its elements as a blueprint for a continuous\nAI auditability infrastructure.",
+    "pdf_url": "http://arxiv.org/pdf/2406.14243v1",
+    "published": "2024-06-20"
+  },
+  "2405.16711v1": {
+    "title": "The AI-DEC: A Card-based Design Method for User-centered AI Explanations",
+    "authors": [
+      "Christine P Lee",
+      "Min Kyung Lee",
+      "Bilge Mutlu"
+    ],
+    "summary": "Increasing evidence suggests that many deployed AI systems do not\nsufficiently support end-user interaction and information needs. Engaging\nend-users in the design of these systems can reveal user needs and\nexpectations, yet effective ways of engaging end-users in the AI explanation\ndesign remain under-explored. To address this gap, we developed a design\nmethod, called AI-DEC, that defines four dimensions of AI explanations that are\ncritical for the integration of AI systems -- communication content, modality,\nfrequency, and direction -- and offers design examples for end-users to design\nAI explanations that meet their needs. We evaluated this method through\nco-design sessions with workers in healthcare, finance, and management\nindustries who regularly use AI systems in their daily work. Findings indicate\nthat the AI-DEC effectively supported workers in designing explanations that\naccommodated diverse levels of performance and autonomy needs, which varied\ndepending on the AI system's workplace role and worker values. We discuss the\nimplications of using the AI-DEC for the user-centered design of AI\nexplanations in real-world systems.",
+    "pdf_url": "http://arxiv.org/pdf/2405.16711v1",
+    "published": "2024-05-26"
+  }
+}

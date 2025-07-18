@@ -1,0 +1,22 @@
+[
+    {"id": "1", "name": "Mountain Pose", "sanskrit": "Tadasana"},
+    {"id": "2", "name": "Downward-Facing Dog", "sanskrit": "Adho Mukha Svanasana"},
+    {"id": "3", "name": "Warrior I", "sanskrit": "Virabhadrasana I"},
+    {"id": "4", "name": "Warrior II", "sanskrit": "Virabhadrasana II"},
+    {"id": "5", "name": "Triangle Pose", "sanskrit": "Trikonasana"},
+    {"id": "6", "name": "Tree Pose", "sanskrit": "Vrksasana"},
+    {"id": "7", "name": "Child's Pose", "sanskrit": "Balasana"},
+    {"id": "8", "name": "Corpse Pose", "sanskrit": "Savasana"},
+    {"id": "9", "name": "Cobra Pose", "sanskrit": "Bhujangasana"},
+    {"id": "10", "name": "Cat-Cow Stretch", "sanskrit": "Marjaryasana-Bitilasana"},
+    {"id": "99", "name": "Half Moon Pose", "sanskrit": "Ardha Chandrasana"},
+    {"id": "100", "name": "Crow Pose", "sanskrit": "Bakasana"},
+    {"id": "101", "name": "Fish Pose", "sanskrit": "Matsyasana"},
+    {"id": "102", "name": "Bound Angle Pose", "sanskrit": "Baddha Konasana"},
+    {"id": "103", "name": "Seated Forward Bend", "sanskrit": "Paschimottanasana"},
+    {"id": "104", "name": "Half Pigeon Pose", "sanskrit": "Ardha Kapotasana"},
+    {"id": "105", "name": "Upward Bow Pose", "sanskrit": "Urdhva Dhanurasana"},
+    {"id": "106", "name": "Handstand", "sanskrit": "Adho Mukha Vrksasana"},
+    {"id": "107", "name": "Lotus Pose", "sanskrit": "Padmasana"},
+    {"id": "108", "name": "Yogic Sleep Pose", "sanskrit": "Yoga Nidrasana"}
+  ]

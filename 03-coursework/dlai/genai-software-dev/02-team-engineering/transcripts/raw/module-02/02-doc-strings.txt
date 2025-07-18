@@ -1,0 +1,62 @@
+Whereas inline comments are useful for
+providing clarity and making your code easier to follow, they're not intended for
+comprehensive documentation needs. And this is where documentation
+comments come in. Documentation comments,
+also called Doc comments or docstrings, are special comments used
+to explain the purpose, parameters and return values of
+a code block that they document. They're much more detailed and
+structured than regular inline comments, and they play a special role in
+automatically generating documentation. We'll have more on that later. Documentation comments
+are a critical tool for others to make sense of your
+code when written well. They will help your colleagues work with
+your code without having to ask you a ton of questions. And partnering with an LLM on this
+aspect of documentation can really save you time and ensure that you create
+the best possible doc comments. Most modern programming languages have
+either built-in support or agreed upon community standards for some type of
+variation of documentation comments. Here are some examples in JavaScript, the doc comment is the section
+before the function starts. And in Ruby here's the comment in the pink
+text in this video you're going to focus on the implementation in Python,
+which are known as docstrings, and heres a simple example. The docstring appears immediately
+after the definition of the function. In contrast to the examples that you
+just saw in JavaScript and Ruby. The docstring is a multi line string that
+explains the purpose of the function, the input parameters that it accepts,
+and the value that it returns. There are a few different style
+conventions that docstrings in Python can follow. Lets take a look at some examples of each. First is Google style, it's designed
+to be straightforward and easy to read, indeed is what you just saw a moment ago. The numpy or scipy style shown here is
+similar to Google style, but some slight differences in how the parameters and
+return sections are formatted. And lastly, there's restructured text or
+rest style, which is often used with
+documentation tools like Sphinx. Here's an example and as you can see
+it looks quite a bit different from the previous styles because the items
+aren't broken out into different sections. So lets take a look now at how you can
+work with an LLM to generate great doc strings in Python. Keeping the principles of
+good documentation in mind is even more important with
+documentation comments, since theyre longer,
+they involve more components. And theyre often used to generate
+documentation that will appear in public facing settings. Let's start by automatically
+generating a docstring for a function. Using an LLM to do this
+can save you time and can ensure consistency
+across your codebase. As before, you'll provide
+ChatGPT with a piece of code and then you'll prompt it to
+generate a docstring for you. Heres a python implementation of the
+calculate area function you saw earlier, but with no docstring. Pause the video and work with GPT to
+try and get a docstring generated for this code. Here's an example result that I got. The model has generated a docstring
+describing what the function does, and then describes its parameters and returns. It looks like this time the model
+chose to use the Google style, but if I wanted it in a different format
+I could ask the model to change that. Okay, here's another piece of code to try. Pause the video and give it a go. What kind of docstring did you get? Are you happy with it? Is there anything else you would try? Or maybe see if you can use a roll to
+get it to produce a different style of docstring, I found that it generally
+defaults to the Google format. Can you override that? Okay, here's the bubble
+sort code from earlier. Pause the video again and
+try to generate a docstring for this. Think about writing this one for
+a specific audience, maybe a novice developer or
+someone who usually codes in C or Java. See how that changes the output for fun. Here's what I got. Do you notice anything interesting? Yep, you guessed it, it actually
+identified it as a bubble sort. Lastly, try using an LLM
+to refactor a docstring. Have it change the one that it just wrote
+for the bubble sort to the rest style, and here's how the model responded for me. You can see that it refactored the
+information into the structure required for the rest. This refactoring ability is so useful as
+you think about preparing your code for automated documentation generation tools. The LLM can really save time here, and
+it will help you avoid errors that might impact the quality of your docs and
+the time to generate them. Now you know how to use an LLM to get
+Python doc strings in the right format for auto doc tools like Sphinx. Let's move on to the next video to see how
+you can create beautiful doc pages using these tools with the help
+of an LLM as always,

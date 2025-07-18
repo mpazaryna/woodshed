@@ -1,0 +1,85 @@
+Welcome to this second course on Generative AI for
+Software development. I'm here again with
+Lawrence Bori, your instructor
+for these courses. In the previous course, you took a look at how
+Generative AI works, learned some principles
+of prompting to help you carry out software development
+tasks with the help of AI, and use an LLM to
+help you analyze some foundational
+data structures and improve the
+performance at scale. In this course, you see how LLMs can grease the wheels of
+collaboration and make you better in all the things
+that can become pain points as code is passed back and
+forth between you and others. That's right, Andrew.
+In this course, one of the things we really
+wanted to lean into was that theme of working with others and passing code
+back and forth with them. And it's going to
+follow three things. The first one will be
+testing and debugging. So helping you write
+test cases and helping you pass test cases
+off to your testing team. And then documentation,
+allowing you to put the proper comments and
+the proper formatting of comments so that things such as auto documentation tools can turn that into
+documentation for you. And then, of course, dependency management, everybody's
+best friend, so that you can
+work not just with third party dependencies from
+outside of your company, but also how you can
+understand how to integrate dependencies from inside your company and from the
+people that you work. The dream has
+always been to have well tested, well
+documented code. And the reality is
+we're all kind of busy, and an always meet that high
+standard that we aspire to, and we encourage others
+to aspire to as well. And generative AI
+is helping a lot. Absolutely. And
+it's, like I mean, I'd like to share
+one example is that, like, talking about
+sharing code is that, we've done many
+courses together. And by definition,
+when we do courses, we share code with the learners. And in one of the courses
+that we worked on, we were doing ten to flow
+for mobile applications, and specifically for IOS
+mobile applications in Swift. And if you think about doing an image classification,
+for example, you have your image
+as an NS image, I believe, was the
+data structure on IOS, that you have to
+convert into tensors, that you then pass to
+the tensor flow lights, that you then get an
+interpretation back, that in tensors,
+that you then have to cast back into
+native data types. And I wrote the code to do this for a simple
+image classifier. And in the three
+weeks between writing the code and then teaching the course. I
+forgot what it did. I forgot, like, all how
+these things worked. And it took me a long time to
+kind of sit down and like, work through that and
+understand it again. This was before LLMs. So then recently, as, like, working through building
+this course now where we have LLMs as
+our pair programmer, I actually took that code, and I tried it out and I
+was able to document it. I was able to get an LLM
+to explain it back to me. Now it's like three years later that helped me to
+understand it better. And it even found and fixed
+some issues in the code. Wow. So it's like, those
+are the kind of things that when you share with others or when you inherit from others, it's amazing to have that LLM by your side to work
+it through with you. Yeah, I think
+someone said that if you haven't looked at your
+own code for long enough, it is as if a stranger
+had written it, and in this case, that stranger of your
+younger self you're own code that you hope
+you understand is great. Yeah, I had to
+look back and tell him off that he didn't
+do a great job. And I find that machine
+learning people are notorious, not proud of this, but
+having complex code. I think partly because machine
+learning is so iterative. We'll try something works, so it doesn't work, change it. And by the time we finally
+get to working prototype, the code's been
+iterated on many, many times, much more than traditional software
+engineering. And so I found that sometimes
+I pull documentation, get a few lines of code from some cloud providers
+documentation, and then a week later, I have no idea what I just did, and getting some help to
+understand that code. My code, someone else's
+code would be very welcome. I'm really glad to hear you say that. I thought it was just me. So with that, let's
+jump in to see how s can help you with testing,
+debugging, documentation, and dependency management, which will make you
+a better developer, I think, and also
+a better teammate to everyone you might work with. Let's go to the next video.

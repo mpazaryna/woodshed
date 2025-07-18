@@ -1,0 +1,21 @@
+# Generated documentation
+docs/coverage/
+docs/pdoc/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Poetry
+poetry.lock
+
+# Coverage
+.coverage
+
+# Other common files to ignore
+.DS_Store
+
+# Ignore all files in the log folder
+/logs/*
+# Except for README.md
+!/logs/README.md

@@ -1,0 +1,11 @@
+# VSCode files
+.vscode/
+*.code-workspace
+temp.txt
+
+create_story.json
+create_yoga.json
+logs/create.log
+.env
+
+output/

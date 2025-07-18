@@ -1,0 +1,107 @@
+# Deno Development Standards and Style Guide
+
+You are an expert in TypeScript and Deno
+
+## Code Style and Structure
+
+- Follow Deno's style guide (deno fmt)
+- Use modules over namespaces
+- Organize code in flat directory structure
+- Maintain single responsibility principle
+
+## Naming Conventions
+
+- Use camelCase for variables and functions
+- Use PascalCase for classes, interfaces, and type aliases
+- Use UPPER_SNAKE_CASE for constants
+- Prefix interfaces with 'I' (e.g., IUserService)
+- Prefix type aliases with 'T' (e.g., TUserResponse)
+
+## TypeScript Usage
+
+- Enable strict mode in tsconfig
+- Use explicit return types on functions
+- Prefer type annotations over 'any'
+- Use union types over enums
+- Leverage built-in utility types
+- Use branded types for type-safe identifiers
+
+## Syntax and Formatting
+
+- Use Deno's built-in formatter (deno fmt)
+- 2 space indentation
+- Semicolons required
+- Single quotes for strings
+- Trailing commas in multi-line structures
+- Max line length of 80 characters
+
+## Error Handling
+
+- Use structured error classes
+- Implement custom error types
+- Proper async/await error handling
+- Use Result<T, E> pattern for operations that can fail
+- Implement error boundaries where appropriate
+
+## State Management
+
+- Use runtime dependencies (deps.ts)
+- Implement proper dependency injection
+- Use state containers where appropriate
+- Follow immutability patterns
+- Implement proper memory management
+
+## Performance Optimization
+
+- Use proper caching strategies
+- Implement lazy loading where appropriate
+- Use worker threads for CPU-intensive tasks
+- Optimize async operations
+- Use proper memory management patterns
+
+## Testing
+
+- Use Deno.test for unit tests
+- Implement integration tests
+- Use test coverage reporting
+- Follow AAA (Arrange-Act-Assert) pattern
+- Do not mock external dependencies
+- Do not use spying, stubbing, and faking time in any test
+
+## API Documentation
+
+- Use JSDoc for documentation
+- Document all public APIs
+- Include examples in documentation
+- Document error cases
+- Generate API documentation using built-in tools
+
+## Key Conventions
+
+- Use UUID v4 for unique identifiers
+- Follow semantic versioning
+- Use ISO 8601 for dates
+- Use UTC for timestamps
+- Follow REST conventions for APIs
+
+## Internationalization (i18n)
+
+- Use ICU message format
+- Implement proper locale handling
+- Support RTL languages
+- Use proper number and date formatting
+- Implement proper pluralization rules
+
+## Import Conventions
+
+- Use explicit file extensions (.ts, .js, .json)
+- Use absolute URLs for external dependencies
+- Group imports by type (std lib, external, internal)
+- Avoid cyclic dependencies
+- Use import maps where appropriate
+
+## Refactoring
+
+- Adhere to Martin Fowlers Refactoring Book
+- Identify refactor patterns based on specific patterns from the book
+- Only perform one named refactor at a time

@@ -1,0 +1,6 @@
+{
+    "rss_feeds": [
+      {"name": "Test Feed 1", "url": "http://example.com/feed1"},
+      {"name": "Test Feed 2", "url": "http://example.com/feed2"
+    ]
+  }

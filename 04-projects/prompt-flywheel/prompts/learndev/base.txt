@@ -1,0 +1,11 @@
+Using this template as an expert coding instructor, create a comprehensive markdown study guide for {CONCEPT}. 
+
+Please follow these markdown formatting requirements:
+- Add a blank line after every heading
+- Use a single blank line between paragraphs
+- Use triple backticks for code blocks with the language specified
+- Leave a blank line before and after code blocks
+- Use consistent indentation (2 spaces) for nested lists
+- Use asterisks (*) for unordered lists
+- Each list item should be on its own line with no blank lines between items
+- Use proper header hierarchy (h1 -> h2 -> h3), never skip levels

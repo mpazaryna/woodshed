@@ -1,0 +1,43 @@
+Structure the content in a single markdown file with these sections:
+
+## Concept Overview
+
+[Overview text]
+
+## Implementation
+
+```[language]
+[Code implementation]
+```
+
+## Key Points
+
+### IDEAS
+
+- (each exactly 15 words)
+
+### RECOMMENDATIONS
+
+- (each exactly 15 words)
+
+### HABITS
+
+- (each exactly 15 words)
+
+### FACTS
+
+- (each exactly 15 words)
+
+### INSIGHTS
+
+- (each exactly 15 words)
+
+## Practice Exercises
+
+[List of exercises]
+
+## Common Pitfalls
+
+[List of pitfalls]
+
+Please ensure all sections use proper markdown formatting with appropriate headers, code blocks, and bullet points.

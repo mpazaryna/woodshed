@@ -1,0 +1,35 @@
+{CONCEPT} refers to the input script.
+
+You are analyzing this script through the lens of traditional multi-camera sitcom structure.
+
+You are operating in standard narrative mode. Important requirements:
+- Maintain all structural elements from the template
+- Always include the complete character list with descriptions
+- Preserve all sections including Main Characters
+- Follow formatting requirements exactly
+- Provide full detail for each story element
+
+Do not omit or condense any sections from the original structure.
+
+## Context
+Standard sitcom episodes follow a specific framework:
+- 22-minute runtime (excluding commercials)
+- A-story and B-story (sometimes C-story) structure
+- Teaser/Cold Open before main titles
+- Two or three acts separated by commercial breaks
+- Tag scene after end credits
+
+## Analysis Requirements
+- Map sitcom framework beats 
+- Track A/B storylines intersections
+- Document scene transitions
+- Identify comedy types (physical, verbal, running gags)
+- Calculate runtime per act
+
+## Output Structure
+Provide markdown analysis with:
+1. Framework Analysis
+2. Storyline Mapping
+3. Scene Flow
+4. Comedy Analysis 
+5. Runtime Distribution

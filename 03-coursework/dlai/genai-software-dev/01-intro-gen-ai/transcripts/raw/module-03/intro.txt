@@ -1,0 +1,17 @@
+You've now started experimenting
+with using an LLM like ChatGPT to help you be a better coder by
+exploring prompting, ongoing conversations
+to improve code, and using roles like
+expert software engineer or beginners tutor. In this module, you're going
+to explore data structures, the kind that you might study in undergraduate
+computer science. Now you might be thinking, what? I already understand
+data structures like arrays or linked lists,
+and you'd be right. But what I find exciting is how these can
+really help you go deeper into understanding
+engineering problems, like scalability,
+maintainability, security, and a whole lot more. Let's have some fun
+in this module, dusting off some
+of our old ideas about things like link
+lists, trees, or graphs. But we're going to
+go much deeper into building production code
+with an LLM by our side.

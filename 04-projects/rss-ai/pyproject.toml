@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "rss-ai"
+version = "0.1.0"
+description = ""
+authors = ["Matthew Pazaryna <52605785+mpazaryna@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+pytz = "^2024.2"
+feedparser = "^6.0.11"
+pyyaml = "^6.0.2"
+openai = "^1.51.0"
+
+[tool.poetry.group.dev.dependencies]
+invoke = "^2.2.0"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+black = "^23.3.0"
+flake8 = "^6.1.0"
+mdformat = "^0.7.16"  
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Add Black configuration
+[tool.black]
+line-length = 88
+target-version = ['py312']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''

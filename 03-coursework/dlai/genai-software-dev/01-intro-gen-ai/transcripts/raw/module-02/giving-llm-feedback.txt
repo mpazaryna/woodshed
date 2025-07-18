@@ -1,0 +1,73 @@
+Building on iterative
+development, where you prompted the model
+to write a piece of code, and then continually re-prompt it to update and
+improve that code, there's another nuance
+of re-prompting, and that's
+incorporating feedback. It's a similar idea, but it's more about using
+your own expertise to spot and correct errors or
+deficiencies in the code. I like to think
+of the code I get back from an LLM
+as a first draft. It's exceptionally rare for
+a first draft to be perfect, so it takes some work
+to guide the model to continually re-draft
+and get it right. Let's explore some
+examples of this. For example, you
+could start with a classic computer
+science 101 problem, and ask for a Python function that calculates the
+factorial of a number. Prompting the model with
+this instruction results in the following response. Now, there's something
+naive in this code. It's making the assumption
+that the number is an integer. If you pass a non integer, it's unclear how this
+code would behave. Let's ask the model to fix that. Here's the new prompt, and here's the resulting code. By specifying the need
+for input validation, ChatGPT modified the function
+to ensure that the input is always a non negative integer enhancing the functions
+robustness and error handling. Let's explore another example. Another common computer
+science problem to determine if a
+string is a palindrome. A palindrome is a string that reads backwards the
+same way as forwards. My favorite one is a man, a plan, a canal, Panama. I really struggled with this
+when I was an undergrad, try to do it in Pascal. Anyway, here's a prompt to ask the model to
+do it in Python, and here's the resulting code. The built-in string methods
+in Python definitely make this task easier than when I was trying
+to do it in Pascal. Anyway, there's a
+naivety in this code. It doesn't check to see
+if the string is empty. Let's re-prompt.
+Here's the result. The feedback helped
+the model write a more sophisticated
+function that handled variations in case
+and ignored spaces, and of course, handled
+empty strings. I also really love that because
+of long context windows, I can refer back to
+previous things in my chat, and I can say stuff like
+update the function, and the LLM will
+get what I mean. Let's do one final example. This one's a little trickier. Let's see if the model
+can write a function to find all the unique
+characters in a string. Here's the prompt, and
+this is the response. Now, you might
+have expected this to be a bit more complicated. Maybe using an if
+statement to check if each character has
+been seen already or not, but it actually ended
+up being really simple because of this set
+function in Python. To learn more about sets
+and about how it works, you could start phishing through docs or stack
+overflow or Google, or you could just prompt the model to ask it to
+tell you more about sets, which works and it was a great way to learn
+about this data type. As you're using LLMs
+to help you with code, this process of
+incorporating feedback is crucial for tailoring it to meet your specific needs
+and functionality, and you should always
+review and refine the code to ensure not
+only that it works, but also that it's the best, most efficient, and the
+most robust for your needs. In this video, you
+saw how continued prompting the back and
+forth with an LLM to continuously update and
+refine the output of the model lends itself well
+to iterative development. It's very similar to how a software development project with multiple humans
+might evolve. You also saw how bringing your own expertise to bear on
+the output of the model by offering feedback
+on code errors or deficiencies allowed you to fine-tune the code to be better. When used properly
+and carefully, both of these prompting
+strategies can help you be a much better
+software engineer. The assistance of
+an LLM like ChatGPT is truly invaluable for
+developers just like you. In the next video, you'll see how you can assign a role to the model to help you get more useful and
+specific responses. Let's move on and take a look.

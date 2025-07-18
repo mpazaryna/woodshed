@@ -1,0 +1,83 @@
+So far, you've looked at arrays and
+linked lists, which are both linear data structures, as
+well as trees, which are non linear, and you explored how useful they can be for
+a variety of scenarios. Now let's pivot to another data structure
+which has the elements of each, the graph. A graph models the relationships
+between objects. When you use something like
+an online map for navigation, you're using a graph where every location
+is a node, and the roads or paths or railways that connect these
+locations are the edges. In a complex system like the real world,
+there are many ways to go from A to B, so modeling that can be difficult if you
+don't use a graph which is set up for exactly that scenario. A graph has nodes to denote a thing and
+then edges for the connections between that thing and
+other things. Graphs could be used in social networks,
+for example, where you are the node and your friends are other nodes that
+are connected to you via an edge. A friend of a friend is then a node that
+is connected to your friend's node but not to yours. Or they can be used in shopping. Items that you buy could be the nodes,
+and related items, such as accessories could be
+other nodes connected by edges. Or indeed,
+the relationship could be more abstract, such as items that were purchased at
+the same time or by the same people could be connected to the item via edges, giving
+the basis of a recommendation system. One other nuance of graphs is that
+the edges can be directed or undirected. In a directed graph,
+an edge from A to B can be one way, whereas in an undirected graph,
+the edge from A to B is both ways. Where is this distinction useful? Well, if you think back to the navigation
+concept, on a map, generally a road is a two way connection between two
+locations, but a specific flight, like the 3:00 PM from Seattle to San Jose,
+is a one way connection. If you were building a navigation system
+with time sensitivity, you could see where your graph of locations could
+have both types of connection. Or more likely,
+you could have multiple graphs. Graphs are an incredibly flexible data
+structure, which, as you can see, can have many uses. But how do you, as a developer,
+get the most out of them? Well, let's dive in and take a look. We'll start with this code that
+I created using ChatGPT to implement a directed graph. You can find it in graph.py
+in the course materials. You can either use the provided code,
+of course, or you could write your own. But what I want you to do next
+is to look at the code and consider how it might
+be used in production. As before, pause the video,
+think about it a bit, play with it, and then think through how this
+implementation might need to be changed to make it production quality. Take some time with it and
+then come back when you're done. Okay, so what did you come up with? For me, the first and most obvious
+issue is the fact that the graph only gives a connection between A and B. But that's not enough
+information to be useful. For navigation on a map, for
+example, one might need distance. For relationships between people,
+one might need type. I'm connected to my wife, children and
+friends, but the type of connection is much more important between some
+of them than it is between others. But the structure doesn't have that. So there are semantic issues
+that we need to address. Also consider scalability. If you're using this for locations with
+connections between them on a map, there may be many millions of locations, each with many routes connecting
+them with other locations. This thing would have to be able
+to handle huge amounts of data. And then there's
+the underlying implementation. You can see that self.graph
+is a dictionary, but is this data type
+appropriate at huge scale? Does it create any security concerns? And of course, does all the stuff you've been considering
+in the course up to this point? Type checking, denial of service attacks,
+et cetera, et cetera. It's really good to get into
+this code critique mindset and stay in that mindset as you
+work towards production code. So let's start working with
+ChatGPT on assessing and improving this graph implementation and
+see where it takes us. First, you'll have the model
+work with the code and see if it comes up with things
+that you and I didn't think of. Okay, so the LLM has provided
+a lot of useful feedback here. First, fix some of the obvious
+stuff like lack of direction, and maybe add some commenting. You've seen how to do this already,
+so give it a try and chat yourself. But here's how I did it. Now let's give the model a role,
+that of an expert software developer or SRE, and tell it that you want to make
+the code run quickly and securely. It found a lot of things
+that I hadn't considered. How many of these have occurred to you? Things like not checking for existing
+edges or concurrency, as this uses Python, which does lock and that can be
+a bottleneck if you want to go at scale. So let's now go back and modify the graph with the help
+of ChatGPT to fix these issues. And this takes a simple prompt because
+I'm still in the same ChatGPT session. The output that the model generated
+here is stored in graph2.py, which you can download and
+try for yourself. See if you can break it, and if you do,
+see what you would do to fix it. Pause the video, give it a try. Hopefully, you found some issues,
+maybe not crashes, but id love to hear what you got. So consider sharing your edge cases
+in the course community page. One obvious problem is that when you try
+to add an edge between a node and itself, nothing happens, but
+you don't get an error message. I'm sure there are many others. Okay, so now that you've revisited
+the fundamentals of graphs and seen some of the issues that you have to
+deal with to work with them at scale, it's a good time to take a look at some
+algorithms that would let you use graphs to solve real world problems. Let's move on to the next activity, which
+is the graded lab for this course where you're going to work on writing these
+algorithms with the help of an LLM.

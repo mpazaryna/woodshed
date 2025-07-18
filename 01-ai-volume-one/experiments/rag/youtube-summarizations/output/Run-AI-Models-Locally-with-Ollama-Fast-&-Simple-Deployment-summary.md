@@ -1,0 +1,13 @@
+In this episode of "this show," the host and guest discuss running large language models locally, focusing on data privacy benefits and the use of open source tools for developers. The discussion centers around the OLAMA (Open Language Model Agnostic) developer tool, which has gained popularity among developers for its ability to run advanced AI models on a local machine.
+
+The host initiates the conversation by highlighting a significant advantage of running large language models locally: "you can run the latest large language models locally on your laptop this means you don't have any dependencies on cloud services and you get full data privacy while using optimized models to chat." This approach offers developers an alternative to relying on cloud services, preserving both performance and data security.
+
+The guest elaborates on why traditional methods might pose challenges: "as a developer traditionally I'd need to request computing resources or hardware to run something as intensive as a large language model and to use cloud services involves sending my data to somebody else which might not always be feasible." This statement underscores the practical benefits of local deployment, particularly for developers working with sensitive data.
+
+The episode delves into the setup process of OLAMA, explaining that every interaction with the model—such as asking Vim or Emacs questions—is made through a post request to the API running on localhost. The host emphasizes the importance of this feature, noting that it facilitates seamless integration and local prototyping without relying on cloud services.
+
+OLAMA’s model catalog is highlighted for its versatility, supporting not only pre-existing models but also allowing developers to import their own fine-tuned models. This flexibility opens up numerous possibilities for custom development and experimentation with AI models tailored to specific needs.
+
+The discussion then shifts to the technical aspects of setting up OLAMA, including the use of standardized APIs and Kubernetes-optimized Java flavors. The guest mentions that the standardized format is critical for integration within applications, particularly through tools like LangChain for Java.
+
+The episode concludes by touching on the broader implications of running AI models locally, such as the processing of insurance claims and the use of WebSocket for model requests, which together demonstrate the practical applications of this technology in various industries. Overall, the conversation emphasizes the value of using open-source tools like OLAMA to empower developers with local AI prototyping capabilities while maintaining data privacy.

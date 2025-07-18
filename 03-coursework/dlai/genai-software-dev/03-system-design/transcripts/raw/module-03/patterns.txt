@@ -1,0 +1,119 @@
+In the previous video, you explored a
+real-world problem that could be solved using
+a singleton pattern, and that was
+managing data access across a mobile application. But that likely
+raised questions. How did I discover the singleton when I wasn't an expert
+in design patterns? The answer was a
+lot of googling, a lot of Stack Overflow, and a lot of talking
+with people. These are great ways to learn, but it can take a lot of
+time to find what you need or good explanations
+of how things work, and sometimes you still
+may come up short. The availability of chatbots now adds another option
+for getting advice, namely working with an LLM to profile and
+analyze your code, and then make suggestions on design patterns that can improve your
+application or system. Let's explore that
+partnership with an LLM by creating an example
+application and seeing how something like ChatGPT
+can profile it and make suggestions about how to
+use proper design patterns. I've created some
+code that simulates the type of app that you might
+use in financial services. The application has a
+database of time series data. In this case, it's the price of a stock at closing
+on a given day, as well as associated
+functionality for accessing and retrieving
+the data into a company object that also calculates some statistics
+based on the time series. By the way, if you
+want to explore the prompts used to
+create this code, I've saved them into a text file that you can download
+below this video. You can cut and paste
+from this if you want to see what your
+LLM would write. The prompts use
+the strategies you learned in the previous
+module on databases. You start by
+assigning a role and providing some context
+on the project, and then you'll outline
+the schema of the database specifying the table and associated columns that
+you wanted to store. A follow-up prompt then ask the LLM to create
+some code that will generate synthetic
+stock price data and add that to the database. This is another really cool
+usage of LLMs, by the way. When you don't have
+data to work with, the model can help you
+synthesize some to use. Lastly, another follow-up
+prompt asks for some code to calculate some statistics of
+the stock price data. In this case, moving average and Bollinger bands and add
+those to the database. What was really cool was
+that the LLM knew what these quantities were and it generated code that does
+the calculations for you. All of this code is
+in a notebook that's also included in the
+downloads for this video. At this point, I
+encourage you to download the notebook and try
+running it for yourself. I cheated a little bit with
+this code by taking some of the hard-coded parameters and making them global variables. By default, the moving
+average was a 20-day window, but I made that a global
+variable that you can change. Similarly, the
+Bollinger bands are two standard deviations above and below the moving average. I made that a parameter
+so you can make wider or narrower
+ones if you prefer. Pause the video and play
+with that code for a bit, and feel free to use any
+of your own knowledge of design patterns to critique the code and identify
+areas for improvement. Then, when you're done, come back and we're
+going to work with an LLM to improve the code using design patterns. Welcome back. I hope you had some fun
+playing around with the code. I'm sure you've
+thought of some ways that the code could be improved, and I deliberately made
+some suboptimal choices. Let's now explore
+what would happen if you interact with an
+LLM around this code. Start with a prompt
+like this one, where you specify a
+role that the LLM is an expert in software
+design patterns, particularly those
+from the Gang of Four. The goal is to make coding and maintenance
+more efficient. So you'll ask the LLM to analyze it with that
+in mind and ask it to suggest some changes to
+make that will align with good software engineering practices and design patterns. In my case, I got an
+answer like this, suggesting that there
+are four key patterns that this code could use. The first was to
+use the singleton that we looked at
+in the last video. It was recommended for
+database connections, which makes a lot of sense. A badly designed
+application may open the database multiple times instead of using a
+single connection, and this can eat
+memory and bandwidth. Frankly, I hadn't
+even thought of that, and I was solely thinking about a singleton for the global
+variables that we use. We should also use one
+there as well, but, of course, the database
+connection is a much better idea. Did you think of that one
+when you studied the code? The model went on to three other patterns that
+might also be useful. The factory method pattern is a creational design pattern that deals with object
+creation mechanisms. It's used to try to
+create objects in a manner that's suitable
+to the situation, and in this case,
+the LLM suggests it for creating company objects. You'll explore this
+in more detail a little bit later
+in this module. The template method and strategy patterns are
+both behavioral patterns, and from the description
+the LLM gives, their use is a little
+bit less clear. The template method will be for operations that follow
+a specific sequence, and the strategy pattern will be used for our
+grading algorithm. Our grading algorithm is one
+of the things where we're giving companies grade based
+on their price history. You're going to take
+a closer look at how these work in later videos. In addition to suggesting
+these patterns, the LLM went on to refactor the code to actually implement
+those patterns for me. In my case, the prompt
+was poorly structured, and it caused the LLM to make
+all four changes at once. I'd personally rather
+do them one by one so that we can see and
+understand what's going on. I think it's generally
+bad practice to use generated code to make huge sweeping changes
+because the risk of hallucination breaking a
+code is so much higher. I followed up that
+prompt with this one, asking it to update the
+code pattern by pattern, and to explain its
+reasoning as it went along. The LLM went on to walk through the implementation of
+each pattern in turn. So let's go on and explore what the LLM did for each pattern. You're going to dig
+into each example in turn over the
+next few videos. Hopefully, this will be a useful guide for how you can use software design patterns with the aid of an LLM like
+GPT going forward. You're going to start
+by looking at how the LLM used a singleton for
+the database connection. So please move to the next
+video to get started.

@@ -1,0 +1,104 @@
+There are two key concepts that form the foundation of
+how transformers work. You'll explore those in
+more detail in this video. The first is attention. In essence, attention allows
+the model to focus on specific parts of the input text when predicting the next word, like you just did with my secondary school
+example sentence. Attention considers the
+relationships between words in a sentence to understand the context and predict
+the upcoming word. For example, if you
+had a sentence like my little white fluffy
+dog ran towards my guest, the attention
+mechanism would allow for the model to focus
+on the adjectives, little, white, and fluffy when predicting the meaning
+of the noun dog. This would help the model to understand that the
+dog is likely to be something that's greeting my guest and not attacking them. The model might predict
+and greeted them enthusiastically as the text
+that completes the sentence. But how exactly does this
+attention mechanism work? Let's take a closer look at how the text is represented
+by the model. Text is broken down into
+pieces called tokens, which are mostly
+individual words, but they're occasionally
+pieces of words. Each word is assigned a
+high dimensional vector, which is a mathematical representation of
+the words meaning. This vector is
+called an embedding. The attention mechanism
+helps to adjust these embeddings to account for the context of the
+surrounding words. For example, here,
+little, white, and fluffy will impact the
+values of the dog vector, changing it to more
+resemble them. The model then goes through multiple attention blocks where the embeddings are
+updated repeatedly. As a result, details
+about the words and the sentences are used to
+learn the underlying concepts, and with proper tuning, they can very accurately determine the
+underlying semantics and thus generate
+semantically accurate text to follow a phrase. Overall, the attention mechanism is a powerful tool that allows transformers to capture
+the complex relationships between words and a sentence. This is essential for tasks
+such as machine translation, text summarization, and
+question answering. The second concept is that
+of encoders and decoders. Imagine you're
+working on a piece of code that's part of
+a complex code base. Before you add or
+modify anything, you need to understand
+the entire context, what each part of the code does and how it interacts
+with other parts. That's pretty much
+what the encoder in a transformer model
+will do with text. When we're training a
+transformer base model, the encoder takes the entire
+input sequence at once. Unlike traditional
+supervised models, that process data step by step, the encoder looks at all parts of the
+data simultaneously. This is possible, thanks to the attention mechanisms
+that we described earlier. Remember, they allow
+the encoder to focus on different parts
+of the input sequencing, determining which features
+are the most important. You could see this process as somewhat like a code review, where you might focus more on
+the critical sections that could impact the functionality
+of the entire application. After processing,
+the encoder converts the input data into a
+set of context vectors. These vectors are a
+distilled representation of the input text, encapsulating the learned
+insights and relationships between different elements of the data thanks to the
+attention mechanism. The decoder reverses
+this process. In a way you can think
+about this in terms of a code review and the insights that you've
+gained from it. You're no longer just reviewing
+you're planning what to code next based on the understanding that
+you've just developed. I like to call this
+artificial understanding. Through the many
+pieces of intelligence that are gleaned through
+the attention mechanism, the model understands a lot of context about what you're
+currently working on with it, and as a result, can intelligently suggest
+new content to you. When it comes to using
+transformer-based models, like you will be
+extensively in this course. It is important to have this basic understanding
+of how they work. There's no magic
+or secret sauce, just an excellent algorithm that understands your context, such as code you feed it
+and ask it to analyze, and it can then
+apply reasoning on that context to give
+very relevant output, like finding bugs in the code. As a developer, it always
+helps to understand at least some of the
+technical details underlying the
+tools you're using, and the same is true
+here for an LLM. Let's quickly review
+the main concepts that you saw in this module. First, you saw a quick summary of supervised machine learning. The idea here is that
+models can be trained on labeled datasets in order to find underlying
+rules and patterns. These rules can then
+be applied to new data to make predictions or to
+generate useful output. The more or higher quality
+data used in training, in general, the higher quality output the
+model will give you. Large language
+models are built on an architecture
+called a transformer. Transformers are
+particularly good at processing large
+bodies of text, whether it's a software
+library or a book. Using a concept
+called attention, they can track relationships
+between words or concepts, even if they're not close
+to each other in the text. LLMs available to you
+will have been trained on almost unfathomably
+large datasets of text, including a ton of code. This training allows
+them both to understand long or nuanced prompts
+and generate new text, for example, code that best
+matches what you asked for. I'm sure you're excited to
+start thinking about how best to use these models in your work as a
+software engineer, and that's what you're
+going to learn about in the next module.
+I'll see you there.

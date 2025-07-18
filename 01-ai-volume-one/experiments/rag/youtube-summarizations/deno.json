@@ -1,0 +1,27 @@
+{
+  "tasks": {
+    "start": "deno run --allow-run --allow-read --allow-write --allow-net main.ts",
+    "dev": "deno run --watch --allow-run --allow-read --allow-write --allow-net main.ts"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["deno.window", "dom"]
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "singleQuote": false,
+    "semiColons": true
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "importMap": "./import_map.json",
+  "permissions": {
+    "read": true,
+    "write": true,
+    "net": true,
+    "run": true
+  }
+}

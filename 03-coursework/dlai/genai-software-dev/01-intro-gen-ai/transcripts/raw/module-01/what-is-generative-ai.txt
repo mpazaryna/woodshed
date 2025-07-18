@@ -1,0 +1,44 @@
+Welcome to a skills certificate for
+generative AI for software development. It's an innovative course designed
+to empower you with the cutting edge skills required to integrate and
+leverage generative artificial intelligence within
+the realm of software development. As businesses and technologies evolve, the demand for
+advanced AI capabilities is skyrocketing. This course offers you a comprehensive
+pathway to not only understand generative AI technologies, but also to apply
+them when you create, enhance, and scale software applications. By the end of this specialization, you'll
+know how to use generative AI tools to assist you with all of the major tasks
+that make up the software developer role, allowing you to do your work better and
+more efficiently. You may have heard about how
+GenAI can generate code, but you need a lot more than just
+code to build a working system. So with this course, you'll see how you
+can enhance your coding skills to become a better engineer by having
+large language models, or LLMs, at your side to assist
+you through the process. So let's begin by taking a step back and
+exploring LLMs. You might have heard these terms,
+but what do they really mean for you as a developer? Let's unpack this and explore
+the implications for your projects and workflows. Generative AI refers to artificial
+intelligence systems that can generate new content. This includes everything from code
+snippets to fully rendered images, and even synthetic media like videos and
+music. For instance, you may have encountered
+tools like GitHub Copilot. It's a prime example of how
+generative AI assists in coding by suggesting entire lines or
+blocks of code as you type. It's fascinating to see how deeply AI is integrated into the tools
+that you use daily. Think about search engines,
+recommendation systems, IDEs, and even some debugging tools, all powered
+by AI, to enhance your efficiency. Focusing on the generative side, AI can now aid in content creation that
+goes beyond traditional data processing. It's about producing new,
+usable assets from scratch. Consider something like Dali, which can
+create images from text descriptions. Here, I've prompted the model to generate
+an image of a time traveling catacorn, half unicorn, half cat, all time traveler. I've included some features I want
+the image to have as well, and the model's done a really good job of creating
+an image with just those features. Now, this isn't just a cool toy,
+it's a glimpse into how you might be soon generating assets for games or
+applications directly from a description. So why does this matter? Generative AI is not just a tool for
+creating content faster, it's a paradigm shift in how you can approach problems and
+solutions in software development. It offers a way to automate and
+enhance creativity, reducing the time from concept to product. Whether you're building enterprise
+applications or indie games, understanding generative AI will
+give you a significant edge. So let's start by exploring
+just how all of this works. You're not going to go very deep,
+but I do think it's useful for you to see how it works under the hood
+in order to get the most out of it.

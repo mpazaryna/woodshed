@@ -1,0 +1,78 @@
+Good documentation can take many forms. It can be as simple as inline
+comments that explain the purpose of a particular block of code,
+why you chose a particular approach. Or it might be a more complex set
+of instructions or explanations, like you'd find in a software
+development kit, SDK, or an application programmer's interface,
+API. Good documentation, first and foremost,
+improves code readability, but the benefits extend well beyond this. Well documented code is easier for others
+to understand, and this is crucial in a team setting where multiple developers
+may be working on the same codebase. If your code is well explained and
+easy to follow, the team can quickly grasp what you were
+doing when they pick up the code and try to move forward with their own tasks. Good documentation also helps
+prevent technical debts, and this accrues when you take shortcuts today
+in order to get something to production. But then other people have the burden,
+not least the cognitive load, of understanding what you
+have done in the future. I think this is a really important point. Well written documentation
+aids in maintenance. When you or someone else revisits the code
+months or even years after it was written, good documentation helps to quickly
+understand the code's purpose and its logic. Making it much easier to update,
+maintain, and debug. Documentation is the primary tool for
+others to learn what your code is and how to use it, so it is really important
+that it be fit for this purpose. Think of maybe when you were
+onboarding new team members. If your code was well documented,
+it helped get new developers up to speed faster, reducing their learning curve and
+increasing productivity. Finally, and perhaps most importantly, good documentation improves
+overall code quality. Writing documentation often forces you
+to think about your code more deeply, which can lead to better design
+decisions and fewer bugs. So given all of these benefits
+of writing good documentation, let's take some time to get really
+specific about what we mean by good. I'd like to share some principles of good
+documentation that I find really useful in my work. The first is that your documentation
+should be clear and concise. This applies whether you're
+writing an inline comment or the full documentation for an SDK. For example, here's an inline comment
+that really doesn't say anything. I mean, what does update mean here? A clearer comment would
+be something like this, where in just a few words you now have
+an idea of what the code is doing. But of course you should use
+as few words as possible. Too much documentation can make
+your code very hard to read. This multiline comment
+is probably overkill, and it doesn't really need to explain
+the basic functions of Python. Another principle that will
+keep your code manageable and easy to read is to avoid redundancy. For example, in this Python script, the
+variables are named in a very descriptive way, and
+it's pretty clear what the code is doing. The documentation comment at the top is
+useful because it defines the input types, but you wouldn't want to add inline
+comments to this section since the function of the code
+is already quite clear. And if you're working on more complex
+documentation, for example, a full SDK, avoiding redundancy is really important
+to make the documents easy to navigate. Having the same information in multiple
+places can lead to inconsistencies, user errors, and it can make
+docs more difficult to maintain. It also bloats your
+documentation unnecessarily. Documentation is intended to be read, so having a specific audience in mind
+can help you make the tone and level of detail of your docs most
+useful for your intended users. For example, you might reference
+internal requirements and specifications when working on
+a private internal project. But you wouldn't want to do that in
+public facing docs since those resources are inaccessible to external users. Another important issue to keep in
+mind is that documentation conventions can differ by language. Some, like Java and Python,
+have well established guidelines for writing documentation that
+are maintained by the community. For example,
+Python uses documentation comments, known as docstrings,
+as their standard way of documenting code. Here's the calculate total price function
+you saw a few moments ago to demonstrate. The docstring is this string literal that
+appears right after the definition of the function, and you'd place this in
+your definition of a method, class, or module two. The style of these docstrings is
+outlined in a document called PEP 257. Python has many of these
+Python enhancement proposals, which can then help developers
+standardize their code, and it's best practice to
+follow these guidelines. Lastly, and this ones really important, keep your documentation up to
+date code is like a living thing, its constantly evolving as things
+change around it and bugs are found. Keeping your code up to date will
+help you to avoid technical debt and make your code easier to
+maintain in the long run. And of course, I think you know
+what I'm going to say next. An LLM can help you maintain these
+principles as you work on documentation. Besides just helping
+you to write comments, it can also help you work across
+languages, advise on tone for your intended audience, and
+analyze docs to suggest improvements. So let's get hands on and look at how LLMs can help you with
+different types of documentation. We'll start with a seemingly easy one,
+inline comments. I'll see you there in the next video.
