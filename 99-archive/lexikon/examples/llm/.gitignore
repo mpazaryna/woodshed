@@ -1,0 +1,11 @@
+# Coverage directories and files
+coverage/
+coverage.lcov
+coverage-html
+
+# Deno
+.env
+.DS_Store 
+
+# Logs
+logs/

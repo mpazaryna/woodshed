@@ -1,0 +1,60 @@
+{
+  "domain": {
+    "name": "system/yoga",
+    "version": "1.0",
+    "description": "system/yoga domain configuration",
+    "filterStrategy": "language-specific"
+  },
+  "contextTypes": {
+    "languages": [],
+    "categories": [
+      "pranayama.md",
+      "Yoga Breathing Techniques",
+      "README.md"
+    ]
+  },
+  "tagTypes": {
+    "generic": {
+      "description": "Tags that apply across all languages and frameworks",
+      "tags": [
+        {
+          "name": "pranayama",
+          "description": "Generic tag for pranayama",
+          "applicableToAll": true
+        },
+        {
+          "name": "breath",
+          "description": "Generic tag for breath",
+          "applicableToAll": true
+        },
+        {
+          "name": "foundation",
+          "description": "Generic tag for foundation",
+          "applicableToAll": true
+        }
+      ]
+    },
+    "language_specific": {
+      "description": "Tags that are specific to certain languages",
+      "rules": {
+        "allowGenericWithSpecific": true,
+        "requireLanguageMatch": true
+      },
+      "tags": {}
+    }
+  },
+  "promptTemplate": {
+    "path": "prompts/system/yoga.txt",
+    "variables": {
+      "AVAILABLE_TAGS": "{{tags}}",
+      "LANGUAGE_CONTEXT": "{{language}}",
+      "FRAMEWORK_CONTEXT": "{{framework}}"
+    }
+  },
+  "outputRules": {
+    "includeGenericTags": true,
+    "includeLanguageTags": true,
+    "requireLanguageDetection": true,
+    "allowUnknownTags": false
+  }
+}

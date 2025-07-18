@@ -1,0 +1,58 @@
+AI Analysis Results
+==================
+Prompt: "i am building a python command line application to process rss feeds.  I need to use coding standards, reliability."
+
+Detected Language: python
+
+Initial Tags Selected by LLM:
+- python-specific
+- clean-code
+- reliability
+- code quality
+- maintainability
+- SOLID
+- best practices
+
+AI Reasoning:
+The user input clearly specifies the development of a Python command line application, indicating the Python language. Therefore, the language-specific tag 'python-specific' is included. The user also mentions the need for coding standards, reliability, and coding quality, which align with the generic tags 'clean-code', 'reliability', 'code quality', 'maintainability', 'SOLID', and 'best practices'. These tags address the user's emphasis on following coding standards, ensuring reliability, and maintaining high-quality code.
+
+Matched Primitives and Their Tags:
+- clean-code-dry:
+    - code quality
+    - maintainability
+    - clean-code
+- clean-code-kiss:
+    - code quality
+    - simplicity
+    - maintainability
+    - clean-code
+- clean-code-yagni:
+    - code quality
+    - minimalism
+    - pragmatic design
+    - clean-code
+- single-responsibility:
+    - code quality
+    - SOLID
+    - design patterns
+- clean-code-pythonic:
+    - code quality
+    - python-specific
+    - best practices
+- clean-code-pep8:
+    - code quality
+    - style guide
+    - python-specific
+
+Final Composed Tags:
+- SOLID
+- best practices
+- clean-code
+- code quality
+- design patterns
+- maintainability
+- minimalism
+- pragmatic design
+- python-specific
+- simplicity
+- style guide

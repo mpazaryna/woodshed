@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-01-10T17:07:51.861Z",
+  "test_path": "system/story/three-act",
+  "versions": {
+    "a": "Original version",
+    "b": "Improved version"
+  },
+  "files": [
+    "creative",
+    "requirements",
+    "structure",
+    "base",
+    "improvement",
+    "advanced",
+    "format"
+  ]
+}

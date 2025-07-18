@@ -1,0 +1,88 @@
+{
+  "domain": {
+    "name": "user/paz",
+    "version": "1.0",
+    "description": "user/paz domain configuration",
+    "filterStrategy": "language-specific"
+  },
+  "contextTypes": {
+    "languages": [],
+    "categories": [
+      "v0-landing.md",
+      "refactor.md",
+      "Software Engineering Best Practices",
+      "integration-first-dev.md",
+      "Software Engineering Methodology",
+      "ai-assisted-development-questions.md"
+    ]
+  },
+  "tagTypes": {
+    "generic": {
+      "description": "Tags that apply across all languages and frameworks",
+      "tags": [
+        {
+          "name": "refactoring",
+          "description": "Generic tag for refactoring",
+          "applicableToAll": true
+        },
+        {
+          "name": "code quality",
+          "description": "Generic tag for code quality",
+          "applicableToAll": true
+        },
+        {
+          "name": "clean code",
+          "description": "Generic tag for clean code",
+          "applicableToAll": true
+        },
+        {
+          "name": "integration-first",
+          "description": "Generic tag for integration-first",
+          "applicableToAll": true
+        },
+        {
+          "name": "development-methodology",
+          "description": "Generic tag for development-methodology",
+          "applicableToAll": true
+        },
+        {
+          "name": "ai-assisted-development",
+          "description": "Generic tag for ai-assisted-development",
+          "applicableToAll": true
+        },
+        {
+          "name": "systematic-refactoring",
+          "description": "Generic tag for systematic-refactoring",
+          "applicableToAll": true
+        },
+        {
+          "name": "integration-testing",
+          "description": "Generic tag for integration-testing",
+          "applicableToAll": true
+        }
+      ]
+    },
+    "language_specific": {
+      "description": "Tags that are specific to certain languages",
+      "rules": {
+        "allowGenericWithSpecific": true,
+        "requireLanguageMatch": true
+      },
+      "tags": {}
+    }
+  },
+  "promptTemplate": {
+    "path": "prompts/user/paz.txt",
+    "variables": {
+      "AVAILABLE_TAGS": "{{tags}}",
+      "LANGUAGE_CONTEXT": "{{language}}",
+      "FRAMEWORK_CONTEXT": "{{framework}}"
+    }
+  },
+  "outputRules": {
+    "includeGenericTags": true,
+    "includeLanguageTags": true,
+    "requireLanguageDetection": true,
+    "allowUnknownTags": false
+  }
+}

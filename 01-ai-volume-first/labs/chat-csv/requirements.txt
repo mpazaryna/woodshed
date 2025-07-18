@@ -1,0 +1,7 @@
+langchain==0.1.14
+langchain_community==0.0.31
+langchain_core==0.1.38
+langchain_openai==0.0.5
+langchain-experimental==0.0.56
+python-dotenv==1.0.1
+tabulate==0.9.0

@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "create_date": "2025-02-27T19:05:28.031Z",
+    "description": "Index generated from forge/prompt"
+  },
+  "data": {
+    "aristotle-drama": {
+      "name": "Aristotle Drama Framework",
+      "description": "A comprehensive framework for analyzing and constructing dramatic works based on Aristotelian principles",
+      "tags": [
+        "drama",
+        "aristotle",
+        "writing",
+        "analysis"
+      ],
+      "files": {
+        "requirements": {
+          "description": "requirements",
+          "tags": [],
+          "path": "aristotle-drama/requirements.txt"
+        },
+        "advanced": {
+          "description": "Advanced dramatic elements including peripeteia, anagnorisis, and catharsis tracking",
+          "tags": [
+            "advanced",
+            "dramatic-elements",
+            "structure"
+          ],
+          "path": "aristotle-drama/advanced.txt"
+        },
+        "structure": {
+          "description": "structure",
+          "tags": [],
+          "path": "aristotle-drama/structure.txt"
+        },
+        "improvements": {
+          "description": "improvements",
+          "tags": [],
+          "path": "aristotle-drama/improvements.txt"
+        },
+        "base": {
+          "description": "base",
+          "tags": [],
+          "path": "aristotle-drama/base.txt"
+        },
+        "creative": {
+          "description": "creative",
+          "tags": [],
+          "path": "aristotle-drama/creative.txt"
+        }
+      }
+    },
+    "skin-the-cat": {
+      "name": "Aristotle Drama Framework",
+      "description": "A comprehensive framework for analyzing and constructing dramatic works based on Aristotelian principles",
+      "tags": [
+        "drama",
+        "aristotle",
+        "writing",
+        "analysis"
+      ],
+      "files": {
+        "requirements": {
+          "description": "requirements",
+          "tags": [],
+          "path": "skin-the-cat/requirements.txt"
+        },
+        "advanced": {
+          "description": "Advanced dramatic elements including peripeteia, anagnorisis, and catharsis tracking",
+          "tags": [
+            "advanced",
+            "dramatic-elements",
+            "structure"
+          ],
+          "path": "skin-the-cat/advanced.txt"
+        },
+        "structure": {
+          "description": "structure",
+          "tags": [],
+          "path": "skin-the-cat/structure.txt"
+        },
+        "improvements": {
+          "description": "improvements",
+          "tags": [],
+          "path": "skin-the-cat/improvements.txt"
+        },
+        "base": {
+          "description": "base",
+          "tags": [],
+          "path": "skin-the-cat/base.txt"
+        },
+        "creative": {
+          "description": "creative",
+          "tags": [],
+          "path": "skin-the-cat/creative.txt"
+        }
+      }
+    },
+    "hero-journey": {
+      "name": "Aristotle Drama Framework",
+      "description": "A comprehensive framework for analyzing and constructing dramatic works based on Aristotelian principles",
+      "tags": [
+        "drama",
+        "aristotle",
+        "writing",
+        "analysis"
+      ],
+      "files": {
+        "requirements": {
+          "description": "requirements",
+          "tags": [],
+          "path": "hero-journey/requirements.txt"
+        },
+        "advanced": {
+          "description": "Advanced dramatic elements including peripeteia, anagnorisis, and catharsis tracking",
+          "tags": [
+            "advanced",
+            "dramatic-elements",
+            "structure"
+          ],
+          "path": "hero-journey/advanced.txt"
+        },
+        "structure": {
+          "description": "structure",
+          "tags": [],
+          "path": "hero-journey/structure.txt"
+        },
+        "improvements": {
+          "description": "improvements",
+          "tags": [],
+          "path": "hero-journey/improvements.txt"
+        },
+        "base": {
+          "description": "base",
+          "tags": [],
+          "path": "hero-journey/base.txt"
+        },
+        "creative": {
+          "description": "creative",
+          "tags": [],
+          "path": "hero-journey/creative.txt"
+        }
+      }
+    }
+  }
+}

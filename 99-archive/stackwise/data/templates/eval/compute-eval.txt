@@ -1,0 +1,31 @@
+Evaluate this computing convention content for completeness and clarity:
+
+1. Component Purpose
+- Clear definition of the component's role
+- Scope and boundaries
+- Integration points
+
+2. Implementation Guidelines
+- Technical requirements
+- Best practices
+- Common pitfalls to avoid
+
+3. Dependencies and Relations
+- Required components
+- Optional integrations
+- Version compatibility
+
+4. Quality Attributes
+- Performance considerations
+- Security implications
+- Reliability factors
+
+5. Usage Examples
+- Implementation patterns
+- Code samples
+- Integration examples
+
+Content to evaluate:
+{content}
+
+For each section, identify both present elements and potential improvements.

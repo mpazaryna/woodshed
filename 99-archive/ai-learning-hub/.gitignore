@@ -1,0 +1,23 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore potential virtual environments
+venv/
+env/
+.env
+
+# Ignore potential Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore potential large data files or model weights
+*.csv
+*.h5
+*.pkl
+
+# Ignore potential log files
+*.log
+
+# Ignore potential cache directories
+__pycache__/
+.cache/

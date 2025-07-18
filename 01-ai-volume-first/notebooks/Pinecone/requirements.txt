@@ -1,0 +1,3 @@
+pinecone-client
+python-dotenv
+cohere

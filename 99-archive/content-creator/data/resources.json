@@ -1,0 +1,47 @@
+{
+  "categories": [
+    {
+      "name": "Books",
+      "items": [
+        {
+          "title": "Light on Yoga",
+          "author": "B.K.S. Iyengar",
+          "description": "Comprehensive guide to yoga asanas with detailed instructions and photographs",
+          "link": "https://example.com/light-on-yoga",
+          "tags": ["asana", "philosophy", "technique"]
+        },
+        {
+          "title": "The Heart of Yoga",
+          "author": "T.K.V. Desikachar",
+          "description": "Developing a personal practice with the essence of yoga tradition",
+          "link": "https://example.com/heart-of-yoga",
+          "tags": ["practice", "philosophy"]
+        }
+      ]
+    },
+    {
+      "name": "Online Courses",
+      "items": [
+        {
+          "title": "Yoga Philosophy Foundations",
+          "author": "Oxford Centre for Hindu Studies",
+          "description": "In-depth course on yoga philosophy and history",
+          "link": "https://example.com/yoga-philosophy",
+          "tags": ["philosophy", "education"]
+        }
+      ]
+    },
+    {
+      "name": "Practice Tools",
+      "items": [
+        {
+          "title": "Yoga Timer Pro",
+          "author": "YogaApps Inc",
+          "description": "Professional timer for sequencing and practice",
+          "link": "https://example.com/yoga-timer",
+          "tags": ["tools", "practice"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "provider": "gemini",
+  "template": "sequence-prompt.md",
+  "sequences": [
+    {
+      "name": "hip-opening",
+      "level": "intermediate",
+      "duration": "75 minutes",
+      "focus": "hip opening and flexibility",
+      "style": "vinyasa",
+      "props": ["blocks", "strap"],
+      "contraindications": ["knee injuries", "hip replacements"],
+      "concept": "A flowing practice that gradually opens the hips through progressive poses and movements. The sequence builds heat mindfully while creating space in the hip joints and surrounding muscles, incorporating both dynamic and static stretches to improve flexibility and joint mobility."
+    },
+    {
+      "name": "gentle-strength",
+      "level": "beginner",
+      "duration": "45 minutes",
+      "focus": "gentle strength building",
+      "style": "hatha",
+      "props": ["chair", "blocks"],
+      "contraindications": ["high blood pressure"],
+      "concept": "A balanced practice that builds strength gradually through accessible poses and mindful movements. The sequence focuses on establishing proper alignment and body awareness while slowly developing muscular endurance, perfect for those new to yoga or seeking a gentler approach to strength building."
+    }
+  ]
+} 

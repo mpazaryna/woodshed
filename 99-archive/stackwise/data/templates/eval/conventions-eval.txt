@@ -1,0 +1,13 @@
+Evaluate this content for potential improvements in these categories:
+1. Security
+2. Error Handling
+3. API Design
+4. Performance
+5. Documentation
+
+For each category, identify specific missing or incomplete elements. Format as structured bullet points.
+
+Content to evaluate:
+{content}
+
+Return clear, actionable improvements.

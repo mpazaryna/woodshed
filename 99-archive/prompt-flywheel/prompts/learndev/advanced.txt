@@ -1,0 +1,7 @@
+Additionally, please include:
+
+1. Advanced implementation patterns
+2. Performance considerations
+3. Security implications
+4. System design considerations
+5. Industry best practices from leading companies

@@ -1,0 +1,26 @@
+Dataset Comparison:
+File 1: 495 tweets
+File 2: 483 tweets
+
+Average Sentiment:
+File 1: 0.1266
+File 2: 0.0824
+
+Top 10 Keywords Comparison:
+legal: File 1 - 11.08524177586977, File 2 - 8.945951424979434
+just: File 1 - 17.510024479817474, File 2 - 12.606614747731063
+delta: File 1 - 49.992179684947835, File 2 - 51.77989327154532
+high: File 1 - 0, File 2 - 12.908946559971897
+weed: File 1 - 16.55927786598109, File 2 - 11.47729296820355
+good: File 1 - 9.8145117333957, File 2 - 0
+thc: File 1 - 18.181616915916155, File 2 - 19.824408460883255
+shit: File 1 - 12.193371616526237, File 2 - 13.76983210076719
+gummies: File 1 - 15.021105790643052, File 2 - 9.361444602104475
+cbd: File 1 - 11.350502840841521, File 2 - 11.178840768998176
+like: File 1 - 18.351950092467913, File 2 - 13.567761517722149
+
+Theme Comparison:
+Cannabis Types and Components: File 1 - 0.61%, File 2 - 0.62%
+User Experience: File 1 - 0.40%, File 2 - 0.41%
+Legality and Regulation: File 1 - 0.20%, File 2 - 0.21%
+General Conversation: File 1 - 0.61%, File 2 - 0.62%

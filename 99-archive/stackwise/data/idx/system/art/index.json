@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "filename": "index.json",
+    "version": "1.0",
+    "generated": "2025-01-09T15:37:36.341Z",
+    "count": 4,
+    "domain": "system/art"
+  },
+  "primitives": [
+    {
+      "name": "watercolor-color",
+      "description": "Understanding and applying color theory specifically for watercolor medium",
+      "category": "Watercolor Color Management",
+      "tags": [
+        "color theory",
+        "color mixing",
+        "palette management"
+      ],
+      "domain": "system/art",
+      "path": "data/primitives/system/art/watercolor-theory.md"
+    },
+    {
+      "name": "watercolor-basics",
+      "description": "Core watercolor techniques and methods that form the basis of watercolor painting competency",
+      "category": "Watercolor Painting Fundamentals",
+      "tags": [
+        "painting techniques",
+        "beginner level",
+        "foundation skills"
+      ],
+      "domain": "system/art",
+      "path": "data/primitives/system/art/watercolor-technique.md"
+    },
+    {
+      "name": "montage-layering",
+      "description": "Foundational approach to building depth and complexity in montage compositions",
+      "category": "Montage Art Layering",
+      "tags": [
+        "collage techniques",
+        "layering"
+      ],
+      "domain": "system/art",
+      "path": "data/primitives/system/art/collage-layering.md"
+    },
+    {
+      "name": "montage-basics",
+      "description": "Methods for transforming and combining source materials effectively",
+      "category": "Montage Art Fundamentals",
+      "tags": [
+        "collage techniques",
+        "beginner level",
+        "mixed media"
+      ],
+      "domain": "system/art",
+      "path": "data/primitives/system/art/collage.md"
+    }
+  ]
+}

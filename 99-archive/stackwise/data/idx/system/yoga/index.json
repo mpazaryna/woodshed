@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "filename": "index.json",
+    "version": "1.0",
+    "generated": "2025-01-09T15:37:36.338Z",
+    "count": 1,
+    "domain": "system/yoga"
+  },
+  "primitives": [
+    {
+      "name": "yoga-pranayama-fundamentals",
+      "description": "Systematic breath practice that enhances life force (prana) through conscious regulation of inhalation (puraka), retention (kumbhaka), and exhalation (rechaka)",
+      "category": "Yoga Breathing Techniques",
+      "tags": [
+        "pranayama",
+        "breath",
+        "foundation"
+      ],
+      "domain": "system/yoga",
+      "path": "data/primitives/system/yoga/pranayama.md"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "name": "Process Orders",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "dcf78aa5-90a9-4b61-a86f-00cf0028afc3",
+      "name": "When clicking ‘Test workflow’",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        560,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appyYJzSlXaUMQVki",
+          "mode": "list",
+          "cachedResultName": "Pizza Place",
+          "cachedResultUrl": "https://airtable.com/appyYJzSlXaUMQVki"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tblN6EaLXmxgPrM2R",
+          "mode": "list",
+          "cachedResultName": "Orders",
+          "cachedResultUrl": "https://airtable.com/appyYJzSlXaUMQVki/tblN6EaLXmxgPrM2R"
+        },
+        "options": {}
+      },
+      "id": "f8d0cd51-1736-4a13-9f05-4064c0332a5d",
+      "name": "Airtable",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        720,
+        180
+      ],
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "Z5wWnnyKWn5EwdH2",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "dcced125-d638-4e00-a526-e05dfd65276e",
+              "leftValue": "={{ $json.Pizza }}",
+              "rightValue": "Veg",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "1afaa052-81fa-426d-9697-64ca5acb3597",
+      "name": "Filter",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.1,
+      "position": [
+        860,
+        180
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Airtable",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Airtable": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "352f7c3a-f511-45da-a0ef-9afcae973fb3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "869d068795160cde25ec1942155a6be21049ed1f6fb8c3a2dbbdafeddb8cbc0b"
+  },
+  "id": "NNneSatrs9b0dgZu",
+  "tags": []
+}

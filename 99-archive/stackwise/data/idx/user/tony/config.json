@@ -1,0 +1,69 @@
+{
+  "domain": {
+    "name": "user/tony",
+    "version": "1.0",
+    "description": "user/tony domain configuration",
+    "filterStrategy": "language-specific"
+  },
+  "contextTypes": {
+    "languages": [],
+    "categories": [
+      "arc.md",
+      "Screenwriting Character Development"
+    ]
+  },
+  "tagTypes": {
+    "generic": {
+      "description": "Tags that apply across all languages and frameworks",
+      "tags": [
+        {
+          "name": "character arc",
+          "description": "Generic tag for character arc",
+          "applicableToAll": true
+        },
+        {
+          "name": "story structure",
+          "description": "Generic tag for story structure",
+          "applicableToAll": true
+        },
+        {
+          "name": "character psychology",
+          "description": "Generic tag for character psychology",
+          "applicableToAll": true
+        },
+        {
+          "name": "transformation",
+          "description": "Generic tag for transformation",
+          "applicableToAll": true
+        },
+        {
+          "name": "llm-guidance",
+          "description": "Generic tag for llm-guidance",
+          "applicableToAll": true
+        }
+      ]
+    },
+    "language_specific": {
+      "description": "Tags that are specific to certain languages",
+      "rules": {
+        "allowGenericWithSpecific": true,
+        "requireLanguageMatch": true
+      },
+      "tags": {}
+    }
+  },
+  "promptTemplate": {
+    "path": "prompts/user/tony.txt",
+    "variables": {
+      "AVAILABLE_TAGS": "{{tags}}",
+      "LANGUAGE_CONTEXT": "{{language}}",
+      "FRAMEWORK_CONTEXT": "{{framework}}"
+    }
+  },
+  "outputRules": {
+    "includeGenericTags": true,
+    "includeLanguageTags": true,
+    "requireLanguageDetection": true,
+    "allowUnknownTags": false
+  }
+}

@@ -1,0 +1,9 @@
+---
+description: code refactoring
+globs: 
+---
+
+# Refactoring
+
+- When asked about refacoring, you should rely on patterns described by Martin Fowler in the Refactoring book
+- When suggesting a refactor, provide a brief explanation based on the Fowler book of why this would be important

@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "filename": "index.json",
+    "version": "1.0",
+    "generated": "2025-01-09T15:37:36.345Z",
+    "count": 15,
+    "domain": "system/compute"
+  },
+  "primitives": [
+    {
+      "name": "clean-code-dry",
+      "description": "Don't Repeat Yourself - Every piece of knowledge must have a single, unambiguous, authoritative representation within a system",
+      "category": "Clean Code Principles",
+      "tags": [
+        "code quality",
+        "maintainability",
+        "clean-code"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/core/dry.md"
+    },
+    {
+      "name": "clean-code-kiss",
+      "description": "KISS - Systems work best when kept simple rather than made complicated",
+      "category": "Clean Code Principles",
+      "tags": [
+        "code quality",
+        "simplicity",
+        "maintainability",
+        "clean-code"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/core/kiss.md"
+    },
+    {
+      "name": "clean-code-yagni",
+      "description": "You Aren't Gonna Need It - Implement things only when you actually need them",
+      "category": "Clean Code Principles",
+      "tags": [
+        "code quality",
+        "minimalism",
+        "pragmatic design",
+        "clean-code"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/core/yagni.md"
+    },
+    {
+      "name": "single-responsibility",
+      "description": "A class or function should have one and only one reason to change, meaning it should have only one job or responsibility",
+      "category": "Clean Code Principles",
+      "tags": [
+        "code quality",
+        "SOLID",
+        "design patterns"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/python/single-responsibility.md"
+    },
+    {
+      "name": "clean-code-pythonic",
+      "description": "Write code that follows Python's philosophy of clarity and simplicity, leveraging language-specific features and idioms",
+      "category": "Clean Code Principles",
+      "tags": [
+        "code quality",
+        "python-specific",
+        "best practices"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/python/pythonic.md"
+    },
+    {
+      "name": "clean-code-pep8",
+      "description": "Follow Python's official style guide PEP 8 for consistent and readable code formatting across Python projects",
+      "category": "Clean Code Principles",
+      "tags": [
+        "code quality",
+        "style guide",
+        "python-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/python/pep.md"
+    },
+    {
+      "name": "guidelines",
+      "description": "Working with AI",
+      "category": "ai interaction",
+      "tags": [
+        "ai",
+        "ai interaction"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/ai/guidelines.md"
+    },
+    {
+      "name": "development-guidelines",
+      "description": "category: Development Best Practices",
+      "category": "Development Best Practices",
+      "tags": [
+        "version control",
+        "code style",
+        "testing"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/dev/guidelines.md"
+    },
+    {
+      "name": "clean-code-node-workers",
+      "description": "Utilize Worker Threads for CPU-intensive tasks to prevent blocking the event loop and improve application performance",
+      "category": "Node.js Design Patterns",
+      "tags": [
+        "concurrency",
+        "performance",
+        "node-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/node/threads.md"
+    },
+    {
+      "name": "clean-code-node-errors",
+      "description": "Implement comprehensive error handling strategies for asynchronous operations in Node.js applications",
+      "category": "Node.js Design Patterns",
+      "tags": [
+        "error handling",
+        "reliability",
+        "node-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/node/errors.md"
+    },
+    {
+      "name": "clean-code-node-streams",
+      "description": "Leverage Node.js streams for efficient data processing, memory management, and backpressure handling",
+      "category": "Node.js Design Patterns",
+      "tags": [
+        "streams",
+        "performance",
+        "node-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/node/streams.md"
+    },
+    {
+      "name": "clean-code-node-events",
+      "description": "Utilize Node.js's built-in EventEmitter for implementing robust event-driven architectures and loose coupling",
+      "category": "Node.js Design Patterns",
+      "tags": [
+        "events",
+        "asynchronous",
+        "node-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/node/events.md"
+    },
+    {
+      "name": "clean-code-ruby-meta",
+      "description": "Use Ruby's metaprogramming capabilities judiciously to create elegant solutions while maintaining code clarity",
+      "category": "Ruby Design Principles",
+      "tags": [
+        "metaprogramming",
+        "dynamic features",
+        "ruby-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/ruby/meta.md"
+    },
+    {
+      "name": "clean-code-ruby-duck",
+      "description": "Focus on object capabilities rather than class inheritance. If it walks like a duck and quacks like a duck, treat it as a duck",
+      "category": "Ruby Design Principles",
+      "tags": [
+        "duck typing",
+        "polymorphism",
+        "ruby-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/ruby/ducktype.md"
+    },
+    {
+      "name": "clean-code-ruby-blocks",
+      "description": "Leverage Ruby's block syntax for creating expressive APIs and implementing the Hollywood Principle (don't call us, we'll call you)",
+      "category": "Ruby Design Principles",
+      "tags": [
+        "blocks",
+        "iterators",
+        "ruby-specific"
+      ],
+      "domain": "system/compute",
+      "path": "data/primitives/system/compute/ruby/blocks.md"
+    }
+  ]
+}

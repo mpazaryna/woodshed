@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-01-13T17:34:23.057Z",
+  "test_path": "system/story/hero",
+  "versions": {
+    "a": "Original version",
+    "b": "Improved version"
+  },
+  "files": [
+    "creative",
+    "requirements",
+    "structure",
+    "base",
+    "improvement",
+    "advanced"
+  ]
+}

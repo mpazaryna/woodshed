@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "xml/": "https://deno.land/x/xml@2.1.1/",
+    "std/": "https://deno.land/std@0.207.0/"
+  }
+}

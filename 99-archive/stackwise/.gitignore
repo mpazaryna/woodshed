@@ -1,0 +1,47 @@
+*.code-workspace
+
+# Ignore everything in the drafts folder
+drafts/*
+data/drafts/*
+
+# Except for README.md
+!drafts/README.md
+
+test_logs/*
+
+# Ignore everything in the drafts folder
+output/*
+data/output/*
+
+# Except for README.md
+!output/README.md
+
+import/*
+#data/import/*
+
+.DS_Store
+src/.DS_Store
+**/.DS_Store
+
+docs/dist/*
+docs/coverage/*
+logs/stackwise.log
+logs/pm2_app.log
+logs/pm2_error.log
+logs/pm2_out.log
+logs/server.log
+
+# Local
+.env
+.stash
+.cursorrules
+
+# generated docs
+docs/dist/*
+steps.txt
+
+
+/backup
+*.log
+
+data/chopper/*.xml

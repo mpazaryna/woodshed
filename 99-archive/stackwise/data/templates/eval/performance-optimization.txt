@@ -1,0 +1,78 @@
+Performance Optimization Rules Evaluation
+--------------------------------------
+
+Evaluate these performance optimization rules considering:
+
+1. Optimization Strategy
+   - Algorithm efficiency
+   - Data structure selection
+   - Memory usage patterns
+   - I/O optimization
+   - Computation distribution
+   - Resource utilization
+   - Bottleneck identification
+
+2. Implementation Details
+   - Code-level optimizations
+   - Memory management techniques
+   - Cache utilization
+   - Thread management
+   - Connection pooling
+   - Resource cleanup
+   - Lazy loading patterns
+
+3. Scalability Considerations
+   - Horizontal scaling capability
+   - Vertical scaling limits
+   - Load balancing requirements
+   - State management
+   - Data partitioning
+   - Replication strategies
+   - Cluster considerations
+
+4. Measurement & Monitoring
+   - Performance metrics
+   - Monitoring implementation
+   - Profiling approach
+   - Benchmark methodology
+   - Alerting thresholds
+   - Debugging tools
+   - Performance testing
+
+5. Resource Management
+   - CPU utilization
+   - Memory footprint
+   - I/O patterns
+   - Network usage
+   - Database optimization
+   - Cache efficiency
+   - Thread pool management
+
+6. Trade-off Analysis
+   - Cost vs. performance
+   - Complexity vs. speed
+   - Memory vs. CPU
+   - Latency vs. throughput
+   - Consistency vs. availability
+   - Maintainability impact
+   - Operational overhead
+
+7. Environment Considerations
+   - Infrastructure requirements
+   - Cloud provider optimizations
+   - Container orchestration
+   - Service mesh impact
+   - Network topology
+   - Storage architecture
+   - Security implications
+
+8. Failure Handling
+   - Degradation strategies
+   - Failover mechanisms
+   - Circuit breakers
+   - Timeout handling
+   - Retry policies
+   - Error budgets
+   - Recovery procedures
+
+Evaluate how effectively the optimization rules address these aspects and provide specific recommendations for improvement while maintaining performance goals.

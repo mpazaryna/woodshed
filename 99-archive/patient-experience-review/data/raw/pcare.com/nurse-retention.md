@@ -1,0 +1,20 @@
+# Nurse Retention - pCare Interactive Patient System
+
+Attracting and retaining qualified nurses has reached a critical breaking point in healthcare facilities across the country. As administrators see monetary and scheduling incentives fall short in meeting staffing goals, it may be time to invest in a system that improves the overall experience, not just for patients, but also for providers and staff.
+Nurses are increasingly encountering verbal andphysical abuse from frustrated COVID patients that isdriving them from their jobs.
+Current Bedside Nurse Vacancy Rate 2022 2
+1. The gathering storm: The transformative impact of inflation on the healthcare sector, September 19, 2022.  McKinsey & Company. https://www.mckinsey.com/industries/healthcare-systems-and-services/our-insights/the-gathering-storm-the-transformative-impact-of-inflation-on-the-healthcare-sector
+2.  2022 NSI National Health Care  Retention & RN Staffing Report, March 2022 NSi Solutions. https://www.mckinsey.com/industries/healthcare-systems-and-services/our-insights/the-gathering-storm-the-transformative-impact-of-inflation-on-the-healthcare-sector
+97% of respondents reported deploying a tactic over the last three months to keep their nursing numbers up. Unfortunately, these top tactics don’t address a core contributor to nurse retention issues: improving the work environment. Among the failing recruitment and retention strategies are:
+Don’t underestimate the power the right IPS can have in improving the job experience for your nurses. Throwing money at a problem only goes so far.  And it really doesn’t solve the underlying issues. The pCare IPS is designed to make the job itself more enjoyable. This big-picture thinking solves problems, rather than just treating symptoms.
+By streamlining healthcare processes, pCare helps hospitals operate more efficiently. When nurses feel like their time is valued and they are engaged in fulfilling work, they are less motivated to leave their roles. With end-to-end integration, tasks are routed directly to support staff allowing nurses to practice at the top of their license, creating a productive healthcare facility.
+Job satisfaction comes when nurses know they are having an impact and their core matters. By fostering collaboration and communication, the pCare IPS helps improve patient self-efficacy in their ability to manage care post-discharge. Nurses report “the (IPS education) view rates… makes the team much more confident in the quality of care they are able to provide.”
+The pCare IPS includes capabilities that empower patients to manage nonclinical tasks such as ordering a meal, changing the room temperature or lighting, and placing a service request for cleaning. This not only provides patients a sense of control in an unfamiliar place but also boosts job satisfaction in nurses by allowing them to focus more fully on clinical care.
+1979 Marcus Avenue, Suite 226Lake Success, NY 11042
+pCare uses cookies to ensure that we give you the best experience on our website. You can find out more about which cookies we are using or switch them off in settings.
+This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.
+Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.
+If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again.
+This website uses Google Analytics to collect anonymous information such as the number of visitors to the site, and the most popular pages.
+Keeping this cookie enabled helps us to improve our website.
+Please enable Strictly Necessary Cookies first so that we can save your preferences!

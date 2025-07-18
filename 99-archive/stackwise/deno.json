@@ -1,0 +1,38 @@
+{
+  "tasks": {
+    "test": "deno test --allow-read",
+    "server": "deno run --allow-read --allow-write --allow-net --allow-env --allow-run src/server.ts",
+    "check": "deno check **/*.ts",
+    "gen_index": "deno run --allow-read --allow-write src/gen_index_markdown.ts",
+    "gen_config": "deno run --allow-read --allow-write src/gen_configs_markdown.ts",
+    "gen_templates": "deno run --allow-read --allow-write src/gen_templates_markdown.ts",
+    "import": "deno run --allow-read --allow-write src/importer_markdown.ts",
+    "eval_import": "deno run --allow-read --allow-write --allow-env --allow-net src/eval_facade.ts --file=./data/chopper/fastapi-guidelines.xml",
+    "cli_compose": "deno run --allow-read --allow-write --allow-env --allow-net src/cli_compose_markdown.ts",
+    "doc": "deno doc --html --name='Stackwise' --output=docs/dist/api ./src/**/*.ts",
+    "ai_compose": "deno run --allow-read --allow-write --allow-net --allow-env --env src/ai_compose_markdown.ts",
+    "chopper": "deno run --allow-read --allow-write --allow-net --allow-env src/chopper_markdown.ts",
+    "eval_aic": "deno run --allow-read --allow-write --allow-env --allow-net src/eval_facade.ts --file=./data/tmp/aic.xml",
+    "story_compose": "deno run --allow-read --allow-write --allow-env --allow-net src/story_compose.ts --story-framework=hero --markdown=true",
+    "prep_ab": "deno run --allow-read --allow-write src/prep_ab.ts --dir ./data/primitives/system/story/[framework]"
+  },
+  "fmt": {
+    "files": {
+      "include": ["**/*.ts", "**/*.json", "**/*.xml"]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 80,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  },
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["deno.window"],
+    "checkJs": false
+  },
+  "unstable": ["broadcast-channel", "worker-options"],
+  "importMap": "./import_map.json"
+} 

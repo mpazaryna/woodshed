@@ -1,0 +1,72 @@
+Convert this TypeScript rule definition to structured XML with semantic elements.
+
+Convert to this structure:
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="{name}">
+  <meta>
+    <id>{id}</id>
+    <name>{ruleName}</name>
+    <tags>{tags}</tags>
+    <metadata>
+      <author>{authorEmail}</author>
+      <created>{created}</created>
+      <modified>{modified}</modified>
+    </metadata>
+  </meta>
+  <primitive>
+    <principles>
+      <principle name="Language">
+        <rule>Use English for all code and documentation</rule>
+      </principle>
+      <principle name="Types">
+        <rules>
+          <rule>Declare types for variables and functions</rule>
+          <rule>Avoid using any</rule>
+          <rule>Create necessary custom types</rule>
+        </rules>
+      </principle>
+    </principles>
+    
+    <naming>
+      <convention type="Classes">
+        <pattern>PascalCase</pattern>
+        <examples>
+          <example>UserService</example>
+        </examples>
+      </convention>
+      <convention type="Variables">
+        <pattern>camelCase</pattern>
+        <examples>
+          <example>userId</example>
+        </examples>
+      </convention>
+    </naming>
+    
+    <functions>
+      <guideline name="Length">
+        <rule>Write short functions with single purpose</rule>
+        <constraint>Less than 20 instructions</constraint>
+      </guideline>
+      <guideline name="Parameters">
+        <rule>Use RO-RO pattern for multiple parameters</rule>
+        <rule>Use default parameter values</rule>
+      </guideline>
+    </functions>
+    
+    <practices>
+      <category name="Testing">
+        <practice>Follow Arrange-Act-Assert convention</practice>
+        <practice>Write unit tests for public functions</practice>
+      </category>
+      <category name="Error Handling">
+        <practice>Use exceptions for unexpected errors</practice>
+        <practice>Add context when catching exceptions</practice>
+      </category>
+    </practices>
+  </primitive>
+</template>
+
+Content to convert:
+{ts_content}
+
+Return only valid XML with semantic structure. 

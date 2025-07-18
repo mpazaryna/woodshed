@@ -1,0 +1,95 @@
+{
+  "domain": {
+    "name": "system/art",
+    "version": "1.0",
+    "description": "system/art domain configuration",
+    "filterStrategy": "language-specific"
+  },
+  "contextTypes": {
+    "languages": [],
+    "categories": [
+      "watercolor-theory.md",
+      "Watercolor Color Management",
+      "watercolor-technique.md",
+      "Watercolor Painting Fundamentals",
+      "collage-layering.md",
+      "Montage Art Layering",
+      "collage.md",
+      "Montage Art Fundamentals"
+    ]
+  },
+  "tagTypes": {
+    "generic": {
+      "description": "Tags that apply across all languages and frameworks",
+      "tags": [
+        {
+          "name": "color theory",
+          "description": "Generic tag for color theory",
+          "applicableToAll": true
+        },
+        {
+          "name": "color mixing",
+          "description": "Generic tag for color mixing",
+          "applicableToAll": true
+        },
+        {
+          "name": "palette management",
+          "description": "Generic tag for palette management",
+          "applicableToAll": true
+        },
+        {
+          "name": "painting techniques",
+          "description": "Generic tag for painting techniques",
+          "applicableToAll": true
+        },
+        {
+          "name": "beginner level",
+          "description": "Generic tag for beginner level",
+          "applicableToAll": true
+        },
+        {
+          "name": "foundation skills",
+          "description": "Generic tag for foundation skills",
+          "applicableToAll": true
+        },
+        {
+          "name": "collage techniques",
+          "description": "Generic tag for collage techniques",
+          "applicableToAll": true
+        },
+        {
+          "name": "layering",
+          "description": "Generic tag for layering",
+          "applicableToAll": true
+        },
+        {
+          "name": "mixed media",
+          "description": "Generic tag for mixed media",
+          "applicableToAll": true
+        }
+      ]
+    },
+    "language_specific": {
+      "description": "Tags that are specific to certain languages",
+      "rules": {
+        "allowGenericWithSpecific": true,
+        "requireLanguageMatch": true
+      },
+      "tags": {}
+    }
+  },
+  "promptTemplate": {
+    "path": "prompts/system/art.txt",
+    "variables": {
+      "AVAILABLE_TAGS": "{{tags}}",
+      "LANGUAGE_CONTEXT": "{{language}}",
+      "FRAMEWORK_CONTEXT": "{{framework}}"
+    }
+  },
+  "outputRules": {
+    "includeGenericTags": true,
+    "includeLanguageTags": true,
+    "requireLanguageDetection": true,
+    "allowUnknownTags": false
+  }
+}

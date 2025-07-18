@@ -1,0 +1,1 @@
+deno run --allow-read --allow-write --allow-env --env-file=.env src/create.ts

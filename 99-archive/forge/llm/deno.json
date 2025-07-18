@@ -1,0 +1,35 @@
+{
+  "name": "@forge/llm",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "test": "deno test --allow-env --allow-net",
+    "test:debug": "deno test --allow-env --allow-net --env=LLM_LOG_LEVEL=debug",
+    "test:cov": "deno test --allow-env --allow-net --coverage=coverage",
+    "test:cov-report": "deno coverage --lcov coverage --output=coverage.lcov && deno coverage coverage",
+    "test:cov-html": "deno coverage coverage --html"
+  },
+  "fmt": {
+    "include": ["src/", "tests/", "examples/"],
+    "lineWidth": 80,
+    "singleQuote": true
+  },
+  "compilerOptions": {
+    "lib": ["deno.window", "deno.ns", "dom"],
+    "strict": true
+  },
+  "imports": {
+    "@forge/llm/": "./src/",
+    "std/": "https://deno.land/std@0.224.0/"
+  },
+  "publish": {
+    "exclude": [
+      "coverage/",
+      "examples/",
+      "tests/",
+      ".github/",
+      "*.test.ts",
+      "*.md"
+    ]
+  }
+} 

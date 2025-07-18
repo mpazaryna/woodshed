@@ -1,0 +1,17 @@
+# Veteran Solutions - Integration with VistA / CPRs | eVideon
+
+Designed to fit within the existing clinical workflows and software requirements of the VA, we are uniquely positioned to provide Veterans and their loved ones with more options, increased independence, and improved communication throughout their healthcare journey.
+As the first Interactive Patient Care System to have a bidirectional integration with VistA/CPRS in 2013, we committed to supporting the migration and integration needs of the EHR Modernization Program.
+We are proudly deployed on 1,700+ devices in VA hospitals across the country. We work closely with each of our VA partners to understand the unique needs of their facility and simplify clinical workflow for their staff. Beyond Vista/CPRS integrations, deployments can also offer the following:
+Using the electronic health record (EHR), the nurse assigns educational content to a Veteran
+eVideon receives this assignment and makes the appropriate media available on the in-room television
+The Veteran’s viewing history and assessment results flow automatically back into the EHR
+When Veterans can start the education process on their own with high-quality videos – especially for complex diagnoses like heart disease or diabetes – they have the chance to think about what they’ve learned and prepare questions.
+For Veterans with literacy challenges, video presentations are retained better than handouts. Educational videos are available on a wide range of topics and facilities can access our free VA Health Library.
+Utilize bedside tablets or assistive devices to provide Veterans and their loved ones with access to VHA resources such as My HealtheVet and Connected Health Apps.
+Examples from recent deployments include:
+Gather real-time feedback from Veterans to better support their needs and proactively measure clinical quality and satisfaction initiatives. When an urban VA Medical Center wanted to create a program to address quiet at night, they implemented a survey on their Engage TV menu to proactively gather data, then used that data to shape an improvement plan.
+Access to real-time data streamlines service recovery. When a Veteran responds to a survey question in a predetermined way, such as a negative response to a question, eVideon sends a message to the appropriate staff member for service recovery. This allows issues or perceived problems to be quickly and efficiently addressed.
+eVideon reduces non-medical Veteran calls for nurses and automatically directs requests to appropriate staff members. Veterans can easily request assistance or non-medical services such as a chaplain visit and housekeeping. This reduces time spent waiting for assistance and increases staff efficiencies.
+Studies show that views of nature can help Veterans with PTSD relax. Harmonia combines the beauty of nature with musical compositions to reduce stress and anxiety and promote feelings of well-being. Sleep Aid helps mask normal hospital sounds; Veterans see a “night-light” screen and can choose to hear static (brown noise), fan, waves or soothing forest sounds.
+Veterans and their families access hospital information like maps, directions, cafeteria and gift information as well as community information like hotels, restaurants and shopping. Your hospital can also post resources like VA programs, community social services, crisis hotlines or hospital resources like My HealtheVet.

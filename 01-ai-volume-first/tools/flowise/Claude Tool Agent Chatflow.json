@@ -1,0 +1,780 @@
+{
+  "nodes": [
+    {
+      "id": "toolAgent_0",
+      "position": {
+        "x": 541.1183083273127,
+        "y": 373.77226431608494
+      },
+      "type": "customNode",
+      "data": {
+        "id": "toolAgent_0",
+        "label": "Tool Agent",
+        "version": 1,
+        "name": "toolAgent",
+        "type": "AgentExecutor",
+        "baseClasses": [
+          "AgentExecutor",
+          "BaseChain",
+          "Runnable"
+        ],
+        "category": "Agents",
+        "description": "Agent that uses Function Calling to pick the tools and args to call",
+        "inputParams": [
+          {
+            "label": "System Message",
+            "name": "systemMessage",
+            "type": "string",
+            "default": "You are a helpful AI assistant.",
+            "rows": 4,
+            "optional": true,
+            "additionalParams": true,
+            "id": "toolAgent_0-input-systemMessage-string"
+          },
+          {
+            "label": "Max Iterations",
+            "name": "maxIterations",
+            "type": "number",
+            "optional": true,
+            "additionalParams": true,
+            "id": "toolAgent_0-input-maxIterations-number"
+          }
+        ],
+        "inputAnchors": [
+          {
+            "label": "Tools",
+            "name": "tools",
+            "type": "Tool",
+            "list": true,
+            "id": "toolAgent_0-input-tools-Tool"
+          },
+          {
+            "label": "Memory",
+            "name": "memory",
+            "type": "BaseChatMemory",
+            "id": "toolAgent_0-input-memory-BaseChatMemory"
+          },
+          {
+            "label": "Tool Calling Chat Model",
+            "name": "model",
+            "type": "BaseChatModel",
+            "description": "Only compatible with models that are capable of function calling. ChatOpenAI, ChatMistral, ChatAnthropic, ChatVertexAI",
+            "id": "toolAgent_0-input-model-BaseChatModel"
+          },
+          {
+            "label": "Input Moderation",
+            "description": "Detect text that could generate harmful output and prevent it from being sent to the language model",
+            "name": "inputModeration",
+            "type": "Moderation",
+            "optional": true,
+            "list": true,
+            "id": "toolAgent_0-input-inputModeration-Moderation"
+          }
+        ],
+        "inputs": {
+          "tools": [
+            "{{calculator_0.data.instance}}",
+            "{{serpAPI_0.data.instance}}",
+            "{{retrieverTool_0.data.instance}}"
+          ],
+          "memory": "{{bufferMemory_0.data.instance}}",
+          "model": "{{chatAnthropic_0.data.instance}}",
+          "systemMessage": "You are a helpful AI assistant.",
+          "inputModeration": "",
+          "maxIterations": ""
+        },
+        "outputAnchors": [
+          {
+            "id": "toolAgent_0-output-toolAgent-AgentExecutor|BaseChain|Runnable",
+            "name": "toolAgent",
+            "label": "AgentExecutor",
+            "description": "Agent that uses Function Calling to pick the tools and args to call",
+            "type": "AgentExecutor | BaseChain | Runnable"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 430,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 541.1183083273127,
+        "y": 373.77226431608494
+      },
+      "dragging": false
+    },
+    {
+      "id": "chatAnthropic_0",
+      "position": {
+        "x": 154.25216538515463,
+        "y": 268.6731989858556
+      },
+      "type": "customNode",
+      "data": {
+        "id": "chatAnthropic_0",
+        "label": "ChatAnthropic",
+        "version": 6,
+        "name": "chatAnthropic",
+        "type": "ChatAnthropic",
+        "baseClasses": [
+          "ChatAnthropic",
+          "ChatAnthropicMessages",
+          "BaseChatModel",
+          "BaseLanguageModel",
+          "Runnable"
+        ],
+        "category": "Chat Models",
+        "description": "Wrapper around ChatAnthropic large language models that use the Chat endpoint",
+        "inputParams": [
+          {
+            "label": "Connect Credential",
+            "name": "credential",
+            "type": "credential",
+            "credentialNames": [
+              "anthropicApi"
+            ],
+            "id": "chatAnthropic_0-input-credential-credential"
+          },
+          {
+            "label": "Model Name",
+            "name": "modelName",
+            "type": "asyncOptions",
+            "loadMethod": "listModels",
+            "default": "claude-3-haiku",
+            "id": "chatAnthropic_0-input-modelName-asyncOptions"
+          },
+          {
+            "label": "Temperature",
+            "name": "temperature",
+            "type": "number",
+            "step": 0.1,
+            "default": 0.9,
+            "optional": true,
+            "id": "chatAnthropic_0-input-temperature-number"
+          },
+          {
+            "label": "Max Tokens",
+            "name": "maxTokensToSample",
+            "type": "number",
+            "step": 1,
+            "optional": true,
+            "additionalParams": true,
+            "id": "chatAnthropic_0-input-maxTokensToSample-number"
+          },
+          {
+            "label": "Top P",
+            "name": "topP",
+            "type": "number",
+            "step": 0.1,
+            "optional": true,
+            "additionalParams": true,
+            "id": "chatAnthropic_0-input-topP-number"
+          },
+          {
+            "label": "Top K",
+            "name": "topK",
+            "type": "number",
+            "step": 0.1,
+            "optional": true,
+            "additionalParams": true,
+            "id": "chatAnthropic_0-input-topK-number"
+          },
+          {
+            "label": "Allow Image Uploads",
+            "name": "allowImageUploads",
+            "type": "boolean",
+            "description": "Automatically uses claude-3-* models when image is being uploaded from chat. Only works with LLMChain, Conversation Chain, ReAct Agent, and Conversational Agent",
+            "default": false,
+            "optional": true,
+            "id": "chatAnthropic_0-input-allowImageUploads-boolean"
+          }
+        ],
+        "inputAnchors": [
+          {
+            "label": "Cache",
+            "name": "cache",
+            "type": "BaseCache",
+            "optional": true,
+            "id": "chatAnthropic_0-input-cache-BaseCache"
+          }
+        ],
+        "inputs": {
+          "cache": "",
+          "modelName": "claude-3-opus-20240229",
+          "temperature": "0.2",
+          "maxTokensToSample": "",
+          "topP": "",
+          "topK": "",
+          "allowImageUploads": false
+        },
+        "outputAnchors": [
+          {
+            "id": "chatAnthropic_0-output-chatAnthropic-ChatAnthropic|ChatAnthropicMessages|BaseChatModel|BaseLanguageModel|Runnable",
+            "name": "chatAnthropic",
+            "label": "ChatAnthropic",
+            "description": "Wrapper around ChatAnthropic large language models that use the Chat endpoint",
+            "type": "ChatAnthropic | ChatAnthropicMessages | BaseChatModel | BaseLanguageModel | Runnable"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 664,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 154.25216538515463,
+        "y": 268.6731989858556
+      },
+      "dragging": false
+    },
+    {
+      "id": "bufferMemory_0",
+      "position": {
+        "x": 539.7889488790375,
+        "y": 92.55752515416975
+      },
+      "type": "customNode",
+      "data": {
+        "id": "bufferMemory_0",
+        "label": "Buffer Memory",
+        "version": 2,
+        "name": "bufferMemory",
+        "type": "BufferMemory",
+        "baseClasses": [
+          "BufferMemory",
+          "BaseChatMemory",
+          "BaseMemory"
+        ],
+        "category": "Memory",
+        "description": "Retrieve chat messages stored in database",
+        "inputParams": [
+          {
+            "label": "Session Id",
+            "name": "sessionId",
+            "type": "string",
+            "description": "If not specified, a random id will be used. Learn <a target=\"_blank\" href=\"https://docs.flowiseai.com/memory#ui-and-embedded-chat\">more</a>",
+            "default": "",
+            "additionalParams": true,
+            "optional": true,
+            "id": "bufferMemory_0-input-sessionId-string"
+          },
+          {
+            "label": "Memory Key",
+            "name": "memoryKey",
+            "type": "string",
+            "default": "chat_history",
+            "additionalParams": true,
+            "id": "bufferMemory_0-input-memoryKey-string"
+          }
+        ],
+        "inputAnchors": [],
+        "inputs": {
+          "sessionId": "",
+          "memoryKey": "chat_history"
+        },
+        "outputAnchors": [
+          {
+            "id": "bufferMemory_0-output-bufferMemory-BufferMemory|BaseChatMemory|BaseMemory",
+            "name": "bufferMemory",
+            "label": "BufferMemory",
+            "description": "Retrieve chat messages stored in database",
+            "type": "BufferMemory | BaseChatMemory | BaseMemory"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 250,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 539.7889488790375,
+        "y": 92.55752515416975
+      },
+      "dragging": false
+    },
+    {
+      "id": "calculator_0",
+      "position": {
+        "x": 905.6541826857256,
+        "y": 384.75861792595407
+      },
+      "type": "customNode",
+      "data": {
+        "id": "calculator_0",
+        "label": "Calculator",
+        "version": 1,
+        "name": "calculator",
+        "type": "Calculator",
+        "baseClasses": [
+          "Calculator",
+          "Tool",
+          "StructuredTool",
+          "Runnable"
+        ],
+        "category": "Tools",
+        "description": "Perform calculations on response",
+        "inputParams": [],
+        "inputAnchors": [],
+        "inputs": {},
+        "outputAnchors": [
+          {
+            "id": "calculator_0-output-calculator-Calculator|Tool|StructuredTool|Runnable",
+            "name": "calculator",
+            "label": "Calculator",
+            "description": "Perform calculations on response",
+            "type": "Calculator | Tool | StructuredTool | Runnable"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 142,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 905.6541826857256,
+        "y": 384.75861792595407
+      },
+      "dragging": false
+    },
+    {
+      "id": "serpAPI_0",
+      "position": {
+        "x": 903.1987113178955,
+        "y": 548.0474638866573
+      },
+      "type": "customNode",
+      "data": {
+        "id": "serpAPI_0",
+        "label": "Serp API",
+        "version": 1,
+        "name": "serpAPI",
+        "type": "SerpAPI",
+        "baseClasses": [
+          "SerpAPI",
+          "Tool",
+          "StructuredTool",
+          "Runnable"
+        ],
+        "category": "Tools",
+        "description": "Wrapper around SerpAPI - a real-time API to access Google search results",
+        "inputParams": [
+          {
+            "label": "Connect Credential",
+            "name": "credential",
+            "type": "credential",
+            "credentialNames": [
+              "serpApi"
+            ],
+            "id": "serpAPI_0-input-credential-credential"
+          }
+        ],
+        "inputAnchors": [],
+        "inputs": {},
+        "outputAnchors": [
+          {
+            "id": "serpAPI_0-output-serpAPI-SerpAPI|Tool|StructuredTool|Runnable",
+            "name": "serpAPI",
+            "label": "SerpAPI",
+            "description": "Wrapper around SerpAPI - a real-time API to access Google search results",
+            "type": "SerpAPI | Tool | StructuredTool | Runnable"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 273,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 903.1987113178955,
+        "y": 548.0474638866573
+      }
+    },
+    {
+      "id": "retrieverTool_0",
+      "position": {
+        "x": 535.0071912214581,
+        "y": 847.614970761932
+      },
+      "type": "customNode",
+      "data": {
+        "id": "retrieverTool_0",
+        "label": "Retriever Tool",
+        "version": 2,
+        "name": "retrieverTool",
+        "type": "RetrieverTool",
+        "baseClasses": [
+          "RetrieverTool",
+          "DynamicTool",
+          "Tool",
+          "StructuredTool",
+          "Runnable"
+        ],
+        "category": "Tools",
+        "description": "Use a retriever as allowed tool for agent",
+        "inputParams": [
+          {
+            "label": "Retriever Name",
+            "name": "name",
+            "type": "string",
+            "placeholder": "search_state_of_union",
+            "id": "retrieverTool_0-input-name-string"
+          },
+          {
+            "label": "Retriever Description",
+            "name": "description",
+            "type": "string",
+            "description": "When should agent uses to retrieve documents",
+            "rows": 3,
+            "placeholder": "Searches and returns documents regarding the state-of-the-union.",
+            "id": "retrieverTool_0-input-description-string"
+          },
+          {
+            "label": "Return Source Documents",
+            "name": "returnSourceDocuments",
+            "type": "boolean",
+            "optional": true,
+            "id": "retrieverTool_0-input-returnSourceDocuments-boolean"
+          }
+        ],
+        "inputAnchors": [
+          {
+            "label": "Retriever",
+            "name": "retriever",
+            "type": "BaseRetriever",
+            "id": "retrieverTool_0-input-retriever-BaseRetriever"
+          }
+        ],
+        "inputs": {
+          "name": "yoga_retriever",
+          "description": "Use this tool when asked questions about the Eight Aspects of Yoga. ",
+          "retriever": "{{pinecone_0.data.instance}}",
+          "returnSourceDocuments": true
+        },
+        "outputAnchors": [
+          {
+            "id": "retrieverTool_0-output-retrieverTool-RetrieverTool|DynamicTool|Tool|StructuredTool|Runnable",
+            "name": "retrieverTool",
+            "label": "RetrieverTool",
+            "description": "Use a retriever as allowed tool for agent",
+            "type": "RetrieverTool | DynamicTool | Tool | StructuredTool | Runnable"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 599,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 535.0071912214581,
+        "y": 847.614970761932
+      },
+      "dragging": false
+    },
+    {
+      "id": "pinecone_0",
+      "position": {
+        "x": 158.97219828165143,
+        "y": 970.7607676178982
+      },
+      "type": "customNode",
+      "data": {
+        "id": "pinecone_0",
+        "label": "Pinecone",
+        "version": 3,
+        "name": "pinecone",
+        "type": "Pinecone",
+        "baseClasses": [
+          "Pinecone",
+          "VectorStoreRetriever",
+          "BaseRetriever"
+        ],
+        "category": "Vector Stores",
+        "description": "Upsert embedded data and perform similarity or mmr search using Pinecone, a leading fully managed hosted vector database",
+        "inputParams": [
+          {
+            "label": "Connect Credential",
+            "name": "credential",
+            "type": "credential",
+            "credentialNames": [
+              "pineconeApi"
+            ],
+            "id": "pinecone_0-input-credential-credential"
+          },
+          {
+            "label": "Pinecone Index",
+            "name": "pineconeIndex",
+            "type": "string",
+            "id": "pinecone_0-input-pineconeIndex-string"
+          },
+          {
+            "label": "Pinecone Namespace",
+            "name": "pineconeNamespace",
+            "type": "string",
+            "placeholder": "my-first-namespace",
+            "additionalParams": true,
+            "optional": true,
+            "id": "pinecone_0-input-pineconeNamespace-string"
+          },
+          {
+            "label": "Pinecone Metadata Filter",
+            "name": "pineconeMetadataFilter",
+            "type": "json",
+            "optional": true,
+            "additionalParams": true,
+            "id": "pinecone_0-input-pineconeMetadataFilter-json"
+          },
+          {
+            "label": "Top K",
+            "name": "topK",
+            "description": "Number of top results to fetch. Default to 4",
+            "placeholder": "4",
+            "type": "number",
+            "additionalParams": true,
+            "optional": true,
+            "id": "pinecone_0-input-topK-number"
+          },
+          {
+            "label": "Search Type",
+            "name": "searchType",
+            "type": "options",
+            "default": "similarity",
+            "options": [
+              {
+                "label": "Similarity",
+                "name": "similarity"
+              },
+              {
+                "label": "Max Marginal Relevance",
+                "name": "mmr"
+              }
+            ],
+            "additionalParams": true,
+            "optional": true,
+            "id": "pinecone_0-input-searchType-options"
+          },
+          {
+            "label": "Fetch K (for MMR Search)",
+            "name": "fetchK",
+            "description": "Number of initial documents to fetch for MMR reranking. Default to 20. Used only when the search type is MMR",
+            "placeholder": "20",
+            "type": "number",
+            "additionalParams": true,
+            "optional": true,
+            "id": "pinecone_0-input-fetchK-number"
+          },
+          {
+            "label": "Lambda (for MMR Search)",
+            "name": "lambda",
+            "description": "Number between 0 and 1 that determines the degree of diversity among the results, where 0 corresponds to maximum diversity and 1 to minimum diversity. Used only when the search type is MMR",
+            "placeholder": "0.5",
+            "type": "number",
+            "additionalParams": true,
+            "optional": true,
+            "id": "pinecone_0-input-lambda-number"
+          }
+        ],
+        "inputAnchors": [
+          {
+            "label": "Document",
+            "name": "document",
+            "type": "Document",
+            "list": true,
+            "optional": true,
+            "id": "pinecone_0-input-document-Document"
+          },
+          {
+            "label": "Embeddings",
+            "name": "embeddings",
+            "type": "Embeddings",
+            "id": "pinecone_0-input-embeddings-Embeddings"
+          },
+          {
+            "label": "Record Manager",
+            "name": "recordManager",
+            "type": "RecordManager",
+            "description": "Keep track of the record to prevent duplication",
+            "optional": true,
+            "id": "pinecone_0-input-recordManager-RecordManager"
+          }
+        ],
+        "inputs": {
+          "document": "",
+          "embeddings": "{{voyageAIEmbeddings_0.data.instance}}",
+          "recordManager": "",
+          "pineconeIndex": "yoga-kb",
+          "pineconeNamespace": "",
+          "pineconeMetadataFilter": "",
+          "topK": "",
+          "searchType": "similarity",
+          "fetchK": "",
+          "lambda": ""
+        },
+        "outputAnchors": [
+          {
+            "name": "output",
+            "label": "Output",
+            "type": "options",
+            "description": "",
+            "options": [
+              {
+                "id": "pinecone_0-output-retriever-Pinecone|VectorStoreRetriever|BaseRetriever",
+                "name": "retriever",
+                "label": "Pinecone Retriever",
+                "description": "",
+                "type": "Pinecone | VectorStoreRetriever | BaseRetriever"
+              },
+              {
+                "id": "pinecone_0-output-vectorStore-Pinecone|VectorStore",
+                "name": "vectorStore",
+                "label": "Pinecone Vector Store",
+                "description": "",
+                "type": "Pinecone | VectorStore"
+              }
+            ],
+            "default": "retriever"
+          }
+        ],
+        "outputs": {
+          "output": "retriever"
+        },
+        "selected": false
+      },
+      "width": 300,
+      "height": 600,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 158.97219828165143,
+        "y": 970.7607676178982
+      },
+      "dragging": false
+    },
+    {
+      "id": "voyageAIEmbeddings_0",
+      "position": {
+        "x": -219.95949930350304,
+        "y": 972.0745333443904
+      },
+      "type": "customNode",
+      "data": {
+        "id": "voyageAIEmbeddings_0",
+        "label": "VoyageAI Embeddings",
+        "version": 2,
+        "name": "voyageAIEmbeddings",
+        "type": "VoyageAIEmbeddings",
+        "baseClasses": [
+          "VoyageAIEmbeddings",
+          "Embeddings"
+        ],
+        "category": "Embeddings",
+        "description": "Voyage AI API to generate embeddings for a given text",
+        "inputParams": [
+          {
+            "label": "Connect Credential",
+            "name": "credential",
+            "type": "credential",
+            "credentialNames": [
+              "voyageAIApi"
+            ],
+            "id": "voyageAIEmbeddings_0-input-credential-credential"
+          },
+          {
+            "label": "Model Name",
+            "name": "modelName",
+            "type": "asyncOptions",
+            "loadMethod": "listModels",
+            "default": "voyage-2",
+            "id": "voyageAIEmbeddings_0-input-modelName-asyncOptions"
+          }
+        ],
+        "inputAnchors": [],
+        "inputs": {
+          "modelName": "voyage-2"
+        },
+        "outputAnchors": [
+          {
+            "id": "voyageAIEmbeddings_0-output-voyageAIEmbeddings-VoyageAIEmbeddings|Embeddings",
+            "name": "voyageAIEmbeddings",
+            "label": "VoyageAIEmbeddings",
+            "description": "Voyage AI API to generate embeddings for a given text",
+            "type": "VoyageAIEmbeddings | Embeddings"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 368,
+      "positionAbsolute": {
+        "x": -219.95949930350304,
+        "y": 972.0745333443904
+      },
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "chatAnthropic_0",
+      "sourceHandle": "chatAnthropic_0-output-chatAnthropic-ChatAnthropic|ChatAnthropicMessages|BaseChatModel|BaseLanguageModel|Runnable",
+      "target": "toolAgent_0",
+      "targetHandle": "toolAgent_0-input-model-BaseChatModel",
+      "type": "buttonedge",
+      "id": "chatAnthropic_0-chatAnthropic_0-output-chatAnthropic-ChatAnthropic|ChatAnthropicMessages|BaseChatModel|BaseLanguageModel|Runnable-toolAgent_0-toolAgent_0-input-model-BaseChatModel"
+    },
+    {
+      "source": "bufferMemory_0",
+      "sourceHandle": "bufferMemory_0-output-bufferMemory-BufferMemory|BaseChatMemory|BaseMemory",
+      "target": "toolAgent_0",
+      "targetHandle": "toolAgent_0-input-memory-BaseChatMemory",
+      "type": "buttonedge",
+      "id": "bufferMemory_0-bufferMemory_0-output-bufferMemory-BufferMemory|BaseChatMemory|BaseMemory-toolAgent_0-toolAgent_0-input-memory-BaseChatMemory"
+    },
+    {
+      "source": "calculator_0",
+      "sourceHandle": "calculator_0-output-calculator-Calculator|Tool|StructuredTool|Runnable",
+      "target": "toolAgent_0",
+      "targetHandle": "toolAgent_0-input-tools-Tool",
+      "type": "buttonedge",
+      "id": "calculator_0-calculator_0-output-calculator-Calculator|Tool|StructuredTool|Runnable-toolAgent_0-toolAgent_0-input-tools-Tool"
+    },
+    {
+      "source": "serpAPI_0",
+      "sourceHandle": "serpAPI_0-output-serpAPI-SerpAPI|Tool|StructuredTool|Runnable",
+      "target": "toolAgent_0",
+      "targetHandle": "toolAgent_0-input-tools-Tool",
+      "type": "buttonedge",
+      "id": "serpAPI_0-serpAPI_0-output-serpAPI-SerpAPI|Tool|StructuredTool|Runnable-toolAgent_0-toolAgent_0-input-tools-Tool"
+    },
+    {
+      "source": "retrieverTool_0",
+      "sourceHandle": "retrieverTool_0-output-retrieverTool-RetrieverTool|DynamicTool|Tool|StructuredTool|Runnable",
+      "target": "toolAgent_0",
+      "targetHandle": "toolAgent_0-input-tools-Tool",
+      "type": "buttonedge",
+      "id": "retrieverTool_0-retrieverTool_0-output-retrieverTool-RetrieverTool|DynamicTool|Tool|StructuredTool|Runnable-toolAgent_0-toolAgent_0-input-tools-Tool"
+    },
+    {
+      "source": "pinecone_0",
+      "sourceHandle": "pinecone_0-output-retriever-Pinecone|VectorStoreRetriever|BaseRetriever",
+      "target": "retrieverTool_0",
+      "targetHandle": "retrieverTool_0-input-retriever-BaseRetriever",
+      "type": "buttonedge",
+      "id": "pinecone_0-pinecone_0-output-retriever-Pinecone|VectorStoreRetriever|BaseRetriever-retrieverTool_0-retrieverTool_0-input-retriever-BaseRetriever"
+    },
+    {
+      "source": "voyageAIEmbeddings_0",
+      "sourceHandle": "voyageAIEmbeddings_0-output-voyageAIEmbeddings-VoyageAIEmbeddings|Embeddings",
+      "target": "pinecone_0",
+      "targetHandle": "pinecone_0-input-embeddings-Embeddings",
+      "type": "buttonedge",
+      "id": "voyageAIEmbeddings_0-voyageAIEmbeddings_0-output-voyageAIEmbeddings-VoyageAIEmbeddings|Embeddings-pinecone_0-pinecone_0-input-embeddings-Embeddings"
+    }
+  ]
+}

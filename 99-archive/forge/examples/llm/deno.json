@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "start": "deno run --allow-env --allow-net --allow-write=./logs --allow-read=./logs src/main.ts"
+  },
+  "imports": {
+    "@forge/llm": "../../llm/mod.ts"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "filename": "index.json",
+    "version": "1.0",
+    "generated": "2025-01-09T15:37:36.330Z",
+    "count": 1,
+    "domain": "user/tony"
+  },
+  "primitives": [
+    {
+      "name": "screenwriting-character-advanced",
+      "description": "A comprehensive framework for developing character arcs that create emotional investment and meaningful transformation through measurable stages and specific character elements",
+      "category": "Screenwriting Character Development",
+      "tags": [
+        "character arc",
+        "story structure",
+        "character psychology",
+        "transformation",
+        "llm-guidance"
+      ],
+      "domain": "user/tony",
+      "path": "data/primitives/user/tony/arc.md"
+    }
+  ]
+}

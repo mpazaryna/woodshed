@@ -1,0 +1,69 @@
+{
+  "domain": {
+    "name": "user/steph",
+    "version": "1.0",
+    "description": "user/steph domain configuration",
+    "filterStrategy": "language-specific"
+  },
+  "contextTypes": {
+    "languages": [],
+    "categories": [
+      "design-system.md",
+      "Interface Design Systems"
+    ]
+  },
+  "tagTypes": {
+    "generic": {
+      "description": "Tags that apply across all languages and frameworks",
+      "tags": [
+        {
+          "name": "ui design",
+          "description": "Generic tag for ui design",
+          "applicableToAll": true
+        },
+        {
+          "name": "advanced patterns",
+          "description": "Generic tag for advanced patterns",
+          "applicableToAll": true
+        },
+        {
+          "name": "design systems",
+          "description": "Generic tag for design systems",
+          "applicableToAll": true
+        },
+        {
+          "name": "interaction design",
+          "description": "Generic tag for interaction design",
+          "applicableToAll": true
+        },
+        {
+          "name": "accessibility",
+          "description": "Generic tag for accessibility",
+          "applicableToAll": true
+        }
+      ]
+    },
+    "language_specific": {
+      "description": "Tags that are specific to certain languages",
+      "rules": {
+        "allowGenericWithSpecific": true,
+        "requireLanguageMatch": true
+      },
+      "tags": {}
+    }
+  },
+  "promptTemplate": {
+    "path": "prompts/user/steph.txt",
+    "variables": {
+      "AVAILABLE_TAGS": "{{tags}}",
+      "LANGUAGE_CONTEXT": "{{language}}",
+      "FRAMEWORK_CONTEXT": "{{framework}}"
+    }
+  },
+  "outputRules": {
+    "includeGenericTags": true,
+    "includeLanguageTags": true,
+    "requireLanguageDetection": true,
+    "allowUnknownTags": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "filename": "index.json",
+    "version": "1.0",
+    "generated": "2025-01-09T15:37:36.335Z",
+    "count": 2,
+    "domain": "user/paz"
+  },
+  "primitives": [
+    {
+      "name": "code-refactoring-fundamentals",
+      "description": "Systematic process of restructuring existing computer code without changing its external behavior, focusing on improving non-functional attributes of the software",
+      "category": "Software Engineering Best Practices",
+      "tags": [
+        "refactoring",
+        "code quality",
+        "clean code"
+      ],
+      "domain": "user/paz",
+      "path": "data/primitives/user/paz/refactor.md"
+    },
+    {
+      "name": "integration-first-development",
+      "description": "A systematic approach to software development that prioritizes service integration, real-world testing, and systematic refactoring while embracing AI-assisted development practices",
+      "category": "Software Engineering Methodology",
+      "tags": [
+        "integration-first",
+        "development-methodology",
+        "ai-assisted-development",
+        "systematic-refactoring",
+        "integration-testing"
+      ],
+      "domain": "user/paz",
+      "path": "data/primitives/user/paz/integration-first-dev.md"
+    }
+  ]
+}

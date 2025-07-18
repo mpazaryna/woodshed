@@ -1,0 +1,16 @@
+# Vibe Health Platform
+
+The only platform purpose-built to transform the care experience for patients, families, and clinicians with smart room technology that enhances clinical workflow and delivers safe, high-quality care for all.
+Drive more value from IT investments by integrating with the EMR, and other installed technology, to turn the patient room into an extension of the care team and capture real-time feedback that keep leaders informed.
+Alleviate nurses of non-clinical responsibilities with paperless workflows and automation that eliminates administrative tasks and reduces documentation so  nurses can practice at the top of their license.
+Elevate the experience for patients, families, and staff with technology that provides more meaningful interactions and ensures a frictionless experience throughout the care journey.
+Amplify the voice of the patient and their loved ones with personalized communication, tailored education, and self-service tools to increase satisfaction, foster loyalty, and improve outcomes. Vibe Health makes information accessible across multiple devices, in preferred languages, and invites patients to provide feedback, submit service requests, and actively engage in their care plan.
+Automate clinical workflows and non-clinical service requests by integrating in-room technology with the EMR and other installed technologies to create clinical efficiency and enable nurses and clinical care teams to spend more time focused on direct patient care
+Our smart room technology enables patients, families and clinicians to make more meaningful connections. Vibe Health provides real-time access to critical health information. We enable our hospital partners to elevate the care experience for all healthcare consumers as well as their most valuable asset, their workforce.
+Vibe Health is designed with the clinical workflow in mind to reduce the technology burden on nurses and clinical care teams while personalizing the patient journey every step of the way. Vibe Health has robust integration capabilities with the hospital EMR and other installed technologies to transform the patient room into an interactive, inclusive environment that acts as an extension of the care team. Discover how to make it easier for patients, families, and clinicians to access accurate, real-time information when it’s needed most.
+Personalize the in-room experience with interactive TV software that educates, entertains, and empowers patients throughout their stay.
+Display patient information in real-time with a customizable digital whiteboard that integrates with the EMR, RTLS, and other installed systems.
+Keep staff, visitors and patients safe with digital patient room signs that integrates with the EMR to provide real-time notifications and alerts.
+Give patients more control at the bedside with interactive tablets for enhanced experience
+Video chat that connects patients, loved ones, and care teams anytime, from anywhere.
+Modernize your facility and seamlessly deliver information campus-wide with digital signage.

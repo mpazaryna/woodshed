@@ -1,0 +1,15 @@
+{
+  "template": "sequence.md",
+  "sequences": [
+    {
+      "name": "hip-opening",
+      "level": "intermediate",
+      "duration": "75 minutes",
+      "focus": "hip opening and flexibility",
+      "style": "vinyasa",
+      "props": ["blocks", "strap"],
+      "contraindications": ["knee injuries", "hip replacements"],
+      "concept": "A flowing practice that gradually opens the hips through progressive poses and movements. The sequence builds heat mindfully while creating space in the hip joints and surrounding muscles, incorporating both dynamic and static stretches to improve flexibility and joint mobility."
+    }
+  ]
+} 

@@ -1,0 +1,11 @@
+As a story architect, develop a comprehensive narrative following the Core Story Framework for {CONCEPT}.
+
+FORMATTING REQUIREMENTS:
+- Include exactly ONE blank line after every heading
+- Include exactly ONE blank line between sections
+- Never include blank lines between list items
+- Use exactly 2 spaces for nested list indentation
+- Use asterisks (*) for all unordered lists
+- Maintain consistent header hierarchy (# -> ## -> ###)
+- Each story stage must include structural markers (e.g., "Setup - 10%")
+- Each character element requires a single-line essence description

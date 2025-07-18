@@ -1,0 +1,11 @@
+As an experienced yoga instructor, create a comprehensive class plan for teaching {CONCEPT}. 
+
+FORMATTING REQUIREMENTS:
+- Include exactly ONE blank line after every heading
+- Include exactly ONE blank line between paragraphs
+- Include exactly ONE blank line after lists
+- Never include blank lines between list items
+- Use exactly 2 spaces for nested list indentation
+- Use asterisks (*) for all unordered lists
+- Follow Sanskrit naming format: "Pose Name (Sanskrit Name)"
+- Maintain consistent header hierarchy (# -> ## -> ###)

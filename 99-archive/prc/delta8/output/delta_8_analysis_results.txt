@@ -1,0 +1,104 @@
+Delta 8 Analysis Results
+========================
+
+Top Keywords (Pre-period):
+delta: 561
+thc: 77
+im: 76
+weed: 70
+gummies: 61
+cbd: 48
+get: 47
+legal: 44
+shit: 39
+high: 39
+good: 36
+sleep: 34
+got: 30
+dont: 30
+smoke: 29
+try: 28
+time: 25
+ive: 24
+feel: 23
+tried: 23
+
+Top Keywords (Post-period):
+delta: 548
+thc: 127
+high: 58
+get: 57
+cbd: 56
+shit: 47
+weed: 47
+products: 43
+im: 42
+legal: 37
+gummies: 33
+dont: 31
+smoke: 29
+edibles: 29
+good: 26
+tried: 26
+got: 26
+people: 23
+cannabis: 21
+cant: 20
+
+Generated Themes:
+Cannabis Types and Components: delta, thc, weed, cbd, marijuana
+Legality and Regulation: legal, fda, cdc
+User Experience: high, sleep, pain, anxiety
+General Sentiment: good, bad, love, great
+Product Types: gummy, vape, edible, cart
+Comparison: different
+
+Sentiment Analysis:
+Pre-period average sentiments:
+- Positive: 0.1533
+- Negative: 0.1002
+- Neutral: 0.7464
+- Compound: 0.1279
+
+Post-period average sentiments:
+- Positive: 0.1381
+- Negative: 0.0929
+- Neutral: 0.7690
+- Compound: 0.0812
+
+Summary of Differences:
+
+1. Keyword Changes:
+   - 65 keywords are common to both periods.
+   - 35 keywords are unique to the pre-period.
+   - 35 keywords are unique to the post-period.
+
+   Notable new keywords in post-period:
+   - gives
+   - states
+   - helped
+   - thing
+   - fda
+
+   Notable keywords missing in post-period:
+   - station
+   - made
+   - works
+   - bought
+   - ones
+
+2. Sentiment Changes:
+   Pre-period average sentiments:
+   - Positive: 0.1533
+   - Negative: 0.1002
+   - Neutral: 0.7464
+   - Compound: 0.1279
+
+   Post-period average sentiments:
+   - Positive: 0.1381
+   - Negative: 0.0929
+   - Neutral: 0.7690
+   - Compound: 0.0812
+
+   - Overall compound sentiment change: -0.0467
+   The overall sentiment has become more negative in the post-period.

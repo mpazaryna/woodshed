@@ -1,0 +1,87 @@
+# Ignore everything by default
+*
+
+# But don't ignore the .gitignore file itself
+!.gitignore
+
+# Don't ignore README.md if you choose to have one
+!README.md
+
+# Ignore common OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Ignore common Python files
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Ignore common JavaScript/Node files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore common Java files
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+
+# Ignore common C/C++ files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Ignore common IDE files
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Ignore common build directories
+target/
+out/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore any local configuration files
+*.env
+*.config
+
+# Ignore any log files
+*.log
+
+# Ignore any database files
+*.db
+*.sqlite
+
+# Ignore any compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore any archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore any temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~.nib

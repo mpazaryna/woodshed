@@ -1,0 +1,14 @@
+# Room Connect - pCare Interactive Patient System
+
+Interactive features enable staff to queue up Interactive Patient System (IPS) features for the patient. As a pioneer in interactive communication technology, pCare has created Room Connect, the powerful smart door display. Room Connect shows key patient information right at the entrance of their room, so providers can quickly get to know each patient’s status and needs.
+Room Connect’s interactive touch screen is an always-on device that is mounted right outside the patient’s room for fast, convenient access and critical information. It is available in multiple sizes to accommodate your facility’s design model and only requires a low-energy PoE Connection.
+Room Connect can be configured to display various information such as preferred name and language, safety alerts, allergies, risk and pain levels. When synced with different systems such as EHRs, the display shows care updates in real time. Staff can offer more personalized attention when they are informed and can greet a patient immediately, instead of focusing on a chart. For even greater connectivity with patients, explore Digital Whiteboard.
+Room Connect facilitates staff efficiency by making key information easy to access for all involved providers. Automatic updates remove the need for handwritten precaution notes and the screen’s visibility supports safety protocols. Room Connect interactive controls allow the staff to safely tune the pCare IPS television to specific applications for the patient without having to use the patient’s personal pillow speaker.
+1979 Marcus Avenue, Suite 226Lake Success, NY 11042
+pCare uses cookies to ensure that we give you the best experience on our website. You can find out more about which cookies we are using or switch them off in settings.
+This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.
+Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.
+If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again.
+This website uses Google Analytics to collect anonymous information such as the number of visitors to the site, and the most popular pages.
+Keeping this cookie enabled helps us to improve our website.
+Please enable Strictly Necessary Cookies first so that we can save your preferences!

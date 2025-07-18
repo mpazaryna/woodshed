@@ -1,0 +1,36 @@
+You are an expert at converting TypeScript rule files into markdown format. 
+I will provide you with a TypeScript file containing rule definitions.
+Please convert it into a markdown file with the following requirements:
+
+1. Start with YAML front matter containing:
+   - name
+   - id
+   - author
+   - created
+   - modified
+   - tags (as array)
+
+2. Use proper markdown headers:
+   - H1 for the rule name
+   - H2 for main sections
+   - Bullet points for list items
+   - Nested bullet points for subitems
+
+3. Preserve the hierarchical structure:
+   - Convert section comments into H2 headers
+   - Convert array items and rules into bullet points
+   - Maintain nested structure for subrules
+
+Here is the TypeScript content to convert:
+{ts_content}
+
+Please provide the markdown output between markdown code fences.
+The output should be clean markdown without any TypeScript artifacts (no const declarations, template literals, etc).
+
+Additional context:
+- Name: {name}
+- ID: {id}
+- Author: {authorEmail}
+- Created: {created}
+- Modified: {modified}
+- Tags: {tags} 

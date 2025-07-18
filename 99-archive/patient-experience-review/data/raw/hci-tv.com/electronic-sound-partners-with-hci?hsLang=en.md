@@ -1,0 +1,11 @@
+# Electronic Sound partners with HCI
+
+HCI, a leading provider of digital whiteboard solutions for healthcare communication, is pleased to announce their partnership with Electronic Sound, Inc. This partnership is a continued expansion of HCI's reach and strengthens their sales and support channel deep into the Midwest.
+Kelly Daly, President of Electronic Sound stated, “HCI is a great addition to our suite of quality communication products for healthcare. At our core, we are focused on our customer’s success in treating patients. The HCI whiteboards and interactive TVs contribute to that focus, and we look forward to introducing their innovative solutions to our existing customer base.”
+Electronic Sound provides a set of solutions that improve critical communication in the healthcare environment. They bring to complex environments the ability to collaborate more effectively and improve the level of care the customers provide.
+"Electronic Sound is precisely the type of company we want to partner with," says John Pratt, CEO of HCI. "They have a deep understanding of healthcare, an incredible reputation for taking care of their customers, and a focus on providing innovative technologies to solve complex problems."
+Electronic Sound’s ability to deliver quality systems and ensuring those systems work together directly coincides with HCI’s strength of integrating various healthcare systems and providing key data in a timely manner via their Digital Whiteboards. As a Platinum Partner of HCI, Electronic Sound will deliver and maintain HCI’s cutting edge technology in the hospitals, clinics, and other healthcare settings in Nebraska and Western Iowa.
+About Electronic Sound
+Electronic Sound takes pride in building high-quality systems and making sure they endure the test of time. They are focused on customer success in a safe and secure environment. They work with customers planning for long-term scale. They are committed to communicating and working together with customers to meet and exceed their expectations. Their main criterion for success is how well they serve the customer.
+
+Your partner for better communication, better care.

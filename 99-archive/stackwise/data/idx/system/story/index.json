@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "filename": "index.json",
+    "version": "1.0",
+    "generated": "2025-01-09T15:37:36.348Z",
+    "count": 14,
+    "domain": "system/story"
+  },
+  "primitives": [
+    {
+      "name": "creative",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "creative",
+        "aristotelian",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/aristotelian/creative.md"
+    },
+    {
+      "name": "requirements",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "requirements",
+        "aristotelian",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/aristotelian/requirements.md"
+    },
+    {
+      "name": "structure",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "structure",
+        "aristotelian",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/aristotelian/structure.md"
+    },
+    {
+      "name": "base",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "base",
+        "aristotelian",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/aristotelian/base.md"
+    },
+    {
+      "name": "advanced",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "advanced",
+        "aristotelian",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/aristotelian/advanced.md"
+    },
+    {
+      "name": "improvements",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "improvements",
+        "aristotelian",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/aristotelian/improvements.md"
+    },
+    {
+      "name": "advanced",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "format",
+        "aristotelian",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/aristotelian/format.md"
+    },
+    {
+      "name": "creative",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "creative",
+        "hero",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/hero/creative.md"
+    },
+    {
+      "name": "requirements",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "requirements",
+        "hero",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/hero/requirements.md"
+    },
+    {
+      "name": "structure",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "structure",
+        "hero",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/hero/structure.md"
+    },
+    {
+      "name": "structure",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "base",
+        "hero",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/hero/base.md"
+    },
+    {
+      "name": "improvement",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "improvement",
+        "hero",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/hero/improvement.md"
+    },
+    {
+      "name": "advanced",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "structure",
+        "hero",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/hero/advanced.md"
+    },
+    {
+      "name": "format",
+      "description": "Core Aristotelian dramatic structure with percentage-based story stages and character elements",
+      "category": "Story Structure",
+      "tags": [
+        "format",
+        "hero",
+        "dramatic-elements",
+        "core"
+      ],
+      "domain": "system/story",
+      "path": "data/primitives/system/story/hero/format.md"
+    }
+  ]
+}

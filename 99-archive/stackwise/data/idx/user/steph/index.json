@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "filename": "index.json",
+    "version": "1.0",
+    "generated": "2025-01-09T15:37:36.334Z",
+    "count": 1,
+    "domain": "user/steph"
+  },
+  "primitives": [
+    {
+      "name": "interface-design-advanced",
+      "description": "Comprehensive framework for creating sophisticated, scalable, and accessible interface design systems",
+      "category": "Interface Design Systems",
+      "tags": [
+        "ui design",
+        "advanced patterns",
+        "design systems",
+        "interaction design",
+        "accessibility"
+      ],
+      "domain": "user/steph",
+      "path": "data/primitives/user/steph/design-system.md"
+    }
+  ]
+}

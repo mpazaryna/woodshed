@@ -1,0 +1,31 @@
+## IDEAS:
+
+- Digital textile printing poised for growth, driven by technology, sustainability, and customization demands.
+- Industry evolution driven by technological advancements, market shifts, and sustainability emphasis.
+- Sourcing certified, eco-friendly fabrics is both an environmental obligation and a market advantage.
+- Direct to fabric printing eliminates intermediate steps, enhancing efficiency and reducing costs.
+- Global digital textile printing market projected to grow from $2.99 billion in 2024 to $8.89 billion by 2034.
+- Market experienced 4.1% CAGR between 2019 and 2023.
+- Expected global market surge at 12.1% CAGR during 2024-2034.
+- U.S. market to expand at 7.3% CAGR through 2034.
+- U.S. market recorded $325.5 million in 2023, expected 4.6% CAGR in 2024.
+- 52% of digital printing uses dye-sublimation inks, largest ink type in digital textile printing.
+- Digital machinery market valued at $320 million in 2018, projected to reach $890 million by 2030.
+- Fashion segment expected to dominate market with 41.2% share in 2025.
+- U.S. market growth driven by sustainability awareness and fashion sector demands.
+- Antimicrobial, UV protective, conductive inks open new avenues for smart textiles.
+- Competitive pricing and innovation from growing producer base benefit consumers.
+- Mergers, acquisitions, collaborations streamline supply chain and foster market development.
+- High initial investment is a primary challenge for the digital print market.
+- Major machine producers include Kornit Digital, Epson, Mimaki Engineering, Roland DG, and Konica Minolta.
+- Kornit Digital to unveil dynamic digital textiles and services at TexProcess.
+- Epson introduced Monna Lisa 8000A direct to fabric printer in May 2022.
+- Mimaki Europe launched fully UV print and cut solution with flatbed UV printer JFX600-2531.
+- Agfa unveiled enhanced inkjet printer portfolio at Fespa Global Print Expo.
+- Agfa's Jeti Condor RTR5200 S can print up to 672sqm/hr on flexible substrates.
+- Kornit Digital's Atlas MAX PLUS designed for quality, reliability, and color vibrancy.
+- Roland DG introduced VersaSTUDIO BD-8, first desktop flatbed UV printer in VersaSTUDIO series.
+- Inktec launched JETRIX LXa5, a professional large format LED UV flatbed printer.
+- EFI introduced VUTEk Q3h XP, a high-speed hybrid flatbed/roll-fed LED printer.
+- Ricoh unveiled Flora X20 UV hybrid printer, first compact-footprinted hybrid printer co-developed with Flora.
+- Direct printing on architectural substrates allows maintaining original surface texture, excluding design area.

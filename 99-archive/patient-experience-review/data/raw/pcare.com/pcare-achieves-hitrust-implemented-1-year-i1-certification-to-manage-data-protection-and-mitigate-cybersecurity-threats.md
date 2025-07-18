@@ -1,0 +1,19 @@
+# pCare Achieves HITRUST Implemented, 1-year (i1) Certification to Manage Data Protection and Mitigate Cybersecurity Threats - pCare Interactive Patient System
+
+Lake Success, New York, November 7, 2023
+pCare®, the leader in interactive patient engagement solutions that improve patient outcomes and make the work of healthcare teams safer and simpler, announces its interactive patient system earned the prestigious certified status by HITRUST for information security. This accomplishment underlines pCare’s steadfast commitment to the safety and support of its existing and future customers, including the protection of sensitive information.
+pCare guarantees patient engagement solutions that are purposefully and thoughtfully designed, and this certification further strengthens the company’s commitment to developing the highest quality systems. The HITRUST Implemented, 1-year (i1) Certified status validates that pCare is leveraging a set of curated controls to deliver a complete security program that broadly protects against current and emerging threats.
+“HITRUST is considered the gold standard for cybersecurity and will provide our healthcare customers with confidence and peace of mind that pCare’s technology will not put them at risk,” shared Mark Cortina, Vice President, Technology, pCare. “We are proud to achieve this milestone which underscores our commitment to safeguarding secure data as we further enhance the patient experience and staff satisfaction.”
+Practicing strong cybersecurity is critical to pCare to minimize information security risks and protect healthcare customers and partners. HITRUST i1 Certification gives the company’s stakeholders confidence they are following leading security practices.
+“pCare’s HITRUST Implemented, 1-year Certification is evidence that they are at the forefront of industry best practices for information risk management and cybersecurity,” said Jeremy Huval, Chief Innovation Officer, HITRUST.
+About pCare®
+pCare’s interactive patient experience solutions help healthcare providers engage, educate, and entertain patients across the care continuum and connect patients, families, and caregivers. Recognized as Best in KLAS for interactive patient systems, pCare is the leading partner of healthcare organizations to improve quality, outcomes, and performance. In 2023, pCare was acquired by Uniguest, a global leader in providing connected technology solutions for better customer engagement in the hospitality, senior living, sports/stadiums, entertainment, retail, education, corporate and government markets, to anchor its healthcare business. For more information, go to pCare.com or follow along on X @pCarebyTVRC and pCare on LinkedIn.
+###
+1979 Marcus Avenue, Suite 226Lake Success, NY 11042
+pCare uses cookies to ensure that we give you the best experience on our website. You can find out more about which cookies we are using or switch them off in settings.
+This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.
+Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.
+If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again.
+This website uses Google Analytics to collect anonymous information such as the number of visitors to the site, and the most popular pages.
+Keeping this cookie enabled helps us to improve our website.
+Please enable Strictly Necessary Cookies first so that we can save your preferences!

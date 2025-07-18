@@ -1,0 +1,89 @@
+Evaluation Analysis Report - COMPUTE DOMAIN
+Generated: 2024-12-13T01:17:59.401Z
+Total Files Analyzed: 27
+
+=== Category Summary ===
+
+SECURITY:
+- Total Findings: 7
+- Unique Finding Types: 7
+- Files Affected: 11
+- Positive Findings: 5
+- Identified Gaps: 2
+
+Positive Findings:
+  * Provide specific guidelines or templates for structuring technical responses and documentation to ensure consistency and clarity. (found in 1 files, 1 occurrences)
+  * Emphasize the importance of regularly updating technical responses and documentation to reflect changes in the codebase or best practices. (found in 1 files, 1 occurrences)
+  * Establish a review process for technical responses and documentation to ensure accuracy, completeness, and clarity before dissemination. (found in 1 files, 1 occurrences)
+
+Gaps Identified:
+  * Encourage the use of code linting and formatting tools to ensure that code examples adhere to best practices and are consistently formatted. (found in 1 files, 1 occurrences)
+  * Promote the use of visual aids, such as diagrams or flowcharts, to complement textual explanations and code examples, enhancing overall understanding. (found in 1 files, 1 occurrences)
+
+ERROR HANDLING:
+- Total Findings: 7
+- Unique Finding Types: 7
+- Files Affected: 11
+- Positive Findings: 5
+- Identified Gaps: 2
+
+Positive Findings:
+  * Provide specific guidelines or templates for structuring technical responses and documentation to ensure consistency and clarity. (found in 1 files, 1 occurrences)
+  * Emphasize the importance of regularly updating technical responses and documentation to reflect changes in the codebase or best practices. (found in 1 files, 1 occurrences)
+  * Establish a review process for technical responses and documentation to ensure accuracy, completeness, and clarity before dissemination. (found in 1 files, 1 occurrences)
+
+Gaps Identified:
+  * Encourage the use of code linting and formatting tools to ensure that code examples adhere to best practices and are consistently formatted. (found in 1 files, 1 occurrences)
+  * Promote the use of visual aids, such as diagrams or flowcharts, to complement textual explanations and code examples, enhancing overall understanding. (found in 1 files, 1 occurrences)
+
+API DESIGN:
+- Total Findings: 7
+- Unique Finding Types: 7
+- Files Affected: 11
+- Positive Findings: 5
+- Identified Gaps: 2
+
+Positive Findings:
+  * Provide specific guidelines or templates for structuring technical responses and documentation to ensure consistency and clarity. (found in 1 files, 1 occurrences)
+  * Emphasize the importance of regularly updating technical responses and documentation to reflect changes in the codebase or best practices. (found in 1 files, 1 occurrences)
+  * Establish a review process for technical responses and documentation to ensure accuracy, completeness, and clarity before dissemination. (found in 1 files, 1 occurrences)
+
+Gaps Identified:
+  * Encourage the use of code linting and formatting tools to ensure that code examples adhere to best practices and are consistently formatted. (found in 1 files, 1 occurrences)
+  * Promote the use of visual aids, such as diagrams or flowcharts, to complement textual explanations and code examples, enhancing overall understanding. (found in 1 files, 1 occurrences)
+
+PERFORMANCE:
+- Total Findings: 7
+- Unique Finding Types: 7
+- Files Affected: 11
+- Positive Findings: 5
+- Identified Gaps: 2
+
+Positive Findings:
+  * Provide specific guidelines or templates for structuring technical responses and documentation to ensure consistency and clarity. (found in 1 files, 1 occurrences)
+  * Emphasize the importance of regularly updating technical responses and documentation to reflect changes in the codebase or best practices. (found in 1 files, 1 occurrences)
+  * Establish a review process for technical responses and documentation to ensure accuracy, completeness, and clarity before dissemination. (found in 1 files, 1 occurrences)
+
+Gaps Identified:
+  * Encourage the use of code linting and formatting tools to ensure that code examples adhere to best practices and are consistently formatted. (found in 1 files, 1 occurrences)
+  * Promote the use of visual aids, such as diagrams or flowcharts, to complement textual explanations and code examples, enhancing overall understanding. (found in 1 files, 1 occurrences)
+
+DOCUMENTATION:
+- Total Findings: 7
+- Unique Finding Types: 7
+- Files Affected: 11
+- Positive Findings: 5
+- Identified Gaps: 2
+
+Positive Findings:
+  * Provide specific guidelines or templates for structuring technical responses and documentation to ensure consistency and clarity. (found in 1 files, 1 occurrences)
+  * Emphasize the importance of regularly updating technical responses and documentation to reflect changes in the codebase or best practices. (found in 1 files, 1 occurrences)
+  * Establish a review process for technical responses and documentation to ensure accuracy, completeness, and clarity before dissemination. (found in 1 files, 1 occurrences)
+
+Gaps Identified:
+  * Encourage the use of code linting and formatting tools to ensure that code examples adhere to best practices and are consistently formatted. (found in 1 files, 1 occurrences)
+  * Promote the use of visual aids, such as diagrams or flowcharts, to complement textual explanations and code examples, enhancing overall understanding. (found in 1 files, 1 occurrences)
+
+=== Normalized File Names ===
+- fastapi_guidelines.xml-eval.txt → fastapi-guidelines.xml-eval.txt
+- project_structure.xml-eval.txt → project-structure.xml-eval.txt

@@ -1,0 +1,13 @@
+# HELLO
+
+‍Oftentimes, whether due to isolation status or simply being far from home, patients can’t have their loved ones come to visit. But the comfort of talking with and seeing friends and loved ones is still so important to ease patient anxiety and provide an excellent patient experience. With eVideon HELLO, patients can use their own devices or a hospital borrowed device to “visit” with friends and family. Patients can connect one-on-one or in a group video chat.
+‍Patients will be greeted with the warmth and familiarity of your hospital, your logo, your colors, and your imagery. HELLO’s user interface will be customized to be unmistakably yours across multiple sites and throughout your organization.
+‍
+eVideon manages your solution completely and in a cloud-based environment. No additional IT resources needed. Because it’s web-based, HELLO can run on any device or operating system, so there’s no need to invest in specific hardware.
+Patients can video chat with loved ones easily and seamlessly. eVideon HELLO does not require any software downloads.
+‍Patients don’t have to create accounts or remember login information. HELLO provides instant connection without the hassle of third-party software.
+Allow nurses to focus on providing care - not tech support. HELLO is so easy to use. The days of helping patients with FaceTime and Zoom are over.
+HELLO does not require any account creation, usernames, passwords, or downloads. Patients can use it instantly, and their loved ones on the "other end" do not need to worry about downloading software or creating accounts either. HELLO meets HIPAA requirements, does not require extensive IT involvement or maintenance, and does not require care teams to spend extra time helping patients use the solution. HELLO is custom branded to your hospital with your logo, colors and imagery, and the solution can be deployed in as little as 24 hours so your patients can say HELLO right away.
+A patient can scan a QR code (availalbe from their TV or via a hospital printout) or visit your hospital's unique website to start a visit. They do not have to download anything or create any accounts/logins.
+Patients do not need to sign up for any accounts or remember any logins or passwords. HELLO is available via a shortcut, link, or QR code for patients to access from any device with a modern web browser.
+HELLO does not require traditional "implementation" and can be deployed in 24 hours, completely remotely. Patients can use their own devices or loaned hospital devices to connect. We can provide a hardware quote if you would like to purchase tablets for use with HELLO.

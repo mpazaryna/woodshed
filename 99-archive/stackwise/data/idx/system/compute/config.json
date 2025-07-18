@@ -1,0 +1,225 @@
+{
+  "domain": {
+    "name": "system/compute",
+    "version": "1.0",
+    "description": "system/compute domain configuration",
+    "filterStrategy": "language-specific"
+  },
+  "contextTypes": {
+    "languages": [
+      {
+        "name": "python",
+        "aliases": [
+          "python"
+        ],
+        "frameworks": []
+      },
+      {
+        "name": "node",
+        "aliases": [
+          "node"
+        ],
+        "frameworks": []
+      },
+      {
+        "name": "ruby",
+        "aliases": [
+          "ruby"
+        ],
+        "frameworks": []
+      }
+    ],
+    "categories": [
+      "core",
+      "Clean Code Principles",
+      "python",
+      "ai",
+      "ai interaction",
+      "dev",
+      "Development Best Practices",
+      "node",
+      "Node.js Design Patterns",
+      "ruby",
+      "Ruby Design Principles"
+    ]
+  },
+  "tagTypes": {
+    "generic": {
+      "description": "Tags that apply across all languages and frameworks",
+      "tags": [
+        {
+          "name": "code quality",
+          "description": "Generic tag for code quality",
+          "applicableToAll": true
+        },
+        {
+          "name": "maintainability",
+          "description": "Generic tag for maintainability",
+          "applicableToAll": true
+        },
+        {
+          "name": "clean-code",
+          "description": "Generic tag for clean-code",
+          "applicableToAll": true
+        },
+        {
+          "name": "simplicity",
+          "description": "Generic tag for simplicity",
+          "applicableToAll": true
+        },
+        {
+          "name": "minimalism",
+          "description": "Generic tag for minimalism",
+          "applicableToAll": true
+        },
+        {
+          "name": "pragmatic design",
+          "description": "Generic tag for pragmatic design",
+          "applicableToAll": true
+        },
+        {
+          "name": "SOLID",
+          "description": "Generic tag for SOLID",
+          "applicableToAll": true
+        },
+        {
+          "name": "design patterns",
+          "description": "Generic tag for design patterns",
+          "applicableToAll": true
+        },
+        {
+          "name": "best practices",
+          "description": "Generic tag for best practices",
+          "applicableToAll": true
+        },
+        {
+          "name": "style guide",
+          "description": "Generic tag for style guide",
+          "applicableToAll": true
+        },
+        {
+          "name": "ai",
+          "description": "Generic tag for ai",
+          "applicableToAll": true
+        },
+        {
+          "name": "ai interaction",
+          "description": "Generic tag for ai interaction",
+          "applicableToAll": true
+        },
+        {
+          "name": "version control",
+          "description": "Generic tag for version control",
+          "applicableToAll": true
+        },
+        {
+          "name": "code style",
+          "description": "Generic tag for code style",
+          "applicableToAll": true
+        },
+        {
+          "name": "testing",
+          "description": "Generic tag for testing",
+          "applicableToAll": true
+        },
+        {
+          "name": "concurrency",
+          "description": "Generic tag for concurrency",
+          "applicableToAll": true
+        },
+        {
+          "name": "performance",
+          "description": "Generic tag for performance",
+          "applicableToAll": true
+        },
+        {
+          "name": "error handling",
+          "description": "Generic tag for error handling",
+          "applicableToAll": true
+        },
+        {
+          "name": "reliability",
+          "description": "Generic tag for reliability",
+          "applicableToAll": true
+        },
+        {
+          "name": "streams",
+          "description": "Generic tag for streams",
+          "applicableToAll": true
+        },
+        {
+          "name": "events",
+          "description": "Generic tag for events",
+          "applicableToAll": true
+        },
+        {
+          "name": "asynchronous",
+          "description": "Generic tag for asynchronous",
+          "applicableToAll": true
+        },
+        {
+          "name": "metaprogramming",
+          "description": "Generic tag for metaprogramming",
+          "applicableToAll": true
+        },
+        {
+          "name": "dynamic features",
+          "description": "Generic tag for dynamic features",
+          "applicableToAll": true
+        },
+        {
+          "name": "duck typing",
+          "description": "Generic tag for duck typing",
+          "applicableToAll": true
+        },
+        {
+          "name": "polymorphism",
+          "description": "Generic tag for polymorphism",
+          "applicableToAll": true
+        },
+        {
+          "name": "blocks",
+          "description": "Generic tag for blocks",
+          "applicableToAll": true
+        },
+        {
+          "name": "iterators",
+          "description": "Generic tag for iterators",
+          "applicableToAll": true
+        }
+      ]
+    },
+    "language_specific": {
+      "description": "Tags that are specific to certain languages",
+      "rules": {
+        "allowGenericWithSpecific": true,
+        "requireLanguageMatch": true
+      },
+      "tags": {
+        "python": [
+          "python-specific"
+        ],
+        "node": [
+          "node-specific"
+        ],
+        "ruby": [
+          "ruby-specific"
+        ]
+      }
+    }
+  },
+  "promptTemplate": {
+    "path": "prompts/system/compute.txt",
+    "variables": {
+      "AVAILABLE_TAGS": "{{tags}}",
+      "LANGUAGE_CONTEXT": "{{language}}",
+      "FRAMEWORK_CONTEXT": "{{framework}}"
+    }
+  },
+  "outputRules": {
+    "includeGenericTags": true,
+    "includeLanguageTags": true,
+    "requireLanguageDetection": true,
+    "allowUnknownTags": false
+  }
+}

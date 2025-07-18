@@ -1,0 +1,48 @@
+Software Engineering Principle Evaluation
+---------------------------------------
+
+Analyze this principle considering:
+
+1. Principle Fundamentals
+   - Clarity of core concept
+   - Universality of application
+   - Relationship to SOLID principles
+   - Alignment with software engineering best practices
+   - Theoretical foundation
+
+2. Practical Application
+   - Real-world applicability
+   - Implementation guidance
+   - Common pitfalls and anti-patterns
+   - Trade-off considerations
+   - Example scenarios
+
+3. Technical Impact Analysis
+   - Code maintainability
+   - System architecture implications
+   - Testing strategy impact
+   - Refactoring considerations
+   - Technical debt implications
+
+4. Architectural Considerations
+   - Scalability impact
+   - System coupling effects
+   - Modularity implications
+   - Interface design influence
+   - Integration considerations
+
+5. Long-term Implications
+   - Evolution and maintenance impact
+   - Team collaboration effects
+   - Learning curve assessment
+   - Documentation requirements
+   - Future adaptability
+
+6. Cross-cutting Concerns
+   - Security implications
+   - Performance considerations
+   - Reliability impact
+   - Resource utilization
+   - Operational complexity
+
+Evaluate how effectively the principle addresses these aspects and provide specific recommendations for improvement while maintaining its fundamental intent.

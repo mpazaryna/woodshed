@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "test": "deno test --allow-read --allow-env",
+    "check": "deno check **/*.ts",
+    "coverage": "deno test --coverage=cov/ --allow-read --allow-env && deno coverage cov/"
+  },
+  "imports": {
+    "@core": "../core/mod.ts",
+    "@forge/prompt": "./mod.ts",
+  },
+  "prompt": {
+    "outputDir": "./data/output/prompts",
+    "sourceDir": "./data/prompt",
+    "indexFile": "index.json"
+  }
+} 

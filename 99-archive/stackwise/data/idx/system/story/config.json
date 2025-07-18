@@ -1,0 +1,105 @@
+{
+  "domain": {
+    "name": "system/story",
+    "version": "1.0",
+    "description": "system/story domain configuration",
+    "filterStrategy": "language-specific"
+  },
+  "contextTypes": {
+    "languages": [],
+    "categories": [
+      "aristotelian",
+      "Story Structure",
+      "hero"
+    ]
+  },
+  "tagTypes": {
+    "generic": {
+      "description": "Tags that apply across all languages and frameworks",
+      "tags": [
+        {
+          "name": "creative",
+          "description": "Generic tag for creative",
+          "applicableToAll": true
+        },
+        {
+          "name": "aristotelian",
+          "description": "Generic tag for aristotelian",
+          "applicableToAll": true
+        },
+        {
+          "name": "dramatic-elements",
+          "description": "Generic tag for dramatic-elements",
+          "applicableToAll": true
+        },
+        {
+          "name": "core",
+          "description": "Generic tag for core",
+          "applicableToAll": true
+        },
+        {
+          "name": "requirements",
+          "description": "Generic tag for requirements",
+          "applicableToAll": true
+        },
+        {
+          "name": "structure",
+          "description": "Generic tag for structure",
+          "applicableToAll": true
+        },
+        {
+          "name": "base",
+          "description": "Generic tag for base",
+          "applicableToAll": true
+        },
+        {
+          "name": "advanced",
+          "description": "Generic tag for advanced",
+          "applicableToAll": true
+        },
+        {
+          "name": "improvements",
+          "description": "Generic tag for improvements",
+          "applicableToAll": true
+        },
+        {
+          "name": "format",
+          "description": "Generic tag for format",
+          "applicableToAll": true
+        },
+        {
+          "name": "hero",
+          "description": "Generic tag for hero",
+          "applicableToAll": true
+        },
+        {
+          "name": "improvement",
+          "description": "Generic tag for improvement",
+          "applicableToAll": true
+        }
+      ]
+    },
+    "language_specific": {
+      "description": "Tags that are specific to certain languages",
+      "rules": {
+        "allowGenericWithSpecific": true,
+        "requireLanguageMatch": true
+      },
+      "tags": {}
+    }
+  },
+  "promptTemplate": {
+    "path": "prompts/system/story.txt",
+    "variables": {
+      "AVAILABLE_TAGS": "{{tags}}",
+      "LANGUAGE_CONTEXT": "{{language}}",
+      "FRAMEWORK_CONTEXT": "{{framework}}"
+    }
+  },
+  "outputRules": {
+    "includeGenericTags": true,
+    "includeLanguageTags": true,
+    "requireLanguageDetection": true,
+    "allowUnknownTags": false
+  }
+}

@@ -1,0 +1,41 @@
+Rule/Content Evaluation Template
+------------------------------------
+
+Please evaluate the provided content using the following framework:
+
+1. Content Analysis
+   - Clarity and specificity of rules/guidance
+   - Completeness of implementation details
+   - Technical accuracy and correctness
+   - Consistency with industry standards
+   - Integration with existing practices
+
+2. Implementation Assessment
+   - Practical applicability
+   - Required technical prerequisites
+   - Potential implementation challenges
+   - Resource implications
+   - Migration/adoption considerations
+
+3. Quality Factors
+   - Maintainability impact
+   - Scalability considerations
+   - Testing implications
+   - Security implications
+   - Performance impact
+
+4. Contextual Analysis
+   - Relationship to other rules/practices
+   - Environmental dependencies
+   - Technology stack considerations
+   - Team skill requirements
+   - Organizational impact
+
+5. Risk Assessment
+   - Technical debt implications
+   - Potential failure modes
+   - Mitigation strategies
+   - Long-term sustainability
+   - Support requirements
+
+Provide specific, actionable recommendations for improvement in each area while maintaining the core intent of the rules/guidance.

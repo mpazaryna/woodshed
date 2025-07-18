@@ -1,0 +1,69 @@
+FastAPI Implementation Guidelines Evaluation
+-----------------------------------------
+
+Evaluate these FastAPI implementation guidelines considering:
+
+1. API Design Quality
+   - RESTful principles adherence
+   - Endpoint naming conventions
+   - Resource hierarchy clarity
+   - URL structure consistency
+   - Query parameter design
+   - HTTP method usage
+   - Status code selection
+
+2. Type System & Validation
+   - Pydantic model design
+   - Input validation completeness
+   - Output schema definition
+   - Type hint usage
+   - Custom validation rules
+   - Enum implementations
+   - Generic type patterns
+
+3. Error Handling & Resilience
+   - Exception handling patterns
+   - Error response structure
+   - Retry mechanisms
+   - Timeout handling
+   - Circuit breaker patterns
+   - Fallback strategies
+   - Error logging approach
+
+4. Performance Optimization
+   - Async/await usage
+   - Connection pooling
+   - Caching strategies
+   - Background task handling
+   - Resource cleanup
+   - Memory management
+   - Query optimization
+
+5. Security Implementation
+   - Authentication methods
+   - Authorization patterns
+   - JWT handling
+   - CORS configuration
+   - Rate limiting
+   - Input sanitization
+   - Security headers
+
+6. Middleware & Dependencies
+   - Middleware chain design
+   - Dependency injection
+   - Service integration
+   - Plugin architecture
+   - Extension points
+   - Middleware ordering
+   - Context propagation
+
+7. Testing & Documentation
+   - Test coverage approach
+   - Integration test patterns
+   - OpenAPI documentation
+   - Example request/responses
+   - Edge case handling
+   - Performance test scenarios
+   - Security test cases
+
+Provide specific recommendations for improvement in each area while maintaining FastAPI best practices and performance characteristics.
